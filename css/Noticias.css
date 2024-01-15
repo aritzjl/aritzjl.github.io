@@ -1,7 +1,4 @@
-header {
-    z-index: 1000;
-  }
-  body {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
