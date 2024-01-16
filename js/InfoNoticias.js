@@ -1,61 +1,54 @@
-const xmlFilePath = '/XMLyXSD/XMLInfoNoticias.xml';
+document.addEventListener('DOMContentLoaded', function () {
+    // Находим все кнопки
+    const newsButtons = document.querySelectorAll('a[id^="noticia"]');
 
-// Функция для загрузки XML-файла
-function loadXMLDoc(filename) {
-    let xhttp;
-    if (window.XMLHttpRequest) {
-        xhttp = new XMLHttpRequest();
-    } else {
-        // Для IE6, IE5
-        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xhttp.open("GET", filename, false);
-    xhttp.send();
-    return xhttp.responseXML;
-}
+    // Добавляем обработчик события для каждой кнопки
+    newsButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            // Предотвращаем стандартное действие перехода по ссылке
+            event.preventDefault();
 
-// Функция для изменения информации о новости из XML-файла
-function changeNewsInfoFromXML() {
-    // Загружаем XML-файл
-    const xmlDoc = loadXMLDoc(xmlFilePath);
+            // Извлекаем значение 'xml' из атрибута href
+            const xmlParam = button.getAttribute('href').split('=')[1];
 
-    // Получаем элементы новости из XML
+            // Загружаем XML-документ и обрабатываем его
+            loadAndDisplaySection(xmlParam);
+        });
+    });
+});
+
+function loadAndDisplaySection(sectionId) {
+    const xmlDoc = loadXMLDoc(`/XMLyXSD/XMLInfoNoticias.xml#${sectionId}`);
+
+    // Получаем элементы раздела из XML
     const newsTitleElement = xmlDoc.querySelector('NoticiasTitle');
     const newsImageElement = xmlDoc.querySelector('NoticiasFoto');
-    const newsTextElement = xmlDoc.querySelector('newsText');
     const newsPrimeroTextElement = xmlDoc.querySelector('PrimeroText');
     const newsSegundoTextElement = xmlDoc.querySelector('SegundoText');
     const newsTerseroTextElement = xmlDoc.querySelector('TerseroText');
     const newsCuartoTextElement = xmlDoc.querySelector('CuartoText');
 
     // Заменяем информацию
-    const newText = newsTextElement.textContent;
-    const newTitle = newsTitleElement.textContent;
-    const newImageSrc = newsImageElement.textContent;
-    const PrimeroText = newsPrimeroTextElement.textContent;
-    const SegundoText = newsSegundoTextElement.textContent;
-    const TerseroText = newsTerseroTextElement.textContent;
-    const CuartoText = newsCuartoTextElement.textContent;
-
-    const textElement = document.getElementById('newsText');
     const titleElement = document.getElementById('NoticiasTitle');
     const imageElement = document.getElementById('NoticiasFoto');
-    const PrimeroTextElement = document.getElementById('PrimeroText');
-    const SegundoTextElement = document.getElementById('SegundoText');
-    const TerseroTextElement = document.getElementById('TerseroText');
-    const CuartoTextElement = document.getElementById('CuartoText');
+    const PrimeroTexto = document.getElementById('PrimeroText');
+    const SegundoTexto = document.getElementById('SegundoText');
+    const TerseroTexto = document.getElementById('TerseroText');
+    const CuartoTexto = document.getElementById('CuartoText');
 
-
-
-    titleElement.textContent = newTitle;
-    PrimeroTextElement.textContent = PrimeroText;
-    SegundoTextElement.textContent = SegundoText;
-    TerseroTextElement.textContent = TerseroText;
-    CuartoTextElement.textContent = CuartoText;
-    imageElement.src = newImageSrc;
+    titleElement.textContent = newsTitleElement.textContent;
+    imageElement.src = newsImageElement.textContent;
     imageElement.alt = 'Imagen de la Noticia';
-    textElement.textContent = newText;
+    PrimeroTexto.textContent = newsPrimeroTextElement.textContent;
+    SegundoTexto.textContent = newsSegundoTextElement.textContent;
+    TerseroTexto.textContent = newsTerseroTextElement.textContent;
+    CuartoTexto.textContent = newsCuartoTextElement.textContent;
 }
 
-// Вызываем функцию изменения информации из XML-файла
-changeNewsInfoFromXML();
+function loadXMLDoc(filename) {
+    // Используйте XMLHttpRequest или fetch для загрузки внешнего XML-файла
+    // Пример с использованием fetch:
+    return fetch(filename)
+        .then(response => response.text())
+        .then(data => new DOMParser().parseFromString(data, 'application/xml'));
+}
