@@ -18,76 +18,24 @@
 
 		<div class="relative rounded-md overflow-x-auto drop-shadow-xl">
 			<table class="w-full max-w-full sm:max-w-none text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
-				<thead class="text-xs text-gray-50 uppercase bg-blue-500 dark:bg-blue-900 dark:text-gray-100">
-					<tr>
-						<th scope="col" class="px-6 py-3">
-							Posición
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Escudo
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Nombre
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Ganados
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Perdidos
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Empatados
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Jugados
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Goles F
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Goles C
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Puntos
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-						<td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-							1
-						</td>
-						<td class="px-6 py-4">
-							<img src="ruta_al_escudo.png" alt="Escudo Equipo" class="h-8">
-						</td>
-						<td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-							Nombre
-						</td>
-						<td class="px-6 py-4">
-							5
-						</td>
-						<td class="px-6 py-4">
-							3
-						</td>
-						<td class="px-6 py-4">
-							2
-						</td>
-						<td class="px-6 py-4">
-							10
-						</td>
-						<td class="px-6 py-4">
-							30
-						</td>
-						<td class="px-6 py-4">
-							10
-						</td>
-						<td class="px-6 py-4">
-							23
-						</td>
-					</tr>
-
-				</tbody>
-			</table>
+                <thead class="text-xs text-gray-50 uppercase bg-blue-500 dark:bg-blue-900 dark:text-gray-100">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Posición</th>
+                        <th scope="col" class="px-6 py-3">Escudo</th>
+                        <th scope="col" class="px-6 py-3">Nombre</th>
+                        <th scope="col" class="px-6 py-3">Ganados</th>
+                        <th scope="col" class="px-6 py-3">Perdidos</th>
+                        <th scope="col" class="px-6 py-3">Empatados</th>
+                        <th scope="col" class="px-6 py-3">Jugados</th>
+                        <th scope="col" class="px-6 py-3">Goles F</th>
+                        <th scope="col" class="px-6 py-3">Goles C</th>
+                        <th scope="col" class="px-6 py-3">Puntos</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
 		</div>
 	</main>
 
@@ -102,6 +50,65 @@
 	  <script src="js/footer.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+	<script>
+
+        const xmlFilePath = 'XMLClasificacion.xml';
+
+        // Функция для загрузки XML-файла
+        function loadXMLDoc(filename) {
+            if (window.XMLHttpRequest) {
+                var xhttp = new XMLHttpRequest();
+            } else {
+                // Для IE6, IE5
+                var xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xhttp.open("GET", filename, false);
+            xhttp.send();
+            return xhttp.responseXML;
+        }
+
+        // Функция для динамического заполнения таблицы данными из XML
+        function loadTableData() {
+            const xmlDoc = loadXMLDoc(xmlFilePath);
+            const tableBody = document.getElementById('table-body');
+
+            const teams = xmlDoc.getElementsByTagName('team');
+            for (let i = 0; i < teams.length; i++) {
+                const team = teams[i];
+                const position = team.getElementsByTagName('position')[0].textContent;
+                const escudoPath = team.getElementsByTagName('escudo_path')[0].textContent;
+                const nombre = team.getElementsByTagName('nombre')[0].textContent;
+                const ganados = team.getElementsByTagName('ganados')[0].textContent;
+                const perdidos = team.getElementsByTagName('perdidos')[0].textContent;
+                const empatados = team.getElementsByTagName('empatados')[0].textContent;
+                const jugados = team.getElementsByTagName('jugados')[0].textContent;
+                const golesF = team.getElementsByTagName('goles_f')[0].textContent;
+                const golesC = team.getElementsByTagName('goles_c')[0].textContent;
+                const puntos = team.getElementsByTagName('puntos')[0].textContent;
+
+                const newRow = document.createElement('tr');
+                newRow.className = i % 2 === 0 ? 'bg-white border-b dark:bg-gray-800 dark:border-gray-700' : '';
+
+                newRow.innerHTML = `
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${position}</td>
+                    <td class="px-6 py-4"><img src="${escudoPath}" alt="Escudo Equipo" class="h-8"></td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nombre}</td>
+                    <td class="px-6 py-4">${ganados}</td>
+                    <td class="px-6 py-4">${perdidos}</td>
+                    <td class="px-6 py-4">${empatados}</td>
+                    <td class="px-6 py-4">${jugados}</td>
+                    <td class="px-6 py-4">${golesF}</td>
+                    <td class="px-6 py-4">${golesC}</td>
+                    <td class="px-6 py-4">${puntos}</td>
+                `;
+
+                tableBody.appendChild(newRow);
+            }
+        }
+
+        window.onload = loadTableData;
+    </script>
+
 </body>
 
 </html>
