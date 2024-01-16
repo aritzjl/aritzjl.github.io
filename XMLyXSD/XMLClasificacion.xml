@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<teams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDClasificacion.xsd">
+<teams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDClasificacion.xsd">
     <team>
         <position>1</position>
         <escudo_path>logoEquipo.png</escudo_path>
