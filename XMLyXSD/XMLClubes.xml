@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <club1>
+    <club>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <nombre>Fight Club</nombre>
         <estadio>Piscina</estadio>
         <presidente>Tailer Derden</presidente>
         <fundacion>2001</fundacion>
         <ciudad>Madrid</ciudad>
-    </club1>
+    </club>
+
+    <club2>
+        <escudo2>/imagenes/logoEquipo.png</escudo2>
+        <nombre2>WaterPolo Club</nombre2>
+        <estadio2>Piscina</estadio2>
+        <presidente2>Robert Polson</presidente2>
+        <fundacion2>1994</fundacion2>
+        <ciudad2>Bilbao</ciudad2>
+    </club2>
+
+    <club3>
+        <escudo3>/imagenes/logoEquipo2.jpg</escudo3>
+        <nombre3>8N Club</nombre3>
+        <estadio3>Piscina</estadio3>
+        <presidente3>Ya hz</presidente3>
+        <fundacion3>2014</fundacion3>
+        <ciudad3>Bilbao</ciudad3>
+    </club3>
+
+    <club4>
+        <escudo4>/imagenes/logoEquipo.png</escudo4>
+        <nombre4>Virtus.pro Club</nombre4>
+        <estadio4>Piscina</estadio4>
+        <presidente4>Bumbl jop</presidente4>
+        <fundacion4>2010</fundacion4>
+        <ciudad4>Bilbao</ciudad4>
+    </club4>
+
+    <club5>
+        <escudo5>/imagenes/logoEquipo2.jpg</escudo5>
+        <nombre5>Team Spirit</nombre5>
+        <estadio5>Piscina</estadio5>
+        <presidente5>Yatoro</presidente5>
+        <fundacion5>1981</fundacion5>
+        <ciudad5>Bilbao</ciudad5>
+    </club5>
+
+    <club6>
+        <escudo6>/imagenes/logoEquipo.png</escudo6>
+        <nombre6>NaVi Club</nombre6>
+        <estadio6>Piscina</estadio6>
+        <presidente6>S1mple</presidente6>
+        <fundacion6>1992</fundacion6>
+        <ciudad6>Bilbao</ciudad6>
+    </club6>
+
 </TablaClubs>
