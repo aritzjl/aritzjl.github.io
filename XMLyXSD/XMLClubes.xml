@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <club1>
+        <escudo>/imagenes/logoEquipo2.jpg</escudo>
+        <nombre>Fight Club</nombre>
+        <estadio>Piscina</estadio>
+        <presidente>Tailer Derden</presidente>
+        <fundacion>2001</fundacion>
+        <ciudad>Madrid</ciudad>
+    </club1>
+</TablaClubs>
