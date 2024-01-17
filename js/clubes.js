@@ -21,12 +21,12 @@ function updateTable(xmlDoc) {
     const ciudadElement = club.querySelector('ciudad');
 
     const club2 = xmlDoc.querySelector('club2');
-    const escudoElement2 = club2.querySelector('escudo2');
-    const nombreElement2 = club2.querySelector('nombre2');
-    const estadioElement2 = club2.querySelector('estadio2');
-    const presidenteElement2 = club2.querySelector('presidente2');
-    const fundacionElement2 = club2.querySelector('fundacion2');
-    const ciudadElement2 = club2.querySelector('ciudad2');
+    const escudoElement2 = club2.querySelector('escudo');
+    const nombreElement2 = club2.querySelector('nombre');
+    const estadioElement2 = club2.querySelector('estadio');
+    const presidenteElement2 = club2.querySelector('presidente');
+    const fundacionElement2 = club2.querySelector('fundacion');
+    const ciudadElement2 = club2.querySelector('ciudad');
 
     const club3 = xmlDoc.querySelector('club3');
     const escudoElement3 = club3.querySelector('escudo3');
@@ -69,12 +69,12 @@ function updateTable(xmlDoc) {
     const fundacion = document.getElementById('fundacion');
     const ciudad = document.getElementById('ciudad');
 
-    const image2 = document.getElementById('image2');
-    const nombre2 = document.getElementById('nombre2');
-    const estadio2 = document.getElementById('estadio2');
-    const presidente2 = document.getElementById('presidente2');
-    const fundacion2 = document.getElementById('fundacion2');
-    const ciudad2 = document.getElementById('ciudad2');
+    const image2 = document.getElementById('image');
+    const nombre2 = document.getElementById('nombre');
+    const estadio2 = document.getElementById('estadio');
+    const presidente2 = document.getElementById('presidente');
+    const fundacion2 = document.getElementById('fundacion');
+    const ciudad2 = document.getElementById('ciudad');
 
     const image3 = document.getElementById('image3');
     const nombre3 = document.getElementById('nombre3');
@@ -147,4 +147,7 @@ function updateTable(xmlDoc) {
     presidente6.textContent = presidenteElement6.textContent;
     fundacion6.textContent = fundacionElement6.textContent;
     ciudad6.textContent = ciudadElement6.textContent;
+}
+function navigateToClubPage(url) {
+    window.location.href = url;
 }

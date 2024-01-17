@@ -10,12 +10,12 @@
     </club>
 
     <club2>
-        <escudo2>/imagenes/logoEquipo.png</escudo2>
-        <nombre2>WaterPolo Club</nombre2>
-        <estadio2>Piscina</estadio2>
-        <presidente2>Robert Polson</presidente2>
-        <fundacion2>1994</fundacion2>
-        <ciudad2>Bilbao</ciudad2>
+        <escudo>/imagenes/logoEquipo.png</escudo>
+        <nombre>WaterPolo Club</nombre>
+        <estadio>Piscina</estadio>
+        <presidente>Robert Polson</presidente>
+        <fundacion>1994</fundacion>
+        <ciudad>Bilbao</ciudad>
     </club2>
 
     <club3>
