@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<newsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDInfoMoticias.xsd">
+<newsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <news id="noticia1">
     <NoticiasTitle>España - Croacia: a qué hora es, dónde ver en TV y canal de la final del Europeo de waterpolo 2024</NoticiasTitle>
     <NoticiasFoto>imagenes/noticiasNormal.png</NoticiasFoto>

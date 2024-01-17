@@ -81,7 +81,7 @@
         <!--1-->
         <h1 class="text-center text-4xl font-bold tracking-tight text-gray-900 dark:text-white">noticias para este mes</h1>
         <br>
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center" id="newsList">
         <a href="/InfoNoticias.html?xml=noticia1" id="noticia1" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m-4">
             <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="imagenes/noticiasNormal.png" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
@@ -168,6 +168,44 @@
 
 	<script src="js/footer.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <!-- Agrega este script al final de tu archivo HTML -->
+<!-- Agrega este script al final de tu archivo HTML -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Obtén todas las noticias enlaces
+      const noticiasEnlaces = document.querySelectorAll('.flex.flex-col.items-center');
+  
+      // Recorre cada enlace y añade un evento de clic
+      noticiasEnlaces.forEach((enlace) => {
+        enlace.addEventListener("click", function () {
+          // Obtiene el índice de la noticia haciendo referencia al índice del enlace en el conjunto de enlaces
+          const index = Array.from(noticiasEnlaces).indexOf(enlace);
+  
+          // Obtiene la noticia correspondiente del XML
+          const xml = new DOMParser().parseFromString(xmlString, "text/xml");
+          const noticias = xml.querySelectorAll('news');
+          const noticia = noticias[index];
+  
+          // Extrae la información de la noticia
+          const title = noticia.querySelector('NoticiasTitle').textContent;
+          const foto = noticia.querySelector('NoticiasFoto').textContent;
+          const firstText = noticia.querySelector('PrimeroText').textContent;
+          const secondText = noticia.querySelector('SegundoText').textContent;
+          const thirdText = noticia.querySelector('TerseroText').textContent;
+          const fourthText = noticia.querySelector('CuartoText').textContent;
+          console.log(title);
+  
+          // Construye la URL para la página de información de la noticia
+          const infoNoticiaURL = `noticia.html?title=${encodeURIComponent(title)}&foto=${encodeURIComponent(foto)}&firstText=${encodeURIComponent(firstText)}&secondText=${encodeURIComponent(secondText)}&thirdText=${encodeURIComponent(thirdText)}&fourthText=${encodeURIComponent(fourthText)}`;
+  
+          // Redirecciona a la página de información de la noticia
+          window.location.href = infoNoticiaURL;
+        });
+      });
+    });
+  </script>
+  
+  
 </body>
 
 </html>

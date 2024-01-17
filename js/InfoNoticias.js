@@ -1,24 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded event fired.'); // Проверка события DOMContentLoaded
+
     // Находим все кнопки
     const newsButtons = document.querySelectorAll('a[id^="noticia"]');
+    console.log('Section loaded and displayed successfully.');
+    console.log(newsButtons);
 
     // Добавляем обработчик события для каждой кнопки
     newsButtons.forEach(function (button) {
         button.addEventListener('click', function (event) {
             // Предотвращаем стандартное действие перехода по ссылке
             event.preventDefault();
-
+            
             // Извлекаем значение 'xml' из атрибута href
-            const xmlParam = button.getAttribute('href').split('=')[1];
+            const sectionId = button.getAttribute('href').split('=')[1];
 
             // Загружаем XML-документ и обрабатываем его
-            loadAndDisplaySection(xmlParam);
+            loadAndDisplaySection(sectionId);
         });
     });
+    console.log('Section loaded and displayed successfully.');
+    console.log(sectionId);
 });
+console.log('Section loaded and displayed successfully.');
+async function loadAndDisplaySection(sectionId) {
+    console.log('Attempting to load XML document:');
 
-function loadAndDisplaySection(sectionId) {
-    const xmlDoc = loadXMLDoc(`/XMLyXSD/XMLInfoNoticias.xml#${sectionId}`);
+    try {
+        const xmlDoc = await loadXMLDoc(`/XMLyXSD/XMLInfoNoticias.xml#${sectionId}`);
 
     // Получаем элементы раздела из XML
     const newsTitleElement = xmlDoc.querySelector('NoticiasTitle');
@@ -43,9 +52,12 @@ function loadAndDisplaySection(sectionId) {
     SegundoTexto.textContent = newsSegundoTextElement.textContent;
     TerseroTexto.textContent = newsTerseroTextElement.textContent;
     CuartoTexto.textContent = newsCuartoTextElement.textContent;
+} catch (error) {
+    console.log('XML Document loading error:', error);
 }
-
+}
 function loadXMLDoc(filename) {
+    console.log('Section loaded and displayed successfully.');
     // Используйте XMLHttpRequest или fetch для загрузки внешнего XML-файла
     // Пример с использованием fetch:
     return fetch(filename)
