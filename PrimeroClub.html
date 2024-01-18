@@ -26,25 +26,29 @@
 				</div>
 				<div class="w-full">
 					<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">información</div>
-					<!-- PrimeroClub.html -->
+					<!-- нейм -->
 					<div id="nombre" class="text-left mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"></div>
 					<br>
 					<div class="flex items-center">
+						<!--код группы -->
 						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Codigo de Club:</div>
 						<div id="codigo" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2"></div>
 					</div>
 					<br>
 					<div class="flex items-center">
+						<!--презик -->
 						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">El presidente: </div>
 						<div id="presidente" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2"></div>
 					</div>
 					<br>
 					<div class="flex items-center">
+						<!--кол-во ребяток -->
 						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Cantidad de socios: </div>
 						<div id="cantidad" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2"></div>
 					</div>
 					<br>
 					<div class="flex items-center">
+						<!--место игр -->
 						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Estadio: </div>
 						<div id="estadio" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2"></div>
 					</div>
@@ -61,12 +65,8 @@
 					
 					<div class="w-full">
 						<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Hictoria</div>
-						<div class="text-left mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nombre de Primero Club</div>
-						<p class="text-left rtl:text-right text-gray-500 dark:text-gray-400">Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
-
-							La sección de waterpolo milita en la primera división nacional de waterpolo, categoría a la que ascendió la temporada 94-95. Descendió la temporada siguiente, pero volvió a conseguir el ascenso en la temporada 1996-97.
-							
-							Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.</p>
+						<!--история команды -->
+						<p id="historia" class="text-left rtl:text-right text-gray-500 dark:text-gray-400"></p>
 					</div>
 				</div>
 				<span class="sr-only">Loading...</span>
@@ -81,52 +81,52 @@
 		   </div>
 		   <div class="flow-root">
 				<ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-					<li class="py-3 sm:py-4">
+					<li id="player1" class="py-3 sm:py-4">
 						<div class="flex items-center">
 							<div class="flex-shrink-0">
-								<img class="w-20 h-20 " src="#" alt="Neil image">
+								<img id="player1-image" class="w-20 h-20 " src="#" alt="Neil image">
 							</div>
 							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+								<p id="player1-name" class="text-sm font-medium text-gray-900 truncate dark:text-white">
 									Tailer Derden
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p id="player1-age" class="text-sm text-gray-500 truncate dark:text-gray-400">
 									Años: 26
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p id="player1-height" class="text-sm text-gray-500 truncate dark:text-gray-400">
 									Altura: 184sm
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p id="player1-weight" class="text-sm text-gray-500 truncate dark:text-gray-400">
 									Peso: 87kg
 								</p>
 							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+							<div id="player1-role" class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
 								Comandor
 							</div>
 						</div>
 					</li>
 					
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center ">
+					<li id="player2" class="py-3 sm:py-4">
+						<div class="flex items-center">
 							<div class="flex-shrink-0">
-								<img class="w-20 h-20 " src="#" alt="Bonnie image">
+								<img id="player2-image" class="w-20 h-20 " src="#" alt="Bonnie image">
 							</div>
 							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+								<p id="player2-name" class="text-sm font-medium text-gray-900 truncate dark:text-white">
 									Tailer Derden
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p id="player2-age" class="text-sm text-gray-500 truncate dark:text-gray-400">
 									Años: 26
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p id="player2-height" class="text-sm text-gray-500 truncate dark:text-gray-400">
 									Altura: 184sm
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p id="player2-weight" class="text-sm text-gray-500 truncate dark:text-gray-400">
 									Peso: 87kg
 								</p>
 							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								jugador
+							<div id="player2-role" class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+								Jugador
 							</div>
 						</div>
 					</li>
@@ -412,7 +412,7 @@
 	  <script src="js/footer.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-	<script src="js/clubes.js"></script>
+	<script src="js/PrimeroClub.js"></script>
 </body>
 
 </html>

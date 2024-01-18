@@ -37,6 +37,6 @@ function updateTable(xmlDoc) {
     }
 }
 
-function navigateToClubPage(url) {
-    window.location.href = url;
+function navigateToClubPage(clubUrl) {
+    window.location.href = clubUrl;
 }
