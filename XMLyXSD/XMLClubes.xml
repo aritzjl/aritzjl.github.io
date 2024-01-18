@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <club>
+    <club1>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <nombre>Fight Club</nombre>
         <estadio>Piscina</estadio>
         <presidente>Tailer Derden</presidente>
         <fundacion>2001</fundacion>
         <ciudad>Madrid</ciudad>
-    </club>
+        <codigo>22495031</codigo>
+        <cantidad>13</cantidad>
+    </club1>
 
     <club2>
         <escudo>/imagenes/logoEquipo.png</escudo>
@@ -16,42 +18,46 @@
         <presidente>Robert Polson</presidente>
         <fundacion>1994</fundacion>
         <ciudad>Bilbao</ciudad>
+        <codigo>22495031</codigo>
+        <cantidad>13</cantidad>
     </club2>
 
     <club3>
-        <escudo3>/imagenes/logoEquipo2.jpg</escudo3>
-        <nombre3>8N Club</nombre3>
-        <estadio3>Piscina</estadio3>
-        <presidente3>Ya hz</presidente3>
-        <fundacion3>2014</fundacion3>
-        <ciudad3>Bilbao</ciudad3>
+        <escudo>/imagenes/logoEquipo2.jpg</escudo>
+        <nombre>8N Club</nombre>
+        <estadio>Piscina</estadio>
+        <presidente>Ya hz</presidente>
+        <fundacion>2014</fundacion>
+        <ciudad>Bilbao</ciudad>
+        <codigo>22495031</codigo>
+        <cantidad>13</cantidad>
     </club3>
 
     <club4>
-        <escudo4>/imagenes/logoEquipo.png</escudo4>
-        <nombre4>Virtus.pro Club</nombre4>
-        <estadio4>Piscina</estadio4>
-        <presidente4>Bumbl jop</presidente4>
-        <fundacion4>2010</fundacion4>
-        <ciudad4>Bilbao</ciudad4>
+        <escudo>/imagenes/logoEquipo.png</escudo>
+        <nombre>Virtus.pro Club</nombre>
+        <estadio>Piscina</estadio>
+        <presidente>Bumbl jop</presidente>
+        <fundacion>2010</fundacion>
+        <ciudad>Bilbao</ciudad>
     </club4>
 
     <club5>
-        <escudo5>/imagenes/logoEquipo2.jpg</escudo5>
-        <nombre5>Team Spirit</nombre5>
-        <estadio5>Piscina</estadio5>
-        <presidente5>Yatoro</presidente5>
-        <fundacion5>1981</fundacion5>
-        <ciudad5>Bilbao</ciudad5>
+        <escudo>/imagenes/logoEquipo2.jpg</escudo>
+        <nombre>Team Spirit</nombre>
+        <estadio>Piscina</estadio>
+        <presidente>Yatoro</presidente>
+        <fundacion>1981</fundacion>
+        <ciudad>Bilbao</ciudad>
     </club5>
 
     <club6>
-        <escudo6>/imagenes/logoEquipo.png</escudo6>
-        <nombre6>NaVi Club</nombre6>
-        <estadio6>Piscina</estadio6>
-        <presidente6>S1mple</presidente6>
-        <fundacion6>1992</fundacion6>
-        <ciudad6>Bilbao</ciudad6>
+        <escudo>/imagenes/logoEquipo.png</escudo>
+        <nombre>NaVi Club</nombre>
+        <estadio>Piscina</estadio>
+        <presidente>S1mple</presidente>
+        <fundacion>1992</fundacion>
+        <ciudad>Bilbao</ciudad>
     </club6>
 
 </TablaClubs>
