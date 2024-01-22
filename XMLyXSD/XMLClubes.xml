@@ -4,7 +4,7 @@
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <codigo>22495031</codigo>
         <nombre>Fight Club</nombre>
-        <estadio>Piscina</estadio>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Tailer Derden</presidente>
         <fundacion>2001</fundacion>
         <ciudad>Madrid</ciudad>
@@ -20,7 +20,7 @@
     <club2>
         <escudo>/imagenes/logoEquipo.png</escudo>
         <nombre>WaterPolo Club</nombre>
-        <estadio>Piscina</estadio>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Robert Polson</presidente>
         <fundacion>1994</fundacion>
         <ciudad>Bilbao</ciudad>
@@ -37,8 +37,8 @@
     <club3>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <nombre>8N Club</nombre>
-        <estadio>Piscina</estadio>
-        <presidente>Ya hz</presidente>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Witch Blvde</presidente>
         <fundacion>2014</fundacion>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
@@ -54,7 +54,7 @@
     <club4>
         <escudo>/imagenes/logoEquipo.png</escudo>
         <nombre>Virtus.pro Club</nombre>
-        <estadio>Piscina</estadio>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Bumbl jop</presidente>
         <fundacion>2010</fundacion>
         <ciudad>Bilbao</ciudad>
@@ -71,7 +71,7 @@
     <club5>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <nombre>Team Spirit</nombre>
-        <estadio>Piscina</estadio>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Yatoro</presidente>
         <fundacion>1981</fundacion>
         <ciudad>Bilbao</ciudad>
@@ -88,7 +88,7 @@
     <club6>
         <escudo>/imagenes/logoEquipo.png</escudo>
         <nombre>NaVi Club</nombre>
-        <estadio>Piscina</estadio>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>S1mple</presidente>
         <fundacion>1992</fundacion>
         <ciudad>Bilbao</ciudad>
