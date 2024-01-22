@@ -2,13 +2,13 @@
 <TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <club1>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
+        <codigo>22495031</codigo>
         <nombre>Fight Club</nombre>
         <estadio>Piscina</estadio>
         <presidente>Tailer Derden</presidente>
         <fundacion>2001</fundacion>
         <ciudad>Madrid</ciudad>
-        <codigo>22495031</codigo>
-        <cantidad>13</cantidad>
+        <cantidad>15</cantidad>
         <historia>Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
 
 				  La sección de waterpolo milita en la primera división nacional de waterpolo, categoría a la que ascendió la temporada 94-95. Descendió la temporada siguiente, pero volvió a conseguir el ascenso en la temporada 1996-97.
