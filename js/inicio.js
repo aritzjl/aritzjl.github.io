@@ -1,70 +1,54 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Загружаем XML и обновляем данные для первого клуба
-    fetch('/XMLyXSD/XMLClubes.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
+    // Procesar datos para tres clubes
+    for (let i = 1; i <= 3; i++) {
+        // Realizar una solicitud fetch para obtener el archivo XML
+        fetch(`/XMLyXSD/XMLClubes.xml`)
+            .then(response => response.text())
+            .then(xmlString => {
+                // Crear un objeto DOMParser para analizar el XML
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
+                
+                // Definir los identificadores para los elementos HTML
+                const clubId = `club${i}`;
+                const escudoId = `escudo${i}`;
+                const codigoId = `codigo${i}`;
+                const nombreId = `nombre${i}`;
+                const estadioId = `estadio${i}`;
+                const presidenteId = `presidente${i}`;
+                const cantidadId = `cantidad${i}`;
 
-            updateClubInfo(xmlDoc, 'club1', 'escudo1', 'codigo1', 'nombre1', 'estadio1', 'presidente1', 'cantidad1');
-        });
-
-    // Загружаем XML и обновляем данные для второго клуба
-    fetch('/XMLyXSD/XMLClubes.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
-
-            updateClubInfo(xmlDoc, 'club2', 'escudo2', 'codigo2', 'nombre2', 'estadio2', 'presidente2', 'cantidad2');
-        });
-
-    // Загружаем XML и обновляем данные для третьего клуба
-    fetch('/XMLyXSD/XMLClubes.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
-
-            updateClubInfo(xmlDoc, 'club3', 'escudo3', 'codigo3', 'nombre3', 'estadio3', 'presidente3', 'cantidad3');
-        });
+                // Llamar a la función para actualizar la información del club
+                updateClubInfo(xmlDoc, clubId, escudoId, codigoId, nombreId, estadioId, presidenteId, cantidadId);
+            });
+    }
 });
 
+// Función para actualizar la información del club en la página HTML
 function updateClubInfo(xmlDoc, clubId, escudoId, codigoId, nombreId, estadioId, presidenteId, cantidadId) {
-    // Получаем элементы для выбранной команды
+    // Obtener el elemento del club del documento XML
     const clubElement = xmlDoc.querySelector(clubId);
 
-    if (clubElement) { // Проверяем, что команда существует
-        // картинка
+    // Verificar si se encontró el elemento del club
+    if (clubElement) {
+        // Obtener elementos específicos del club del documento XML
         const escudoElement = clubElement.querySelector('escudo');
-        //код
         const codigoElement = clubElement.querySelector('codigo');
-        //имя
         const nombreElement = clubElement.querySelector('nombre');
-        //басейн
         const estadioElement = clubElement.querySelector('estadio');
-        //имя президента
         const presidenteElement = clubElement.querySelector('presidente');
-        //количество игроков
         const cantidadElement = clubElement.querySelector('cantidad');
 
-        // Обновляем информацию на странице
-        // картинка
+        // Actualizar los elementos HTML con la información del club
         document.getElementById(escudoId).src = escudoElement.textContent;
-        //код
         document.getElementById(codigoId).textContent = codigoElement.textContent;
-        //имя
         document.getElementById(nombreId).textContent = nombreElement.textContent;
-        //басейн
         document.getElementById(estadioId).textContent = estadioElement.textContent;
-        //имя президента
         document.getElementById(presidenteId).textContent = presidenteElement.textContent;
-        //количество игроков
         document.getElementById(cantidadId).textContent = cantidadElement ? cantidadElement.textContent : "N/A";
     } else {
-        // Если команда не найдена, можно отобразить сообщение об ошибке или перенаправить на другую страницу.
-        console.error(`Команда с идентификатором ${clubId} не найдена.`);
-        // Например, можно перенаправить на страницу ошибки
-        // window.location.href = '/error.html';
+        // Mostrar un mensaje de error si el elemento del club no se encuentra
+        console.error(`Club con identificador ${clubId} no encontrado.`);
     }
 }
+
