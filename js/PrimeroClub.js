@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
+
+            const cantidadId = `cantidad`;
             // Вызываем функцию обновления информации о клубе
             updateClubInfo(xmlDoc, clubId);
         });
@@ -35,7 +37,7 @@ function updateClubInfo(xmlDoc, clubId) {
         const ciudadElement = clubElement.querySelector('ciudad');
         const cantidadElement = clubElement.querySelector('cantidad');
         const historiaElement = clubElement.querySelector('historia');
-
+        console.log(historiaElement);
         // Обновляем информацию на странице
         document.getElementById('escudo').src = escudoElement.textContent;
         document.getElementById('codigo').textContent = codigoElement.textContent;
@@ -49,7 +51,5 @@ function updateClubInfo(xmlDoc, clubId) {
     } else {
         // Если команда не найдена, выводим сообщение об ошибке в консоль
         console.error(`Команда с идентификатором ${clubId} не найдена.`);
-        // Можно также рассмотреть перенаправление на страницу ошибки
-        // window.location.href = '/error.html';
     }
 }
