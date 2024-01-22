@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDClubes.xsd">
     <club1>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <codigo>22495031</codigo>
