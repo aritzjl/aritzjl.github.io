@@ -6,44 +6,74 @@ document.addEventListener('DOMContentLoaded', function () {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-            // Обновляем таблицу с данными о клубах
+            // Обновляем таблицу с данными о новостях
             updateTable(xmlDoc);
-        });
+        })
+        .catch(error => console.error('Error fetching XML:', error));
 });
 
-function updateInformationFromXML() {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            // Parse the XML response
-            var xmlDoc = xhr.responseXML;
-            
-            // Get all 'a' elements in the HTML
-            var newsElements = document.querySelectorAll('.flex.flex-wrap.justify-center a');
-            
-            // Loop through each 'a' element and update information
-            newsElements.forEach(function(newsElement, index) {
-                var newsId = "noticia" + (index + 1);
-                var nameId = "NameNoticias" + (index + 1);
-                var newsLittleId = "NewsLittle" + (index + 1);
-                var imageId = "image" + (index + 1);
+function updateTable(xmlDoc) {
+    // Проходим по всем новостям в XML
+    for (let i = 1; i <= 9; i++) {
+        // Получаем элемент новости из XML
+        const NoticiaElement = xmlDoc.querySelector(`news[id="noticia${i}"]`);
 
-                // Get data from XML based on element index
-                var newsData = xmlDoc.querySelector('noticia[id="' + newsId + '"]');
-                var name = newsData.querySelector('name').textContent;
-                var newsLittle = newsData.querySelector('newsLittle').textContent;
-                var imageUrl = newsData.querySelector('imageUrl').textContent;
+        if (NoticiaElement) { // Проверяем, что элемент существует
+            // Получаем необходимые элементы данных о новости
+            const NameElement = NoticiaElement.querySelector('NameNoticias');
+            const imageElement = NoticiaElement.querySelector('NoticiasFoto');
+            const NewsLittleElement = NoticiaElement.querySelector('NewsLittle');
 
-                // Update HTML content
-                newsElement.setAttribute('href', '/InfoNoticias.html?noticia=' + newsId);
-                newsElement.querySelector('h5').textContent = name;
-                newsElement.querySelector('p').textContent = newsLittle;
-                newsElement.querySelector('img').setAttribute('src', imageUrl);
-            });
+            // Получаем соответствующие элементы HTML на странице
+            const image = document.getElementById(`NoticiasFoto${i}`);
+            const nombre = document.getElementById(`NameNoticias${i}`);
+            const NewsLittle = document.getElementById(`NewsLittle${i}`);
+
+            // Обновляем содержимое элементов HTML данными из XML
+            if (imageElement) {
+                image.src = imageElement.textContent;
+            }
+
+            if (NameElement) {
+                nombre.textContent = NameElement.textContent;
+            }
+
+            if (NewsLittleElement) {
+                NewsLittle.textContent = NewsLittleElement.textContent;
+            }
         }
-    };
 
-    // Open and send the request to the XML file
-    xhr.open('GET', 'your-xml-file.xml', true);
-    xhr.send();
+        // Добавляем обработку для элементов с id, начинающимися на "noticiaFast"
+        const NoticiaFastElement = xmlDoc.querySelector(`news[id^="noticiaFast${i}"]`);
+
+        if (NoticiaFastElement) { // Проверяем, что элемент существует
+            // Получаем необходимые элементы данных о новости
+            const NameFNotElement = NoticiaFastElement.querySelector('NameFNot');
+            const imageFElement = NoticiaFastElement.querySelector('image');
+            const NewsFLitElement = NoticiaFastElement.querySelector('NewsFLit');
+
+            // Получаем соответствующие элементы HTML на странице
+            const imageF = document.getElementById(`image${i}`);
+            const nombreF = document.getElementById(`NameFNot${i}`);
+            const NewsFLit = document.getElementById(`NewsFLit${i}`);
+
+            // Обновляем содержимое элементов HTML данными из XML
+            if (imageFElement) {
+                imageF.src = imageFElement.textContent;
+            }
+
+            if (NameFNotElement) {
+                nombreF.textContent = NameFNotElement.textContent;
+            }
+
+            if (NewsFLitElement) {
+                NewsFLit.textContent = NewsFLitElement.textContent;
+            }
+        }
+    }
+}
+
+
+function navigateToNoticiasPage(NoticiaUrl) {
+    window.location.href = NoticiaUrl;
 }
