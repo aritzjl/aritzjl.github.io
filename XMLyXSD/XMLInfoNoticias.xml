@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<newsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<news id="noticiaFast1">
-    <image>imagenes/noticiaXD2.jpg</image>
-    <NameFNot>Noteworthy technology acquisitions 2021</NameFNot>
-    <NewsFLit>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</NewsFLit>
-</news>
-<news id="noticiaFast2">
-    <image>imagenes/noticiaXD2.jpg</image>
-    <NameFNot>Noteworthy technology acquisitions 2021</NameFNot>
-    <NewsFLit>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</NewsFLit>
-</news>
-<news id="noticiaFast3">
-    <image>imagenes/noticiaXD2.jpg</image>
-    <NameFNot>Noteworthy technology acquisitions 2021</NameFNot>
-    <NewsFLit>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</NewsFLit>
-</news>
+<newsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDInfoNoticias.xsd">
 
 <news id="noticia1">
     <NameNoticias>Noticia</NameNoticias>
@@ -23,7 +8,7 @@
     <NoticiasTitle>España - Croacia: a qué hora es, dónde ver en TV y canal de la final del Europeo de waterpolo 2024</NoticiasTitle>
     <NoticiasFoto>imagenes/noticiasNormal.png</NoticiasFoto>
     <newsText>Nuevo Texto de la Noticia</newsText>
-    <PrimeroText>La selección masculina persigue el único título que se le resiste. Una victoria también le daría el billete para los Juegos Olímpicos de París.</PrimeroText>
+    <PrimeroText>La selpara los Juegos Olímpicos de París.</PrimeroText>
     <SegundoText>La selección masculina de waterpolo busca el único título que le falta en su palmarés: el campeonato de Europa. Con un oro olímpico (Atlanta 96) y tres mundiales (1998, 2001, 2022), se le resiste ceñirse la corona continental. En tres ocasiones se quedó a las puertas al caer en la final (1991, 2018 y 2020). Ahora tiene una nueva oportunidad. España se medirá a Croacia, en Zagreb, en el último partido del Europeo, este martes 16 de enero a partir de las 20.15 horas. En juego, el oro y la clasificación para los Juegos de París.</SegundoText>
     <TerseroText>Luego España ganó a Montenegro y Francia para acabar primera de grupo al perder Croacia con Montenegro en los penaltis. En cuartos se impuso a Rumania (24-7) y en semifinales a Italia por 7-4 con una gran actuación del meta Unai Aguirre.</TerseroText>
     <CuartoText>El combinado nacional llega a la final tras sumar una única derrota, precisamente ante Croacia en el primer partido. Cayó en los penaltis en un encuentro en el que le pasó factura la acumulación de exclusiones: 19, seis más que a los croatas, que marcaron siete de sus nueve goles en juego con un hombre de más.</CuartoText>

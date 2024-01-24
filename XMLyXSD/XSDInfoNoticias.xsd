@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <xs:element name="news">
+  <xs:element name="newsList">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="NoticiasTitle" type="xs:string"/>
-        <xs:element name="NoticiasFoto" type="xs:string"/>
-        <xs:element name="newsText" type="xs:string"/>
-        <xs:element name="PrimeroText" type="xs:string"/>
-        <xs:element name="SegundoText" type="xs:string"/>
-        <xs:element name="TerseroText" type="xs:string"/>
-        <xs:element name="CuartoText" type="xs:string"/>
+        <xs:element name="news" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" type="xs:string"/>
+              <xs:element name="NameFNot" type="xs:string"/>
+              <xs:element name="NewsFLit" type="xs:string"/>
+              <xs:element name="NameNoticias" type="xs:string"/>
+              <xs:element name="NewsLittle" type="xs:string"/>
+              <xs:element name="NoticiasTitle" type="xs:string"/>
+              <xs:element name="NoticiasFoto" type="xs:string"/>
+              <xs:element name="newsText" type="xs:string"/>
+              <xs:element name="PrimeroText" type="xs:string"/>
+              <xs:element name="SegundoText" type="xs:string"/>
+              <xs:element name="TerseroText" type="xs:string"/>
+              <xs:element name="CuartoText" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

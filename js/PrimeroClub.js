@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const params = new URLSearchParams(window.location.search);
     const clubId = params.get('club');
 
-    // Выводим параметры в консоль (для отладки)
-    console.log('URL параметры:', params);
-    console.log('ID выбранного клуба:', clubId);
-
     // Загружаем XML и обновляем данные для выбранной команды
     fetch('/XMLyXSD/XMLClubes.xml')
         .then(response => response.text())
@@ -14,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-
-            const cantidadId = `cantidad`;
             // Вызываем функцию обновления информации о клубе
             updateClubInfo(xmlDoc, clubId);
         });
@@ -33,12 +27,7 @@ function updateClubInfo(xmlDoc, clubId) {
         const nombreElement = clubElement.querySelector('nombre');
         const estadioElement = clubElement.querySelector('estadio');
         const presidenteElement = clubElement.querySelector('presidente');
-        const fundacionElement = clubElement.querySelector('fundacion');
-        const ciudadElement = clubElement.querySelector('ciudad');
         const cantidadElement = clubElement.querySelector('cantidad');
-
-
-
         const historiaElement = clubElement.querySelector('historia');
  
         // Обновляем информацию на странице
