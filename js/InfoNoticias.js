@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Получаем параметр 'noticia' из URL
     const params = new URLSearchParams(window.location.search);
     const noticiaId = params.get('noticia');
+    const noticiaFastId = params.get('noticiaFast');
 
     // Загружаем XML и обновляем данные для выбранной команды
     fetch('/XMLyXSD/XMLInfoNoticias.xml')
@@ -11,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
             // Вызываем функцию обновления информации
-            updateNoticiaInfo(xmlDoc, noticiaId);
+            updateNoticiaInfo(xmlDoc, noticiaId, noticiaFastId);
         });
 });
 
-function updateNoticiaInfo(xmlDoc, noticiaId) {
+function updateNoticiaInfo(xmlDoc, noticiaId, noticiaFastId) {
 
     const noticiaElement = xmlDoc.querySelector(`news[id="${noticiaId}"]`);
     console.log(noticiaId);
@@ -36,7 +37,19 @@ function updateNoticiaInfo(xmlDoc, noticiaId) {
     document.getElementById('TerseroText').textContent = newsTerseroTextElement.textContent;
     document.getElementById('CuartoText').textContent = newsCuartoTextElement.textContent;
     } else {
-        // Если команда не найдена, выводим сообщение об ошибке в консоль
-        console.error(`Команда с идентификатором ${noticiaId} не найдена.`);
+        // Если это элемент noticiaFast
+         const noticiaFastElement = xmlDoc.querySelector(`news[id="noticiaFast${i}"]`);
+         console.log(noticiaFastElement);
+        if (noticiaFastElement) {
+             const imageFElement = noticiaFastElement.querySelector('NoticiasFoto');
+             const NameFNotElement = noticiaFastElement.querySelector('NoticiasTitle');
+             const NewsFLitElement = noticiaFastElement.querySelector('PrimeroText');
+             
+
+              document.getElementById('NoticiasFoto').src = imageFElement.textContent;
+              document.getElementById('NoticiasTitle').textContent = NameFNotElement.textContent;
+              document.getElementById('PrimeroText').textContent = NewsFLitElement.textContent;
+            }
+        
     }
 }

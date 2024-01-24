@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <newsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDInfoNoticias.xsd">
 
+<news id="noticiaFast1">
+    <image>imagenes/noticiaXD2.jpg</image>
+    <NameFNot>Noteworthy technology acquisitions 2021</NameFNot>
+    <NewsFLit>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</NewsFLit>
+</news>
+<news id="noticiaFast2">
+    <image>imagenes/noticiaXD2.jpg</image>
+    <NameFNot>Noteworthy technology acquisitions 2021</NameFNot>
+    <NewsFLit>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</NewsFLit>
+</news>
+<news id="noticiaFast3">
+    <image>imagenes/noticiaXD2.jpg</image>
+    <NameFNot>Noteworthy technology acquisitions 2021</NameFNot>
+    <NewsFLit>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</NewsFLit>
+</news>
+
+
 <news id="noticia1">
     <NameNoticias>Noticia</NameNoticias>
     <NewsLittle>Вот самые крупные предприятельские технологические сделки 2021 года до сих пор, в обратном хронологическом порядке</NewsLittle>
