@@ -1,30 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOMContentLoaded event fired.'); // Проверка события DOMContentLoaded
+    // Получаем параметр 'club' из URL
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
 
-    // Находим все кнопки
-    const newsButtons = document.querySelectorAll('a[id^="noticia"]');
-    console.log('Section loaded and displayed successfully.');
-    console.log(newsButtons);
+    // Выводим параметры в консоль (для отладки)
+    console.log('URL параметры:', params);
+    console.log('ID выбранного клуба:', noticiaId);
 
-    // Добавляем обработчик события для каждой кнопки
-    newsButtons.forEach(function (button) {
-        button.addEventListener('click', function (event) {
-            // Предотвращаем стандартное действие перехода по ссылке
-            event.preventDefault();
-            
-            // Извлекаем значение 'xml' из атрибута href
-            const sectionId = button.getAttribute('href').split('=')[1];
+    // Загружаем XML и обновляем данные для выбранной команды
+    fetch('/XMLyXSD/XMLInfoNoticias.xml')
+        .then(response => response.text())
+        .then(xmlString => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-            // Загружаем XML-документ и обрабатываем его
-            loadAndDisplaySection(sectionId);
+            // Вызываем функцию обновления информации о клубе
+            updateClubInfo(xmlDoc, noticiaId);
         });
-    });
-    console.log('Section loaded and displayed successfully.');
-    console.log(sectionId);
 });
-console.log('Section loaded and displayed successfully.');
+
 async function loadAndDisplaySection(sectionId) {
-    console.log('Attempting to load XML document:');
 
     try {
         const xmlDoc = await loadXMLDoc(`/XMLyXSD/XMLInfoNoticias.xml#${sectionId}`);
@@ -55,12 +50,4 @@ async function loadAndDisplaySection(sectionId) {
 } catch (error) {
     console.log('XML Document loading error:', error);
 }
-}
-function loadXMLDoc(filename) {
-    console.log('Section loaded and displayed successfully.');
-    // Используйте XMLHttpRequest или fetch для загрузки внешнего XML-файла
-    // Пример с использованием fetch:
-    return fetch(filename)
-        .then(response => response.text())
-        .then(data => new DOMParser().parseFromString(data, 'application/xml'));
 }

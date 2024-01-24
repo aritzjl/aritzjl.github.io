@@ -36,17 +36,18 @@ function updateClubInfo(xmlDoc, clubId) {
         const fundacionElement = clubElement.querySelector('fundacion');
         const ciudadElement = clubElement.querySelector('ciudad');
         const cantidadElement = clubElement.querySelector('cantidad');
+
+
+
         const historiaElement = clubElement.querySelector('historia');
-        console.log(historiaElement);
+ 
         // Обновляем информацию на странице
         document.getElementById('escudo').src = escudoElement.textContent;
         document.getElementById('codigo').textContent = codigoElement.textContent;
         document.getElementById('nombre').textContent = nombreElement.textContent;
         document.getElementById('estadio').textContent = estadioElement.textContent;
         document.getElementById('presidente').textContent = presidenteElement.textContent;
-        document.getElementById('fundacion').textContent = fundacionElement.textContent;
-        document.getElementById('ciudad').textContent = ciudadElement.textContent;
-        document.getElementById('cantidad').textContent = cantidadElement.textContent;
+        document.getElementById('cantidad').textContent =cantidadElement.textContent;
         document.getElementById('historia').textContent = historiaElement.textContent;
     } else {
         // Если команда не найдена, выводим сообщение об ошибке в консоль
