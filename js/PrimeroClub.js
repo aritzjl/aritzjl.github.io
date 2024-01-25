@@ -38,8 +38,14 @@ function updateClubInfo(xmlDoc, clubId) {
         document.getElementById('presidente').textContent = presidenteElement.textContent;
         document.getElementById('cantidad').textContent =cantidadElement.textContent;
         document.getElementById('historia').textContent = historiaElement.textContent;
-    } else {
-        // Если команда не найдена, выводим сообщение об ошибке в консоль
-        console.error(`Команда с идентификатором ${clubId} не найдена.`);
+    } 
+updatePersonasInfo(xmlDoc, PersonaId);
+}
+function updatePersonasInfo(xmlDoc, PersonaId) {
+    const PersonaElement = xmlDoc.querySelector(PersonaId);
+
+    if (PersonaElement) {
+        
+        
     }
 }

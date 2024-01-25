@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com"
+           xmlns="http://example.com"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:element name="Personas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="equipo1" type="TeamType"/>
+        <xs:element name="equipo2" type="TeamType"/>
+        <xs:element name="equipo3" type="TeamType"/>
+        <xs:element name="equipo4" type="TeamType"/>
+        <xs:element name="equipo5" type="TeamType"/>
+        <xs:element name="equipo6" type="TeamType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="TeamType">
+    <xs:sequence>
+      <xs:element name="jugador1" type="PlayerType"/>
+      <xs:element name="jugador2" type="PlayerType"/>
+      <xs:element name="jugador3" type="PlayerType"/>
+      <xs:element name="jugador4" type="PlayerType"/>
+      <xs:element name="jugador5" type="PlayerType"/>
+      <xs:element name="jugador6" type="PlayerType"/>
+      <xs:element name="jugador7" type="PlayerType"/>
+      <xs:element name="jugador8" type="PlayerType"/>
+      <xs:element name="jugador9" type="PlayerType"/>
+      <xs:element name="jugador10" type="PlayerType"/>
+      <xs:element name="jugador11" type="PlayerType"/>
+      <xs:element name="jugador12" type="PlayerType"/>
+      <xs:element name="jugador13" type="PlayerType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PlayerType">
+    <xs:sequence>
+      <xs:element name="Fotca" type="xs:string"/>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Anos" type="xs:string"/>
+      <xs:element name="Alt" type="xs:string"/>
+      <xs:element name="Peso" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
