@@ -26,18 +26,21 @@ function updatePlayerInfo(xmlDoc, clubId) {
       const AnosElement = personaElement.querySelector('Anos');
       const AltElement = personaElement.querySelector('Alt');
       const PesoElement = personaElement.querySelector('Peso');
+      const FichaElement = personaElement.querySelector('Ficha');
 
       const Fotca = document.getElementById(`Fotca${i}`);
       const Name = document.getElementById(`Name${i}`);
       const Anos = document.getElementById(`Anos${i}`);
       const Alt = document.getElementById(`Alt${i}`);
       const Peso = document.getElementById(`Peso${i}`);
+      const Ficha = document.getElementById(`Ficha${i}`);
 
       Fotca.src = FotcaElement.textContent;
       Name.textContent = NameElement.textContent;
       Anos.textContent = AnosElement.textContent;
       Alt.textContent = AltElement.textContent;
       Peso.textContent = PesoElement.textContent;
+      Ficha.textContent = FichaElement.textContent;
     }
   }
 }
