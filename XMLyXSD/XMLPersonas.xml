@@ -1,194 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDPersonas.xsd">
-    <equipo1>
+    <club1>
         <jugador1>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador1>
         <jugador2>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador2>
         <jugador3>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador3>
         <jugador4>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador4>
         <jugador5>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador5>
         <jugador6>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador6>
         <jugador7>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador7>
         <jugador8>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador8>
         <jugador9>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador9>
         <jugador10>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador10>
         <jugador11>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador11>
         <jugador12>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador12>
         <jugador13>
-            <Fotca>png</Fotca>
+            <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
             <Alt>173</Alt>
             <Peso>81</Peso>
         </jugador13>
-    </equipo1>
+    </club1>
 
-    <equipo2>
+    <club2>
         <jugador1>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador1>
         <jugador2>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador2>
         <jugador3>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador3>
         <jugador4>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador4>
         <jugador5>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador5>
         <jugador6>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador6>
         <jugador7>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador7>
         <jugador8>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador8>
         <jugador9>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador9>
         <jugador10>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador10>
         <jugador11>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador11>
         <jugador12>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador12>
         <jugador13>
-            <Fotca></Fotca>
-            <Name></Name>
-            <Anos></Anos>
-            <Alt></Alt>
-            <Peso></Peso>
+            <Fotca>/imagenes/img2.png</Fotca>
+            <Name>daun</Name>
+            <Anos>34567</Anos>
+            <Alt>234</Alt>
+            <Peso>6790</Peso>
         </jugador13>
-    </equipo2>
+    </club2>
 
-    <equipo3>
+    <club3>
         <jugador1>
             <Fotca></Fotca>
             <Name></Name>
@@ -280,7 +280,7 @@
             <Alt></Alt>
             <Peso></Peso>
         </jugador13>
-    </equipo3>
+    </club3>
 
     <equipo4>
         <jugador1>
@@ -374,9 +374,9 @@
             <Alt></Alt>
             <Peso></Peso>
         </jugador13>
-    </equipo4>
+    </club4>
 
-    <equipo5>
+    <club5>
         <jugador1>
             <Fotca></Fotca>
             <Name></Name>
@@ -468,9 +468,9 @@
             <Alt></Alt>
             <Peso></Peso>
         </jugador13>
-    </equipo5>
+    </club5>
 
-    <equipo6>
+    <club6>
         <jugador1>
             <Fotca></Fotca>
             <Name></Name>
@@ -562,5 +562,5 @@
             <Alt></Alt>
             <Peso></Peso>
         </jugador13>
-    </equipo6>
+    </club6>
 </Personas>
