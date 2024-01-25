@@ -39,13 +39,4 @@ function updateClubInfo(xmlDoc, clubId) {
         document.getElementById('cantidad').textContent =cantidadElement.textContent;
         document.getElementById('historia').textContent = historiaElement.textContent;
     } 
-updatePersonasInfo(xmlDoc, PersonaId);
-}
-function updatePersonasInfo(xmlDoc, PersonaId) {
-    const PersonaElement = xmlDoc.querySelector(PersonaId);
-
-    if (PersonaElement) {
-        
-        
-    }
 }
