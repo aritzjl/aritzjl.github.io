@@ -3,34 +3,33 @@
     <Temporada2023>
         <Jornada1>
             <Partido>
-                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
-                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
-                <NomEquipoLocal>Askartza Claret</NomEquipoLocal>
-                <NombreEquipoVisitante>Sevilla</NombreEquipoVisitante>
-                <EtiquetaPartido>Partido 1</EtiquetaPartido>
-                <ResultadoLocal>4</ResultadoLocal>
-                <ResultadoVIsitante>5</ResultadoVIsitante>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 1</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
-                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
-                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
-                <NomEquipoLocal>La Latina</NomEquipoLocal>
-                <NombreEquipoVisitante>Navarra</NombreEquipoVisitante>
-                <EtiquetaPartido>Partido 2</EtiquetaPartido>
-                <ResultadoLocal>5</ResultadoLocal>
-                <ResultadoVIsitante>5</ResultadoVIsitante>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 2</etiquetaPartido>
+                <resultadoLocal>5</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
-                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
-                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
-                <NomEquipoLocal>La Latina</NomEquipoLocal>
-                <NombreEquipoVisitante>Sevilla</NombreEquipoVisitante>
-                <EtiquetaPartido>Partido 3</EtiquetaPartido>
-                <ResultadoLocal>4</ResultadoLocal>
-                <ResultadoVIsitante>5</ResultadoVIsitante>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 3</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
             </Partido>
         </Jornada1>
-
     </Temporada2023>
 
     <Temporada2024>
