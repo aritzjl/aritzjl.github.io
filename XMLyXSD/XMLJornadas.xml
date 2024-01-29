@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Jornadas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDJornadas.xsd">
+    <Temporada2023>
+        <Jornada1>
+            <Partido>
+                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
+                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
+                <NomEquipoLocal>Askartza Claret</NomEquipoLocal>
+                <NombreEquipoVisitante>Sevilla</NombreEquipoVisitante>
+                <EtiquetaPartido>Partido 1</EtiquetaPartido>
+                <ResultadoLocal>4</ResultadoLocal>
+                <ResultadoVIsitante>5</ResultadoVIsitante>
+            </Partido>
+            <Partido>
+                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
+                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
+                <NomEquipoLocal>La Latina</NomEquipoLocal>
+                <NombreEquipoVisitante>Navarra</NombreEquipoVisitante>
+                <EtiquetaPartido>Partido 2</EtiquetaPartido>
+                <ResultadoLocal>5</ResultadoLocal>
+                <ResultadoVIsitante>5</ResultadoVIsitante>
+            </Partido>
+            <Partido>
+                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
+                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
+                <NomEquipoLocal>La Latina</NomEquipoLocal>
+                <NombreEquipoVisitante>Sevilla</NombreEquipoVisitante>
+                <EtiquetaPartido>Partido 3</EtiquetaPartido>
+                <ResultadoLocal>4</ResultadoLocal>
+                <ResultadoVIsitante>5</ResultadoVIsitante>
+            </Partido>
+        </Jornada1>
+
+    </Temporada2023>
+
+    <Temporada2024>
+        <Jornada1>
+            <Partido>
+                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
+                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
+                <NomEquipoLocal>Askartza Claret</NomEquipoLocal>
+                <NombreEquipoVisitante>Sevilla</NombreEquipoVisitante>
+                <EtiquetaPartido>Partido 1</EtiquetaPartido>
+                <ResultadoLocal>4</ResultadoLocal>
+                <ResultadoVIsitante>5</ResultadoVIsitante>
+            </Partido>
+            <Partido>
+                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
+                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
+                <NomEquipoLocal>La Latina</NomEquipoLocal>
+                <NombreEquipoVisitante>Navarra</NombreEquipoVisitante>
+                <EtiquetaPartido>Partido 2</EtiquetaPartido>
+                <ResultadoLocal>5</ResultadoLocal>
+                <ResultadoVIsitante>5</ResultadoVIsitante>
+            </Partido>
+            <Partido>
+                <FotcaLocal>/imagenes/img2.png</FotcaLocal>
+                <FotcaVisitante>/imagenes/img2.png</FotcaVisitante>
+                <NomEquipoLocal>La Latina</NomEquipoLocal>
+                <NombreEquipoVisitante>Sevilla</NombreEquipoVisitante>
+                <EtiquetaPartido>Partido 3</EtiquetaPartido>
+                <ResultadoLocal>4</ResultadoLocal>
+                <ResultadoVIsitante>5</ResultadoVIsitante>
+            </Partido>
+        </Jornada1>
+
+    </Temporada2024>
+
+    </Jornadas>
