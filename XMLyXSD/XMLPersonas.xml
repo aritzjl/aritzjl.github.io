@@ -2,7 +2,10 @@
 <Personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDPersonas.xsd">
     <club1>
         <jugador1>
+<<<<<<< HEAD
         
+=======
+>>>>>>> 686eafabcbcb868da5ec93ccbc7ce17aaa27ae19
             <Fotca>/imagenes/img2.png</Fotca>
             <Name>Tailer Derden</Name>
             <Anos>31</Anos>
