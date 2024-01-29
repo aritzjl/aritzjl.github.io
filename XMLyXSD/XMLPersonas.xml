@@ -326,6 +326,10 @@
     </club3>
 
     <club4>
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 833fffe8c078fdc8e339e0336047d8c54769d460
         <jugador1>
             <Fotca>/imagenes/img2.png</Fotca>
             <Name>daun</Name>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define complex types for elements -->
+
+  <xs:complexType name="PartidoType">
+    <xs:sequence>
+      <xs:element name="FotcaLocal" type="xs:string"/>
+      <xs:element name="FotcaVisitante" type="xs:string"/>
+      <xs:element name="NomEquipoLocal" type="xs:string"/>
+      <xs:element name="NombreEquipoVisitante" type="xs:string"/>
+      <xs:element name="EtiquetaPartido" type="xs:string"/>
+      <xs:element name="ResultadoLocal" type="xs:integer"/>
+      <xs:element name="ResultadoVIsitante" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="JornadaType">
+    <xs:sequence>
+      <xs:element name="Partido" type="PartidoType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TemporadaType">
+    <xs:sequence>
+      <xs:element name="Jornada1" type="JornadaType"/>
+     
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="JornadasType">
+    <xs:sequence>
+      <xs:element name="Temporada2023" type="TemporadaType"/>
+      <xs:element name="Temporada2024" type="TemporadaType"/>
+      
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+  <xs:element name="Jornadas" type="JornadasType"/>
+
+</xs:schema>
