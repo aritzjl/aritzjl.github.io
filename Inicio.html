@@ -52,34 +52,34 @@
 							  <div id="doubleDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
 								<ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas1" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas2" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas3" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas4" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas5" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas6" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas7" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas8" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas9" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
 									</li>
 									<li>
-									  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
+									  <a href="/Jornada.html?Jornadas=Jornadas10" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
 									</li>
 								  </ul>
 							  </div>
@@ -252,55 +252,6 @@
 	<br>
 	<br>
 	<br>
-	<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Функция для закрытия всех открытых выпадающих меню, кроме указанного
-    function closeOtherDropdowns(excludeDropdownId) {
-      var dropdowns = document.querySelectorAll(".dropdown");
-      dropdowns.forEach(function (dropdown) {
-        if (dropdown.id !== excludeDropdownId) {
-          dropdown.style.display = "none";
-        }
-      });
-    }
-
-    // Функция для переключения видимости меню
-    function toggleDropdown(dropdownId) {
-      var dropdown = document.getElementById(dropdownId);
-      if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
-      } else {
-        closeOtherDropdowns(dropdownId);
-        dropdown.style.display = "block";
-      }
-    }
-
-    // Обработчики событий для кнопок выпадающих меню
-    document.getElementById("dropdownNavbarLink").addEventListener("click", function () {
-      toggleDropdown("dropdownNavbar");
-    });
-
-    document.getElementById("doubleDropdownButton1").addEventListener("click", function () {
-      toggleDropdown("doubleDropdown1");
-    });
-
-    document.getElementById("doubleDropdownButton2").addEventListener("click", function () {
-      toggleDropdown("doubleDropdown2");
-    });
-
-    document.getElementById("doubleDropdownButton3").addEventListener("click", function () {
-      toggleDropdown("doubleDropdown3");
-    });
-
-    document.getElementById("doubleDropdownButton4").addEventListener("click", function () {
-      toggleDropdown("doubleDropdown4");
-    });
-
-    document.getElementById("doubleDropdownButton5").addEventListener("click", function () {
-      toggleDropdown("doubleDropdown5");
-    });
-  });
-</script>
   </header>
 <body class="flex flex-col h-screen bg-white border-gray-200 dark:bg-gray-700">
 
