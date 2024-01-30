@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Получаем параметр 'Jornadas' из URL
+    // Получаем параметры 'Jornadas' и 'Year' из URL
     const params = new URLSearchParams(window.location.search);
 
     const Jornada = params.get('Jornadas').replace('Jornadas', '');
+    const Year = params.get('Year').replace('Year', '');
 
     // Загружаем XML и обновляем данные для выбранного сезона
     fetch('/XMLyXSD/XMLJornadas.xml')
@@ -11,22 +12,24 @@ document.addEventListener('DOMContentLoaded', function () {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-            // Вызываем функцию для обновления информации о туре
-            updateJornadaInfo(xmlDoc, Jornada);
+            // Вызываем функцию для обновления информации о туре и годе
+            updateJornadaInfo(xmlDoc, Jornada, Year);
         });
 });
 
-function updateJornadaInfo(xmlDoc, Jornada) {
-    console.log(Jornada);
-    const jornadaElement = xmlDoc.querySelector(`Jornada${Jornada}`);
-    console.log(jornadaElement);
-    if (jornadaElement) {
-        for (let i = 1; i <= 3; i++) {
-            const partidos = jornadaElement.querySelectorAll(`Partido${i}`);
+function updateJornadaInfo(xmlDoc, Jornada, Year) {
+    console.log(`Year: ${Year}`);
+    console.log(`Jornada: ${Jornada}`);
 
-            if (partidos) {
-
-                partidos.forEach((partido, index) => {
+    const YearElement = xmlDoc.querySelector(`Temporada${Year}`);
+    if (YearElement) {
+        const jornadaElement = YearElement.querySelector(`Jornada${Jornada}`);
+        console.log(jornadaElement);
+        if (jornadaElement) {
+            for (let i = 1; i <= 3; i++) {
+                const partido = jornadaElement.querySelector(`Partido${i}`);
+                console.log(partido);
+                if (partido) {
                     const fotcaLocalElement = partido.querySelector('fotcaLocal');
                     const fotcaVisitanteElement = partido.querySelector('fotcaVisitante');
                     const nomEquipoLocalElement = partido.querySelector('nomEquipoLocal');
@@ -52,10 +55,12 @@ function updateJornadaInfo(xmlDoc, Jornada) {
                         resultadoLocal.textContent = resultadoLocalElement.textContent;
                         resultadoVisitante.textContent = resultadoVisitanteElement.textContent;
                     }
-                });
-            } else {
-                console.log(`Неверный номер тура: ${i}`);
+                } else {
+                    console.log(`Неверный номер тура: ${i}`);
+                }
             }
+        } else {
+            console.log("Неверный номер тура");
         }
     } else {
         console.log("Неверный номер сезона");
