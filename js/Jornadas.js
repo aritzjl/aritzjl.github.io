@@ -22,10 +22,9 @@ function updateJornadaInfo(xmlDoc, Jornada) {
     console.log(jornadaElement);
     if (jornadaElement) {
         for (let i = 1; i <= 3; i++) {
-            const jornadaEspecificaElement = jornadaElement.querySelector(`Jornada${i}`);
+            const partidos = jornadaElement.querySelectorAll(`Partido${i}`);
 
-            if (jornadaEspecificaElement) {
-                const partidos = jornadaEspecificaElement.querySelectorAll(`Partido${i}`);
+            if (partidos) {
 
                 partidos.forEach((partido, index) => {
                     const fotcaLocalElement = partido.querySelector('fotcaLocal');
