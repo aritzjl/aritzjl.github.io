@@ -35,13 +35,13 @@ function updateJornadaInfo(xmlDoc, Jornada) {
                     const resultadoLocalElement = partido.querySelector('resultadoLocal');
                     const resultadoVisitanteElement = partido.querySelector('resultadoVisitante');
 
-                    const fotcaLocal = document.getElementById(`fotcaLocal${index + 1}`);
-                    const fotcaVisitante = document.getElementById(`fotcaVisitante${index + 1}`);
-                    const nomEquipoLocal = document.getElementById(`nomEquipoLocal${index + 1}`);
-                    const nombreEquipoVisitante = document.getElementById(`nombreEquipoVisitante${index + 1}`);
-                    const etiquetaPartido = document.getElementById(`etiquetaPartido${index + 1}`);
-                    const resultadoLocal = document.getElementById(`resultadoLocal${index + 1}`);
-                    const resultadoVisitante = document.getElementById(`resultadoVisitante${index + 1}`);
+                    const fotcaLocal = document.getElementById(`fotcaLocal${i}`);
+                    const fotcaVisitante = document.getElementById(`fotcaVisitante${i}`);
+                    const nomEquipoLocal = document.getElementById(`nomEquipoLocal${i}`);
+                    const nombreEquipoVisitante = document.getElementById(`nombreEquipoVisitante${i}`);
+                    const etiquetaPartido = document.getElementById(`etiquetaPartido${i}`);
+                    const resultadoLocal = document.getElementById(`resultadoLocal${i}`);
+                    const resultadoVisitante = document.getElementById(`resultadoVisitante${i}`);
 
                     if (fotcaLocal && fotcaVisitante && nomEquipoLocal && nombreEquipoVisitante && etiquetaPartido && resultadoLocal && resultadoVisitante) {
                         fotcaLocal.src = fotcaLocalElement.textContent;
