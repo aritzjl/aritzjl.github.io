@@ -1,38 +1,295 @@
 <header class="mb-5 sticky top-0">
-  <nav class="bg-white border-gray-200 dark:bg-gray-900 drop-shadow-xl fixed w-full ">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="/Inicio.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="imagenes/logo.png" class="h-8" alt="Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WFE</span>
-          </a>
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-              </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                  <li>
-                      <a href="/Inicio.html" class="block py-2 px-3 text-blue-500  rounded  md:p-0 dark:text-blue-900">Inicio</a>
-                  </li>
-                  <li>
-                      <a href="/clasificación.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Clasificacion</a>
-                  </li>
-                  <li>
-                      <a href="/clubes.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Clubes</a>
-                  </li>
-                  <li>
-                      <a href="/Noticias.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Noticias</a>
-                  </li>
-                  <li>
-                      <a href="/Jornada.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Jornadas</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  <br>
-  <br>
-  <br>
-</header>
+	<nav class="bg-white border-gray-200 dark:bg-gray-900 drop-shadow-xl fixed w-full ">
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<a href="/Inicio.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+				<img src="imagenes/logo.png" class="h-8" alt="Logo" />
+				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WFE</span>
+			</a>
+			<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+				</svg>
+			</button>
+			<div class="hidden w-full md:block md:w-auto" id="navbar-default">
+				<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+					<li>
+						<a href="/Inicio.html" class="block py-2 px-3 text-blue-500  rounded  md:p-0 dark:text-blue-900">Inicio</a>
+					</li>
+					<li>
+						<a href="/clasificación.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Clasificacion</a>
+					</li>
+					<li>
+						<a href="/clubes.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Clubes</a>
+					</li>
+					<li>
+						<a href="/Noticias.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Noticias</a>
+					</li>
+					<li>
+					  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Jornadas<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+						  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+						</svg></button>
+						<div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+						  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+							<li aria-labelledby="dropdownNavbarLink1">
+							  <button id="doubleDropdownButton1" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Temporada 2022<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+			  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+			</svg></button>
+							  <div id="doubleDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+								<ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas1&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas2&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas3&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas4&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas5&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas6&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas7&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas8&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas9&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
+									</li>
+									<li>
+									  <a href="/Jornada.html?Jornadas=Jornadas10&Year=2022" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
+									</li>
+								  </ul>
+							  </div>
+							</li>
+							  <li aria-labelledby="dropdownNavbarLink2">
+								<button id="doubleDropdownButton2" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Temporada 2023<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+			  </svg></button>
+								<div id="doubleDropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+									<ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+										<li>
+											<a href="/Jornada.html?Jornadas=Jornadas1&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas2&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas3&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas4&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas5&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas6&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas7&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas8&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas9&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
+										  </li>
+										  <li>
+											<a href="/Jornada.html?Jornadas=Jornadas10&Year=2023" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
+										  </li>
+									  </ul>
+								</div>
+							</li>
+								<li aria-labelledby="dropdownNavbarLink3">
+									<button id="doubleDropdownButton3" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Temporada 2024<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+				  </svg></button>
+									<div id="doubleDropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+										<ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+											<li>
+												<a href="/Jornada.html?Jornadas=Jornadas1&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas2&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas3&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas4&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas5&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas6&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas7&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas8&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas9&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
+											  </li>
+											  <li>
+												<a href="/Jornada.html?Jornadas=Jornadas10&Year=2024" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
+											  </li>
+										  </ul>
+									</div>
+								</li>
+									<li aria-labelledby="dropdownNavbarLink4">
+										<button id="doubleDropdownButton4" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Temporada 2025<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+					  </svg></button>
+										<div id="doubleDropdown4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+											<ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+												<li>
+													<a href="/Jornada.html?Jornadas=Jornadas1&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas2&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas3&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas4&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas5&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas6&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas7&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas8&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas9&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
+												  </li>
+												  <li>
+													<a href="/Jornada.html?Jornadas=Jornadas10&Year=2025" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
+												  </li>
+											  </ul>
+										</div>
+									</li>
+										<li aria-labelledby="dropdownNavbarLink5">
+											<button id="doubleDropdownButton5" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Temporada 2026<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+						  </svg></button>
+											<div id="doubleDropdown5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+												<ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+													<li>
+														<a href="/Jornada.html?Jornadas=Jornadas1&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 1</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas2&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 2</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas3&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 3</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas4&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 4</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas5&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 5</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas6&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 6</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas7&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 7</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas8&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 8</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas9&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 9</a>
+													  </li>
+													  <li>
+														<a href="/Jornada.html?Jornadas=Jornadas10&Year=2026" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Jornada 10</a>
+													  </li>
+												</ul>
+											</div>
+							</li>
+
+						  </ul>
+					  </div>
+		  
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+    <style>
+        header {
+    z-index: 1000;
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Функция для закрытия всех открытых выпадающих меню, кроме указанного
+    function closeOtherDropdowns(excludeDropdownId) {
+      var dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach(function (dropdown) {
+        if (dropdown.id !== excludeDropdownId) {
+          dropdown.style.display = "none";
+        }
+      });
+    }
+
+    // Функция для переключения видимости меню
+    function toggleDropdown(dropdownId) {
+      var dropdown = document.getElementById(dropdownId);
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        closeOtherDropdowns(dropdownId);
+        dropdown.style.display = "block";
+      }
+    }
+
+    // Обработчики событий для кнопок выпадающих меню
+    document.getElementById("dropdownNavbarLink").addEventListener("click", function () {
+      toggleDropdown("dropdownNavbar");
+    });
+
+    document.getElementById("doubleDropdownButton1").addEventListener("click", function () {
+      toggleDropdown("doubleDropdown1");
+    });
+
+    document.getElementById("doubleDropdownButton2").addEventListener("click", function () {
+      toggleDropdown("doubleDropdown2");
+    });
+
+    document.getElementById("doubleDropdownButton3").addEventListener("click", function () {
+      toggleDropdown("doubleDropdown3");
+    });
+
+    document.getElementById("doubleDropdownButton4").addEventListener("click", function () {
+      toggleDropdown("doubleDropdown4");
+    });
+
+    document.getElementById("doubleDropdownButton5").addEventListener("click", function () {
+      toggleDropdown("doubleDropdown5");
+    });
+  });
+    </script>
+  </header>
