@@ -8,9 +8,6 @@ body {
 main {
   flex: 1;
 }
-header {
-    z-index: 1000;
-}
 footer {
   margin-top: auto;
 }
