@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDClubes.xsd">
-    <club1>
+    <club>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <codigo>22495031</codigo>
         <nombre>Fight Club</nombre>
@@ -15,9 +15,9 @@
 							
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
-    </club1>
+    </club>
 
-    <club2>
+    <club>
         <escudo>/imagenes/logoEquipo.png</escudo>
         <nombre>WaterPolo Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
@@ -32,9 +32,9 @@
 							
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
-    </club2>
+    </club>
 
-    <club3>
+    <club>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <nombre>8N Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
@@ -49,9 +49,9 @@
 							
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
-    </club3>
+    </club>
 
-    <club4>
+    <club>
         <escudo>/imagenes/logoEquipo.png</escudo>
         <nombre>Virtus.pro Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
@@ -66,9 +66,9 @@
 							
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
-    </club4>
+    </club>
 
-    <club5>
+    <club>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <nombre>Team Spirit</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
@@ -83,9 +83,9 @@
 							
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
-    </club5>
+    </club>
 
-    <club6>
+    <club>
         <escudo>/imagenes/logoEquipo.png</escudo>
         <nombre>NaVi Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
@@ -100,6 +100,6 @@
 							
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
-    </club6>
+    </club>
 
 </TablaClubs>
