@@ -1,35 +1,37 @@
+// Espera a que se cargue el contenido de la página
 document.addEventListener('DOMContentLoaded', function () {
-    // Загружаем XML и обновляем таблицу
+    // Carga el archivo XML y actualiza la tabla
     fetch('/XMLyXSD/XMLInfoNoticias.xml')
         .then(response => response.text())
         .then(xmlString => {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-            // Обновляем таблицу с данными о новостях
+            // Actualiza la tabla con los datos de las noticias
             updateTable(xmlDoc);
         })
-        .catch(error => console.error('Error fetching XML:', error));
+        .catch(error => console.error('Error al obtener el XML:', error));
 });
 
+// Función para actualizar la tabla con datos de noticias desde el XML
 function updateTable(xmlDoc) {
-    // Проходим по всем новостям в XML
+    // Itera sobre todas las noticias en el XML
     for (let i = 1; i <= 9; i++) {
-        // Получаем элемент новости из XML
+        // Obtiene el elemento de la noticia del XML
         const NoticiaElement = xmlDoc.querySelector(`news[id="noticia${i}"]`);
 
-        if (NoticiaElement) { // Проверяем, что элемент существует
-            // Получаем необходимые элементы данных о новости
+        if (NoticiaElement) { // Verifica que el elemento exista
+            // Obtiene los elementos necesarios de datos de la noticia
             const NameElement = NoticiaElement.querySelector('NameNoticias');
             const imageElement = NoticiaElement.querySelector('NoticiasFoto');
             const NewsLittleElement = NoticiaElement.querySelector('NewsLittle');
 
-            // Получаем соответствующие элементы HTML на странице
+            // Obtiene los elementos HTML correspondientes en la página
             const image = document.getElementById(`NoticiasFoto${i}`);
             const nombre = document.getElementById(`NameNoticias${i}`);
             const NewsLittle = document.getElementById(`NewsLittle${i}`);
 
-            // Обновляем содержимое элементов HTML данными из XML
+            // Actualiza el contenido de los elementos HTML con datos del XML
             if (imageElement) {
                 image.src = imageElement.textContent;
             }
@@ -43,21 +45,21 @@ function updateTable(xmlDoc) {
             }
         }
 
-        // Добавляем обработку для элементов с id, начинающимися на "noticiaFast"
+        // Añade manejo para elementos con id que comienzan con "noticiaFast"
         const NoticiaFastElement = xmlDoc.querySelector(`news[id^="noticiaFast${i}"]`);
 
-        if (NoticiaFastElement) { // Проверяем, что элемент существует
-            // Получаем необходимые элементы данных о новости
+        if (NoticiaFastElement) { // Verifica que el elemento exista
+            // Obtiene los elementos necesarios de datos de la noticia rápida
             const NameFNotElement = NoticiaFastElement.querySelector('NameFNot');
             const imageFElement = NoticiaFastElement.querySelector('image');
             const NewsFLitElement = NoticiaFastElement.querySelector('NewsFLit');
 
-            // Получаем соответствующие элементы HTML на странице
+            // Obtiene los elementos HTML correspondientes en la página
             const imageF = document.getElementById(`image${i}`);
             const nombreF = document.getElementById(`NameFNot${i}`);
             const NewsFLit = document.getElementById(`NewsFLit${i}`);
 
-            // Обновляем содержимое элементов HTML данными из XML
+            // Actualiza el contenido de los elementos HTML con datos del XML
             if (imageFElement) {
                 imageF.src = imageFElement.textContent;
             }
@@ -73,7 +75,7 @@ function updateTable(xmlDoc) {
     }
 }
 
-
+// Función para navegar a la página de noticias con la URL de la noticia
 function navigateToNoticiasPage(NoticiaUrl) {
     window.location.href = NoticiaUrl;
 }

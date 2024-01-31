@@ -1,28 +1,30 @@
+// Elementos del encabezado
 const headerElements = {
   hamburgerMenu: document.getElementById('hamburgerMenu'),
   navMenu: document.getElementById('navMenu')
 };
 
+// Iconos SVG
 const iconSVG = {
   bell: document.getElementById('bellIcon'),
 };
 
+// Manejador de clic para mostrar/ocultar el menú de navegación en dispositivos móviles
 headerElements.hamburgerMenu.addEventListener('click', () => {
   headerElements.navMenu.classList.toggle('active');
 });
 
-
-// Changes the src of the SVG icon on mouseover
+// Función para cambiar la fuente del ícono SVG al pasar el ratón sobre él
 function handleMouseOver() {
   this.src = `/static/svg/${this.id}Hover.svg`;
 }
 
-// Changes the src of the SVG icon back to its original value on mouseout
+// Función para restaurar la fuente del ícono SVG a su valor original al quitar el ratón
 function handleMouseOut() {
   this.src = `/static/svg/${this.id}.svg`;
 }
 
-// Removes mouseover and mouseout event listeners from SVG icons
+// Función para eliminar los escuchadores de eventos mouseover y mouseout de los íconos SVG
 function removeSvgEvents() {
   Object.values(iconSVG).forEach(element => {
     element.removeEventListener('mouseover', handleMouseOver);
@@ -30,7 +32,7 @@ function removeSvgEvents() {
   });
 }
 
-// Checks screen width and adds or removes SVG event listeners accordingly
+// Comprueba el ancho de la pantalla y agrega o elimina los escuchadores de eventos SVG en consecuencia
 function checkScreenWidth() {
   if (window.matchMedia("(min-width: 1024px)").matches) {
     handleSvg();
@@ -39,20 +41,23 @@ function checkScreenWidth() {
   }
 }
 
+// Comprobar el ancho de la pantalla al cargar la página
 window.addEventListener('DOMContentLoaded', checkScreenWidth);
 
 let resizeTimeout;
+// Comprobar el ancho de la pantalla al redimensionar la ventana
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(checkScreenWidth, 200);
 });
 
+// Elementos relacionados con el icono de campana (bell)
 const { bell } = iconSVG;
 const navBarMenuMobile = document.getElementById('navBarMenuMobile');
 const originalParent = bell.parentElement;
 const originalNextSibling = bell.nextElementSibling;
 
-// Moves the bell icon to a different location depending on screen width
+// Mueve el icono de la campana a una ubicación diferente según el ancho de la pantalla
 function moveElement() {
   if (window.matchMedia("(max-width: 1023px)").matches) {
     navBarMenuMobile.insertBefore(bell, navBarMenuMobile.firstChild);
@@ -63,19 +68,21 @@ function moveElement() {
   }
 }
 
+// Mover el elemento al cargar la página
 moveElement();
 
 let moveTimeout;
+// Mover el elemento al redimensionar la ventana
 window.addEventListener('resize', () => {
   clearTimeout(moveTimeout);
   moveTimeout = setTimeout(moveElement, 200);
 });
 
-
+// Elementos relacionados con el cambio de tema
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-// Change the icons inside the button based on previous settings
+// Cambia los íconos dentro del botón según la configuración previa
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
   themeToggleLightIcon.classList.remove('hidden');
 } else {
@@ -84,15 +91,15 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 
 var themeToggleBtn = document.getElementById('theme-toggle');
 
+// Agregar un evento de clic al botón de cambio de tema
 themeToggleBtn.addEventListener('click', function () {
 
-  // toggle icons inside button
+  // Cambiar los íconos dentro del botón
   themeToggleDarkIcon.classList.toggle('hidden');
   themeToggleLightIcon.classList.toggle('hidden');
 
-  // if set via local storage previously
+  // Si se estableció previamente a través de almacenamiento local
   if (localStorage.getItem('color-theme')) {
-    console.log("test")
     if (localStorage.getItem('color-theme') === 'light') {
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
@@ -101,7 +108,7 @@ themeToggleBtn.addEventListener('click', function () {
       localStorage.setItem('color-theme', 'light');
     }
 
-    // if NOT set via local storage previously
+  // Si NO se estableció previamente a través de almacenamiento local
   } else {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');

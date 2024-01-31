@@ -1,24 +1,26 @@
+// Cuando el DOM esté completamente cargado, realizamos las siguientes acciones
 document.addEventListener('DOMContentLoaded', function () {
-    // Загружаем XML и обновляем таблицу
+    // Cargamos el archivo XML y actualizamos la tabla
     fetch('/XMLyXSD/XMLClubes.xml')
         .then(response => response.text())
         .then(xmlString => {
+            // Creamos un parser para convertir el string XML en un documento XML
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-            // Обновляем таблицу с данными о клубах
+            // Actualizamos la tabla con los datos de los clubes
             updateTable(xmlDoc);
         });
 });
 
-// Функция для обновления таблицы с данными о клубах
+// Función para actualizar la tabla con los datos de los clubes
 function updateTable(xmlDoc) {
-    // Проходим по всем клубам (в данном случае, от 1 до 6)
+    // Recorremos todos los clubes (en este caso, del 1 al 6)
     for (let i = 1; i <= 6; i++) {
-        // Получаем элемент клуба из XML
+        // Obtenemos el elemento del club desde el XML
         const clubElement = xmlDoc.querySelector(`club${i}`);
         
-        // Получаем необходимые элементы данных о клубе
+        // Obtenemos los elementos necesarios de datos del club
         const escudoElement = clubElement.querySelector('escudo');
         const nombreElement = clubElement.querySelector('nombre');
         const estadioElement = clubElement.querySelector('estadio');
@@ -26,7 +28,7 @@ function updateTable(xmlDoc) {
         const fundacionElement = clubElement.querySelector('fundacion');
         const ciudadElement = clubElement.querySelector('ciudad');
 
-        // Получаем соответствующие элементы HTML на странице
+        // Obtenemos los elementos HTML correspondientes en la página
         const image = document.getElementById(`image${i}`);
         const nombre = document.getElementById(`nombre${i}`);
         const estadio = document.getElementById(`estadio${i}`);
@@ -34,7 +36,7 @@ function updateTable(xmlDoc) {
         const fundacion = document.getElementById(`fundacion${i}`);
         const ciudad = document.getElementById(`ciudad${i}`);
 
-        // Обновляем содержимое элементов HTML данными из XML
+        // Actualizamos el contenido de los elementos HTML con los datos del XML
         image.src = escudoElement.textContent;
         nombre.textContent = nombreElement.textContent;
         estadio.textContent = estadioElement.textContent;
@@ -44,7 +46,8 @@ function updateTable(xmlDoc) {
     }
 }
 
-// Функция для перехода на страницу клуба
+// Función para navegar a la página del club
 function navigateToClubPage(clubUrl) {
+    // Cambiamos la ubicación de la ventana al URL del club
     window.location.href = clubUrl;
 }

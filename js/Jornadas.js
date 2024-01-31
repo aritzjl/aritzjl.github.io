@@ -1,35 +1,41 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Получаем параметры 'Jornadas' и 'Year' из URL
+    // Obtener los parámetros 'Jornadas' y 'Year' de la URL
     const params = new URLSearchParams(window.location.search);
 
     const Jornada = params.get('Jornadas').replace('Jornadas', '');
     const Year = params.get('Year').replace('Year', '');
 
-    // Загружаем XML и обновляем данные для выбранного сезона
+    // Cargar el archivo XML y actualizar los datos para la temporada seleccionada
     fetch('/XMLyXSD/XMLJornadas.xml')
         .then(response => response.text())
         .then(xmlString => {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 
-            // Вызываем функцию для обновления информации о туре и годе
+            // Llamar a la función para actualizar la información de la jornada y el año
             updateJornadaInfo(xmlDoc, Jornada, Year);
         });
 });
 
+// Función para actualizar la información de la jornada y el año en la página
 function updateJornadaInfo(xmlDoc, Jornada, Year) {
-    console.log(`Year: ${Year}`);
+    console.log(`Año: ${Year}`);
     console.log(`Jornada: ${Jornada}`);
 
+    // Obtener el elemento del año del XML según el año proporcionado
     const YearElement = xmlDoc.querySelector(`Temporada${Year}`);
     if (YearElement) {
+        // Obtener el elemento de la jornada dentro del año según la jornada proporcionada
         const jornadaElement = YearElement.querySelector(`Jornada${Jornada}`);
         console.log(jornadaElement);
         if (jornadaElement) {
+            // Iterar sobre los partidos de la jornada
             for (let i = 1; i <= 3; i++) {
+                // Obtener el elemento del partido según el número proporcionado
                 const partido = jornadaElement.querySelector(`Partido${i}`);
                 console.log(partido);
                 if (partido) {
+                    // Obtener elementos del partido del XML
                     const fotcaLocalElement = partido.querySelector('fotcaLocal');
                     const fotcaVisitanteElement = partido.querySelector('fotcaVisitante');
                     const nomEquipoLocalElement = partido.querySelector('nomEquipoLocal');
@@ -38,6 +44,7 @@ function updateJornadaInfo(xmlDoc, Jornada, Year) {
                     const resultadoLocalElement = partido.querySelector('resultadoLocal');
                     const resultadoVisitanteElement = partido.querySelector('resultadoVisitante');
 
+                    // Obtener elementos HTML correspondientes en la página
                     const fotcaLocal = document.getElementById(`fotcaLocal${i}`);
                     const fotcaVisitante = document.getElementById(`fotcaVisitante${i}`);
                     const nomEquipoLocal = document.getElementById(`nomEquipoLocal${i}`);
@@ -46,6 +53,7 @@ function updateJornadaInfo(xmlDoc, Jornada, Year) {
                     const resultadoLocal = document.getElementById(`resultadoLocal${i}`);
                     const resultadoVisitante = document.getElementById(`resultadoVisitante${i}`);
 
+                    // Actualizar elementos HTML con datos del partido
                     if (fotcaLocal && fotcaVisitante && nomEquipoLocal && nombreEquipoVisitante && etiquetaPartido && resultadoLocal && resultadoVisitante) {
                         fotcaLocal.src = fotcaLocalElement.textContent;
                         fotcaVisitante.src = fotcaVisitanteElement.textContent;
@@ -56,13 +64,13 @@ function updateJornadaInfo(xmlDoc, Jornada, Year) {
                         resultadoVisitante.textContent = resultadoVisitanteElement.textContent;
                     }
                 } else {
-                    console.log(`Неверный номер тура: ${i}`);
+                    console.log(`Número de partido incorrecto: ${i}`);
                 }
             }
         } else {
-            console.log("Неверный номер тура");
+            console.log("Número de jornada incorrecto");
         }
     } else {
-        console.log("Неверный номер сезона");
+        console.log("Número de temporada incorrecto");
     }
 }
