@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TablaClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDClubes.xsd">
+<temporada id="2022">
+    <club>
+        <escudo>/imagenes/logoEquipo2.jpg</escudo>
+        <codigo>22495031</codigo>
+        <nombre>dfvsfdbbgfb</nombre>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Tailer Derden</presidente>
+        <cantidadSocios>2001</cantidadSocios>
+        <ciudad>Madrid</ciudad>
+        <cantidad>15</cantidad>
+        <historia>Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
+
+				  La sección de waterpolo milita en la primera división nacional de waterpolo, categoría a la que ascendió la temporada 94-95. Descendió la temporada siguiente, pero volvió a conseguir el ascenso en la temporada 1996-97.
+							
+				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
+                  </historia>
+    </club>
+
+    <club>
+        <escudo>/imagenes/logoEquipo.png</escudo>
+        <nombre>Wsdfbgn gbgbb Club</nombre>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Robert Polson</presidente>
+        <cantidadSocios>1994</cantidadSocios>
+        <ciudad>Bilbao</ciudad>
+        <codigo>22495031</codigo>
+        <cantidad>13</cantidad>
+        <historia>Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
+
+				  La sección de waterpolo milita en la primera división nacional de waterpolo, categoría a la que ascendió la temporada 94-95. Descendió la temporada siguiente, pero volvió a conseguir el ascenso en la temporada 1996-97.
+							
+				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
+                  </historia>
+    </club>
+</temporada>
+<temporada id="2023">
     <club>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
         <codigo>22495031</codigo>
@@ -33,16 +69,17 @@
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
     </club>
-
+</temporada>
+<temporada id="2024">
     <club>
         <escudo>/imagenes/logoEquipo2.jpg</escudo>
-        <nombre>8N Club</nombre>
-        <estadio>Madrid calle Hiujnfd 74</estadio>
-        <presidente>Witch Blvde</presidente>
-        <cantidadSocios>2014</cantidadSocios>
-        <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
-        <cantidad>13</cantidad>
+        <nombre>Fight Club</nombre>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Tailer Derden</presidente>
+        <cantidadSocios>2001</cantidadSocios>
+        <ciudad>Madrid</ciudad>
+        <cantidad>15</cantidad>
         <historia>Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
 
 				  La sección de waterpolo milita en la primera división nacional de waterpolo, categoría a la que ascendió la temporada 94-95. Descendió la temporada siguiente, pero volvió a conseguir el ascenso en la temporada 1996-97.
@@ -53,10 +90,10 @@
 
     <club>
         <escudo>/imagenes/logoEquipo.png</escudo>
-        <nombre>Virtus.pro Club</nombre>
+        <nombre>WaterPolo Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
-        <presidente>Bumbl jop</presidente>
-        <cantidadSocios>2010</cantidadSocios>
+        <presidente>Robert Polson</presidente>
+        <cantidadSocios>1994</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
@@ -67,30 +104,12 @@
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
     </club>
-
-    <club>
-        <escudo>/imagenes/logoEquipo2.jpg</escudo>
-        <nombre>Team Spirit</nombre>
-        <estadio>Madrid calle Hiujnfd 74</estadio>
-        <presidente>Yatoro</presidente>
-        <cantidadSocios>1981</cantidadSocios>
-        <ciudad>Bilbao</ciudad>
-        <codigo>22495031</codigo>
-        <cantidad>13</cantidad>
-        <historia>Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
-
-				  La sección de waterpolo milita en la primera división nacional de waterpolo, categoría a la que ascendió la temporada 94-95. Descendió la temporada siguiente, pero volvió a conseguir el ascenso en la temporada 1996-97.
-							
-				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
-                  </historia>
-    </club>
-
     <club>
         <escudo>/imagenes/logoEquipo.png</escudo>
-        <nombre>NaVi Club</nombre>
+        <nombre>WaterPolo Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
-        <presidente>S1mple</presidente>
-        <cantidadSocios>1992</cantidadSocios>
+        <presidente>Robert Polson</presidente>
+        <cantidadSocios>1994</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
@@ -101,5 +120,5 @@
 				  Se basa esencialmente en el trabajo de cantera. Los más jóvenes empiezan a familiarizarse con este deporte en la escuela de waterpolo del club para, más adelante, empezar a competir a nivel provincial en las diferentes categorías; alevines, infantiles, cadetes, juveniles y absolutos.
                   </historia>
     </club>
-
+</temporada>
 </TablaClubs>

@@ -19,23 +19,55 @@ function loadXMLDoc(filename) {
     return xhttp.responseXML;
 }
 
-// Función para actualizar la tabla con los datos de los clubes
-function updateTableData() {
-    // Cargamos el documento XML
+// Функция для заполнения списка выбора с годами
+function populateSeasonDropdown(xmlDoc) {
+    const selectElement = document.getElementById('countries');
+
+    // Очищаем текущие элементы в списке выбора
+    selectElement.innerHTML = '<option selected>Choose a Temporada</option>';
+
+    // Получаем все элементы temporada из XML
+    const temporadas = xmlDoc.getElementsByTagName('temporada');
+
+    // Проходим по каждому элементу temporada и добавляем год в список выбора
+    for (let i = 0; i < temporadas.length; i++) {
+        const temporada = temporadas[i];
+        const temporadaId = temporada.getAttribute('id');
+        
+        // Проверяем, чтобы не добавлять одинаковые года
+        if (!selectElement.querySelector(`option[value="${temporadaId}"]`)) {
+            const optionElement = document.createElement('option');
+            optionElement.value = temporadaId;
+            optionElement.text = temporadaId;
+            selectElement.add(optionElement);
+        }
+    }
+}
+
+// Функция для обновления данных в таблице
+function updateTableData(selectedSeason) {
+    // Загружаем документ XML
     const xmlDoc = loadXMLDoc(xmlFilePath);
 
-    // Obtenemos el cuerpo de la tabla por su ID
+    // Пополняем список выбора с годами
+    populateSeasonDropdown(xmlDoc);
+
+    // Получаем тело таблицы по ID
     const tableBody = document.getElementById('table-body');
     
-    // Obtenemos todas las etiquetas 'team' del XML
+    // Очищаем текущие строки в таблице
+    tableBody.innerHTML = '';
+
+    // Получаем все элементы 'club' из XML
     const clubes = xmlDoc.getElementsByTagName('club');
 
-    // Recorremos todos los clubes (en este caso, del 1 al 6)
+    // Проходим по каждому элементу 'club' и обновляем таблицу
     for (let i = 0; i < clubes.length; i++) {
-        // Obtenemos el elemento del club desde el XML
         const club = clubes[i];
-        
-        // Obtenemos los elementos necesarios de datos del club
+        const temporadaId = club.closest('temporada').getAttribute('id');
+
+        // Проверяем, соответствует ли элемент 'club' выбранному году
+        if (temporadaId === selectedSeason || selectedSeason === 'Choose a Temporada') {
         const escudo = club.getElementsByTagName('escudo')[0].textContent;
         const nombre = club.getElementsByTagName('nombre')[0].textContent;
         const estadio = club.getElementsByTagName('estadio')[0].textContent;
@@ -61,8 +93,18 @@ function updateTableData() {
         
                 // Añadimos la nueva fila a la tabla
                 tableBody.appendChild(newRow);
+        }
     }
 }
 
-// La función loadTableData se ejecutará cuando la ventana haya cargado completamente
-window.onload = updateTableData;
+// Слушатель изменения значения в списке выбора
+document.getElementById('countries').addEventListener('change', function() {
+    const selectedSeason = this.value;
+    updateTableData(selectedSeason);
+});
+
+// Вызываем функцию updateTableData при загрузке страницы
+window.onload = function() {
+    const defaultSelectedSeason = 'Choose a Temporada';
+    updateTableData(defaultSelectedSeason);
+};

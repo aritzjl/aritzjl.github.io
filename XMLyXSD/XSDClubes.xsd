@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Определяем структуру элемента club -->
-    <xs:element name="club">
-        <xs:complexType>
+  <xs:element name="TablaClubs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="temporada" maxOccurs="unbounded">
+          <xs:complexType>
             <xs:sequence>
-                <xs:element name="escudo" type="xs:string"/>
-                <xs:element name="codigo" type="xs:string"/>
-                <xs:element name="nombre" type="xs:string"/>
-                <xs:element name="estadio" type="xs:string"/>
-                <xs:element name="presidente" type="xs:string"/>
-                <xs:element name="cantidadSocios" type="xs:integer"/>
-                <xs:element name="ciudad" type="xs:string"/>
-                <xs:element name="cantidad" type="xs:integer"/>
-                <xs:element name="historia" type="xs:string"/>
+              <xs:element name="club" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="escudo" type="xs:string"/>
+                    <xs:element name="codigo" type="xs:string"/>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="estadio" type="xs:string"/>
+                    <xs:element name="presidente" type="xs:string"/>
+                    <xs:element name="cantidadSocios" type="xs:integer"/>
+                    <xs:element name="ciudad" type="xs:string"/>
+                    <xs:element name="cantidad" type="xs:integer"/>
+                    <xs:element name="historia" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <!-- Определяем элемент TablaClubs, содержащий вложенные элементы club1, club2, и так далее -->
-    <xs:element name="TablaClubs">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="club1" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="club2" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="club3" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="club4" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="club5" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="club6" minOccurs="0" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <!-- Ссылки на элементы club1, club2, и так далее -->
-    <xs:element name="club1" type="club"/>
-    <xs:element name="club2" type="club"/>
-    <xs:element name="club3" type="club"/>
-    <xs:element name="club4" type="club"/>
-    <xs:element name="club5" type="club"/>
-    <xs:element name="club6" type="club"/>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="xmlns:xsi" type="xs:string"/>
+      <xs:attribute name="xsi:noNamespaceSchemaLocation" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
 
 </xs:schema>
