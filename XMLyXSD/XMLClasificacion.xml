@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <teams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDClasificacion.xsd">
+<temporada id="2022">
     <team>
         <position>1</position>
         <escudo_path>logoEquipo.png</escudo_path>
@@ -37,5 +38,45 @@
         <goles_c>12</goles_c>
         <puntos>17</puntos>
     </team>
+</temporada>
+<temporada id="2023">
+    <team>
+        <position>1</position>
+        <escudo_path>logoEquipo.png</escudo_path>
+        <nombre>Team 1</nombre>
+        <ganados>5</ganados>
+        <perdidos>3</perdidos>
+        <empatados>2</empatados>
+        <jugados>10</jugados>
+        <goles_f>30</goles_f>
+        <goles_c>10</goles_c>
+        <puntos>23</puntos>
+    </team>
+    <team>
+        <position>2</position>
+        <escudo_path>logoEquipo2.png</escudo_path>
+        <nombre>Team 2</nombre>
+        <ganados>3</ganados>
+        <perdidos>2</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>25</goles_f>
+        <goles_c>15</goles_c>
+        <puntos>14</puntos>
+    </team>
+    <!-- Добавленная строка -->
+    <team>
+        <position>3</position>
+        <escudo_path>logoEquipo.png</escudo_path>
+        <nombre>Team 3</nombre>
+        <ganados>4</ganados>
+        <perdidos>1</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
+        <puntos>17</puntos>
+    </team>
+</temporada>
     <!-- Конец добавленной строки -->
 </teams>
