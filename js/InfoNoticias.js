@@ -22,19 +22,26 @@ function updateNoticiaInfo(xmlDoc, noticiaId, noticiaFastId) {
     if (noticiaFastId) {
         // Если есть идентификатор noticiaFastId
         const noticiaFastElement = xmlDoc.querySelector(`news[id="${noticiaFastId}"]`);
-
+        console.log(noticiaFastElement);
         if (noticiaFastElement) {
             // Получаем элементы области noticiaFast из XML
             const imageFElement = noticiaFastElement.querySelector('image');
             const NameFNotElement = noticiaFastElement.querySelector('NameFNot');
-            const NewsFLitElement = noticiaFastElement.querySelector('NewsFLit');
+            const NewsFPrimeroTElement = noticiaFastElement.querySelector('NewsFPrimeroT');
+            const NewsFSegundoTElement = noticiaFastElement.querySelector('NewsFSegundoT');
+            const NewsFTerseroTElement = noticiaFastElement.querySelector('NewsFTersero');
+            const NewsFCuartoTElement = noticiaFastElement.querySelector('NewsFCuartoT');
 
             // Проверяем, что элементы существуют, прежде чем обновить HTML
-            if (imageFElement && NameFNotElement && NewsFLitElement) {
+            if (imageFElement && NameFNotElement && NewsFPrimeroTElement && NewsFSegundoTElement && NewsFTerseroTElement && NewsFCuartoTElement) {
                 // Обновляем HTML-элементы данными noticiaFast
                 document.getElementById('NoticiasFoto').src = imageFElement.textContent;
                 document.getElementById('NoticiasTitle').textContent = NameFNotElement.textContent;
-                document.getElementById('PrimeroText').textContent = NewsFLitElement.textContent;
+                document.getElementById('PrimeroText').textContent = NewsFPrimeroTElement.textContent;
+                document.getElementById('SegundoText').textContent = NewsFSegundoTElement.textContent;
+                document.getElementById('TerseroText').textContent = NewsFTerseroTElement.textContent;
+                document.getElementById('CuartoText').textContent = NewsFCuartoTElement.textContent;
+
             }
         }
     } else {
