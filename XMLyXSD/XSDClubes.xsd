@@ -10,7 +10,7 @@
                 <xs:element name="nombre" type="xs:string"/>
                 <xs:element name="estadio" type="xs:string"/>
                 <xs:element name="presidente" type="xs:string"/>
-                <xs:element name="fundacion" type="xs:integer"/>
+                <xs:element name="cantidadSocios" type="xs:integer"/>
                 <xs:element name="ciudad" type="xs:string"/>
                 <xs:element name="cantidad" type="xs:integer"/>
                 <xs:element name="historia" type="xs:string"/>

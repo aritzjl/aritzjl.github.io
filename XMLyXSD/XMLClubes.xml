@@ -6,7 +6,7 @@
         <nombre>Fight Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Tailer Derden</presidente>
-        <fundacion>2001</fundacion>
+        <cantidadSocios>2001</cantidadSocios>
         <ciudad>Madrid</ciudad>
         <cantidad>15</cantidad>
         <historia>Por lo que respecta a la sección de natación (Club Askartza Natación) fue formada por Javier Sáez en abril de 1979. Es decir antes de la formación del propio club. A partir de la temporada 80-81 el Club de natación se inscribe en las federaciones y comienza su andadura deportiva tanto en natación como en waterpolo.
@@ -22,7 +22,7 @@
         <nombre>WaterPolo Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Robert Polson</presidente>
-        <fundacion>1994</fundacion>
+        <cantidadSocios>1994</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
@@ -39,7 +39,7 @@
         <nombre>8N Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Witch Blvde</presidente>
-        <fundacion>2014</fundacion>
+        <cantidadSocios>2014</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
@@ -56,7 +56,7 @@
         <nombre>Virtus.pro Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Bumbl jop</presidente>
-        <fundacion>2010</fundacion>
+        <cantidadSocios>2010</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
@@ -73,7 +73,7 @@
         <nombre>Team Spirit</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>Yatoro</presidente>
-        <fundacion>1981</fundacion>
+        <cantidadSocios>1981</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
@@ -90,7 +90,7 @@
         <nombre>NaVi Club</nombre>
         <estadio>Madrid calle Hiujnfd 74</estadio>
         <presidente>S1mple</presidente>
-        <fundacion>1992</fundacion>
+        <cantidadSocios>1992</cantidadSocios>
         <ciudad>Bilbao</ciudad>
         <codigo>22495031</codigo>
         <cantidad>13</cantidad>
