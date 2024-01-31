@@ -25,7 +25,7 @@ function updateTable(xmlDoc) {
         const nombreElement = clubElement.querySelector('nombre');
         const estadioElement = clubElement.querySelector('estadio');
         const presidenteElement = clubElement.querySelector('presidente');
-        const fundacionElement = clubElement.querySelector('fundacion');
+        const cantidadSociosElement = clubElement.querySelector('cantidadSocios');
         const ciudadElement = clubElement.querySelector('ciudad');
 
         // Obtenemos los elementos HTML correspondientes en la página
@@ -33,7 +33,7 @@ function updateTable(xmlDoc) {
         const nombre = document.getElementById(`nombre${i}`);
         const estadio = document.getElementById(`estadio${i}`);
         const presidente = document.getElementById(`presidente${i}`);
-        const fundacion = document.getElementById(`fundacion${i}`);
+        const cantidadSocios = document.getElementById(`cantidadSocios${i}`);
         const ciudad = document.getElementById(`ciudad${i}`);
 
         // Actualizamos el contenido de los elementos HTML con los datos del XML
@@ -41,7 +41,7 @@ function updateTable(xmlDoc) {
         nombre.textContent = nombreElement.textContent;
         estadio.textContent = estadioElement.textContent;
         presidente.textContent = presidenteElement.textContent;
-        fundacion.textContent = fundacionElement.textContent;
+        cantidadSocios.textContent = cantidadSociosElement.textContent;
         ciudad.textContent = ciudadElement.textContent;
     }
 }
