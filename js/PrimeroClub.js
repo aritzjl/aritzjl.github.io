@@ -1,43 +1,18 @@
 // Espera a que se cargue el contenido de la página
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtiene el parámetro 'club' de la URL
+    // Obtiene el parámetro 'clubInfo' de la URL
     const params = new URLSearchParams(window.location.search);
-    const clubId = params.get('club');
+    const clubInfoJSON = params.get('clubInfo');
 
-    // Carga el archivo XML y actualiza los datos para el club seleccionado
-    fetch('/XMLyXSD/XMLClubes.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
+    // Преобразует JSON в объект
+    const clubInfo = JSON.parse(decodeURIComponent(clubInfoJSON));
 
-            // Llama a la función para actualizar la información del club
-            updateClubInfo(xmlDoc, clubId);
-        });
+    // Отображает информацию о клубе
+    document.getElementById('escudo').src = clubInfo.escudo;
+    document.getElementById('codigo').textContent = clubInfo.codigo;
+    document.getElementById('nombre').textContent = clubInfo.nombre;
+    document.getElementById('estadio').textContent = clubInfo.estadio;
+    document.getElementById('presidente').textContent = clubInfo.presidente;
+    document.getElementById('cantidad').textContent = clubInfo.cantidadSocios;
+    document.getElementById('historia').textContent = clubInfo.historia;
 });
-
-// Función para actualizar la información del club en la página
-function updateClubInfo(xmlDoc, clubId) {
-    // Obtiene los elementos para el club seleccionado
-    const clubElement = xmlDoc.querySelector(clubId);
-
-    if (clubElement) { // Verifica que el club exista
-        // Obtiene los elementos de información del club
-        const escudoElement = clubElement.querySelector('escudo');
-        const codigoElement = clubElement.querySelector('codigo');
-        const nombreElement = clubElement.querySelector('nombre');
-        const estadioElement = clubElement.querySelector('estadio');
-        const presidenteElement = clubElement.querySelector('presidente');
-        const cantidadElement = clubElement.querySelector('cantidad');
-        const historiaElement = clubElement.querySelector('historia');
-
-        // Actualiza la información en la página
-        document.getElementById('escudo').src = escudoElement.textContent;
-        document.getElementById('codigo').textContent = codigoElement.textContent;
-        document.getElementById('nombre').textContent = nombreElement.textContent;
-        document.getElementById('estadio').textContent = estadioElement.textContent;
-        document.getElementById('presidente').textContent = presidenteElement.textContent;
-        document.getElementById('cantidad').textContent = cantidadElement.textContent;
-        document.getElementById('historia').textContent = historiaElement.textContent;
-    } 
-}
