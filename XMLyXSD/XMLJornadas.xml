@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Jornadas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDJornadas.xsd">
-    <Temporada2022>
-        <Jornada1>
+    <Temporada2022 name="2022">
+        <Jornada1 name="Jornada 1">
             <Partido1>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
@@ -31,7 +31,7 @@
             </Partido3>
         </Jornada1>
 
-        <Jornada2>
+        <Jornada2 name="Jornada 2">
             <Partido1>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
@@ -61,7 +61,7 @@
             </Partido3>
         </Jornada2>
 
-        <Jornada3>
+        <Jornada3 name="Jornada 3">
             <Partido1>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
@@ -92,9 +92,9 @@
         </Jornada3>
     </Temporada2022>
 
-    <Temporada2023>
+    <Temporada2023 name="2023">
         <Jornada1>
-            <Partido1>
+            <Partido1 name="Jornada 1">
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
@@ -103,7 +103,7 @@
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido1>
-            <Partido2>
+            <Partido2 >
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -123,7 +123,7 @@
             </Partido3>
         </Jornada1>
 
-        <Jornada2>
+        <Jornada2 name="Jornada 2">
             <Partido1>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
@@ -153,7 +153,7 @@
             </Partido3>
         </Jornada2>
 
-        <Jornada3>
+        <Jornada3 name="Jornada 3">
             <Partido1>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>

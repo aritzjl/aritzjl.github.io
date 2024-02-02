@@ -51,4 +51,3 @@ function updateClubInfo(xmlDoc, clubId, escudoId, codigoId, nombreId, estadioId,
         console.error(`Club con identificador ${clubId} no encontrado.`);
     }
 }
-

@@ -43,7 +43,7 @@
     <team>
         <position>1</position>
         <escudo_path>logoEquipo.png</escudo_path>
-        <nombre>Team 1</nombre>
+        <nombre>Team 4</nombre>
         <ganados>5</ganados>
         <perdidos>3</perdidos>
         <empatados>2</empatados>
@@ -55,7 +55,7 @@
     <team>
         <position>2</position>
         <escudo_path>logoEquipo2.png</escudo_path>
-        <nombre>Team 2</nombre>
+        <nombre>Team 5</nombre>
         <ganados>3</ganados>
         <perdidos>2</perdidos>
         <empatados>5</empatados>
@@ -68,7 +68,7 @@
     <team>
         <position>3</position>
         <escudo_path>logoEquipo.png</escudo_path>
-        <nombre>Team 3</nombre>
+        <nombre>Team 6</nombre>
         <ganados>4</ganados>
         <perdidos>1</perdidos>
         <empatados>5</empatados>
