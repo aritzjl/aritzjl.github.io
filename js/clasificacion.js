@@ -77,24 +77,26 @@ function loadTableData(selectedSeason) {
             const puntos = team.getElementsByTagName('puntos')[0].textContent;
         
             // Añadimos una clase alternante para el estilo de fila
-            const newRow = document.createElement('tr');
-            newRow.className = i % 2 === 0 ? 'bg-white border-b dark:bg-gray-800 dark:border-gray-700' : '';
+// Añadimos una clase alternante para el estilo de fila
+const newRow = document.createElement('tr');
+newRow.className = i % 2 === 0 ? ' dark:border-gray-700' : '';
 
-            // Insertamos el HTML en la nueva fila con los datos del equipo
-            newRow.innerHTML = `
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${position}</td>
-                <td class="px-6 py-4"><img src="${escudoPath}" alt="Escudo Equipo" class="h-8"></td>
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nombre}</td>
-                <td class="px-6 py-4">${ganados}</td>
-                <td class="px-6 py-4">${perdidos}</td>
-                <td class="px-6 py-4">${empatados}</td>
-                <td class="px-6 py-4">${jugados}</td>
-                <td class="px-6 py-4">${golesF}</td>
-                <td class="px-6 py-4">${golesC}</td>
-                <td class="px-6 py-4">${puntos}</td>
-            `;
-            // Añadimos la nueva fila a la tabla
-            tableBody.appendChild(newRow);
+// Insertamos el HTML en la nueva fila con los datos del equipo
+newRow.innerHTML = `
+    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${position}</td>
+    <td class="px-6 py-4"><img src="${escudoPath}" alt="Escudo Equipo" class="h-8"></td>
+    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nombre}</td>
+    <td class="px-6 py-4">${ganados}</td>
+    <td class="px-6 py-4">${perdidos}</td>
+    <td class="px-6 py-4">${empatados}</td>
+    <td class="px-6 py-4">${jugados}</td>
+    <td class="px-6 py-4">${golesF}</td>
+    <td class="px-6 py-4">${golesC}</td>
+    <td class="px-6 py-4">${puntos}</td>
+`;
+
+// Añadimos la nueva fila a la tabla
+tableBody.appendChild(newRow);
         }
     }
 }

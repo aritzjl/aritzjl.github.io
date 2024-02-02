@@ -66,7 +66,7 @@ function updateTableData(selectedSeason) {
             const codigo = club.getElementsByTagName('codigo')[0].textContent;
 
             const newRow = document.createElement('tr');
-            newRow.className = i % 2 === 0 ? 'bg-white border-b dark:bg-gray-800 dark:border-gray-700' : '';
+            newRow.className = i % 2 === 0 ? ' dark:border-gray-700' : '';
 
             newRow.addEventListener('click', function() {
                 const clubInfo = {
