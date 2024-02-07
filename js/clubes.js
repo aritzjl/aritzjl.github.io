@@ -17,7 +17,7 @@ function loadXMLDoc(filename) {
 
 function populateSeasonDropdown(xmlDoc) {
     const selectElement = document.getElementById('countries');
-    selectElement.innerHTML = '<option selected>Choose a Temporada</option>';
+    selectElement.innerHTML = ''; // Очищаем список выбора
 
     const temporadas = xmlDoc.getElementsByTagName('temporada');
 
@@ -25,31 +25,47 @@ function populateSeasonDropdown(xmlDoc) {
         const temporada = temporadas[i];
         const temporadaId = temporada.getAttribute('id');
 
-        if (!selectElement.querySelector(`option[value="${temporadaId}"]`)) {
-            const optionElement = document.createElement('option');
-            optionElement.value = temporadaId;
-            optionElement.text = temporadaId;
-            selectElement.add(optionElement);
-        }
+        const optionElement = document.createElement('option');
+        optionElement.value = temporadaId;
+        optionElement.text = temporadaId;
+        selectElement.add(optionElement);
     }
 }
 
 function updateTableData(selectedSeason) {
+    // Загружаем XML-документ
     const xmlDoc = loadXMLDoc(xmlFilePath);
+
+    // Заполняем выпадающий список сезонов
     populateSeasonDropdown(xmlDoc);
+
+    const selectElement = document.getElementById('countries');
+
+    // Проверяем, есть ли актуальный год (2024) в XML
+    const temporadas = xmlDoc.getElementsByTagName('temporada');
+    let hasCurrentYear = false;
+    for (let i = 0; i < temporadas.length; i++) {
+        const temporada = temporadas[i];
+        const temporadaId = temporada.getAttribute('id');
+        if (temporadaId === '2024') {
+            hasCurrentYear = true;
+            break;
+        }
+    }
+
+    if (!hasCurrentYear) {
+        // Если актуального года нет в XML, очищаем список выбора и завершаем функцию
+        selectElement.innerHTML = '<option selected>Choose a Temporada</option>';
+        return;
+    }
+
+    // Устанавливаем значение по умолчанию в выпадающем списке на "2024"
+    selectElement.value = '2024';
 
     const tableBody = document.getElementById('table-body');
     tableBody.innerHTML = '';
 
     const clubes = xmlDoc.getElementsByTagName('club');
-
-    const selectElement = document.getElementById('countries');
-    const defaultOption = selectElement.querySelector('option[selected]');
-    defaultOption.textContent = selectedSeason;
-
-    if (selectedSeason === 'Choose a Temporada') {
-        return; // Не отображаем информацию при пустом значении Temporada
-    }
 
     for (let i = 0; i < clubes.length; i++) {
         const club = clubes[i];
@@ -98,13 +114,27 @@ function updateTableData(selectedSeason) {
     }
 }
 
+window.onload = function() {
+    const defaultSelectedSeason = '2024'; // Задаем 2024 год по умолчанию
+    updateTableData(defaultSelectedSeason);
+};
+
 
 document.getElementById('countries').addEventListener('change', function() {
     const selectedSeason = this.value;
     updateTableData(selectedSeason);
+    
+    // Получаем все опции в списке выбора года
+    const options = this.options;
+    // Проходимся по каждой опции
+    for (let i = 0; i < options.length; i++) {
+        const option = options[i];
+        // Если значение опции совпадает с выбранным годом, устанавливаем для нее атрибут selected
+        if (option.value === selectedSeason) {
+            option.setAttribute('selected', 'selected');
+        } else {
+            // Иначе убираем атрибут selected
+            option.removeAttribute('selected');
+        }
+    }
 });
-
-window.onload = function() {
-    const defaultSelectedSeason = 'Choose a Temporada';
-    updateTableData(defaultSelectedSeason);
-};
