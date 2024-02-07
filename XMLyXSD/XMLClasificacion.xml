@@ -82,25 +82,25 @@
     <team>
         <position>1</position>
         <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
-        <nombre>dfvsfdbbgfb</nombre>
-        <ganados>5</ganados>
-        <perdidos>3</perdidos>
+        <nombre>Team Spirit</nombre>
+        <ganados>9</ganados>
+        <perdidos>1</perdidos>
         <empatados>2</empatados>
-        <jugados>10</jugados>
-        <goles_f>30</goles_f>
-        <goles_c>10</goles_c>
+        <jugados>5</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
         <puntos>23</puntos>
     </team>
     <team>
         <position>2</position>
         <escudo_path>/imagenes/logoEquipo.png</escudo_path>
-        <nombre>Wsdfbgn gbgbb Club</nombre>
-        <ganados>3</ganados>
+        <nombre>Gladiators</nombre>
+        <ganados>7</ganados>
         <perdidos>2</perdidos>
         <empatados>5</empatados>
         <jugados>10</jugados>
-        <goles_f>25</goles_f>
-        <goles_c>15</goles_c>
+        <goles_f>24</goles_f>
+        <goles_c>16</goles_c>
         <puntos>14</puntos>
     </team>
     <!-- Добавленная строка -->
@@ -108,33 +108,33 @@
         <position>3</position>
         <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
         <nombre>Fight Club</nombre>
-        <ganados>4</ganados>
+        <ganados>7</ganados>
         <perdidos>1</perdidos>
-        <empatados>5</empatados>
+        <empatados>2</empatados>
         <jugados>10</jugados>
-        <goles_f>28</goles_f>
-        <goles_c>12</goles_c>
+        <goles_f>30</goles_f>
+        <goles_c>10</goles_c>
         <puntos>17</puntos>
     </team>
     <team>
         <position>4</position>
         <escudo_path>/imagenes/logoEquipo.png</escudo_path>
         <nombre>WaterPolo Club</nombre>
-        <ganados>4</ganados>
+        <ganados>7</ganados>
         <perdidos>1</perdidos>
         <empatados>5</empatados>
         <jugados>10</jugados>
-        <goles_f>28</goles_f>
-        <goles_c>12</goles_c>
+        <goles_f>25</goles_f>
+        <goles_c>15</goles_c>
         <puntos>17</puntos>
     </team>
     <team>
         <position>5</position>
         <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
-        <nombre>Fight Club</nombre>
-        <ganados>4</ganados>
-        <perdidos>1</perdidos>
-        <empatados>5</empatados>
+        <nombre>Virtus.pro</nombre>
+        <ganados>7</ganados>
+        <perdidos>3</perdidos>
+        <empatados>1</empatados>
         <jugados>10</jugados>
         <goles_f>28</goles_f>
         <goles_c>12</goles_c>
@@ -143,10 +143,10 @@
     <team>
         <position>6</position>
         <escudo_path>/imagenes/logoEquipo.png</escudo_path>
-        <nombre>WaterPolo Club</nombre>
-        <ganados>4</ganados>
-        <perdidos>1</perdidos>
-        <empatados>5</empatados>
+        <nombre>Navi</nombre>
+        <ganados>7</ganados>
+        <perdidos>2</perdidos>
+        <empatados>7</empatados>
         <jugados>10</jugados>
         <goles_f>28</goles_f>
         <goles_c>12</goles_c>
