@@ -78,5 +78,119 @@
         <puntos>17</puntos>
     </team>
 </temporada>
+<temporada id="2024">
+    <team>
+        <position>1</position>
+        <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
+        <nombre>dfvsfdbbgfb</nombre>
+        <ganados>5</ganados>
+        <perdidos>3</perdidos>
+        <empatados>2</empatados>
+        <jugados>10</jugados>
+        <goles_f>30</goles_f>
+        <goles_c>10</goles_c>
+        <puntos>23</puntos>
+    </team>
+    <team>
+        <position>2</position>
+        <escudo_path>/imagenes/logoEquipo.png</escudo_path>
+        <nombre>Wsdfbgn gbgbb Club</nombre>
+        <ganados>3</ganados>
+        <perdidos>2</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>25</goles_f>
+        <goles_c>15</goles_c>
+        <puntos>14</puntos>
+    </team>
+    <!-- Добавленная строка -->
+    <team>
+        <position>3</position>
+        <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
+        <nombre>Fight Club</nombre>
+        <ganados>4</ganados>
+        <perdidos>1</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
+        <puntos>17</puntos>
+    </team>
+    <team>
+        <position>4</position>
+        <escudo_path>/imagenes/logoEquipo.png</escudo_path>
+        <nombre>WaterPolo Club</nombre>
+        <ganados>4</ganados>
+        <perdidos>1</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
+        <puntos>17</puntos>
+    </team>
+    <team>
+        <position>5</position>
+        <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
+        <nombre>Fight Club</nombre>
+        <ganados>4</ganados>
+        <perdidos>1</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
+        <puntos>17</puntos>
+    </team>
+    <team>
+        <position>6</position>
+        <escudo_path>/imagenes/logoEquipo.png</escudo_path>
+        <nombre>WaterPolo Club</nombre>
+        <ganados>4</ganados>
+        <perdidos>1</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
+        <puntos>17</puntos>
+    </team>
+</temporada>
+<temporada id="2025">
+    <team>
+        <position>1</position>
+        <escudo_path>logoEquipo.png</escudo_path>
+        <nombre>Team 4</nombre>
+        <ganados>5</ganados>
+        <perdidos>3</perdidos>
+        <empatados>2</empatados>
+        <jugados>10</jugados>
+        <goles_f>30</goles_f>
+        <goles_c>10</goles_c>
+        <puntos>23</puntos>
+    </team>
+    <team>
+        <position>2</position>
+        <escudo_path>logoEquipo2.png</escudo_path>
+        <nombre>Team 5</nombre>
+        <ganados>3</ganados>
+        <perdidos>2</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>25</goles_f>
+        <goles_c>15</goles_c>
+        <puntos>14</puntos>
+    </team>
+    <!-- Добавленная строка -->
+    <team>
+        <position>3</position>
+        <escudo_path>logoEquipo.png</escudo_path>
+        <nombre>Team 6</nombre>
+        <ganados>4</ganados>
+        <perdidos>1</perdidos>
+        <empatados>5</empatados>
+        <jugados>10</jugados>
+        <goles_f>28</goles_f>
+        <goles_c>12</goles_c>
+        <puntos>17</puntos>
+    </team>
+</temporada>
     <!-- Конец добавленной строки -->
 </teams>
