@@ -1,53 +1,50 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Procesar datos para tres clubes
-    for (let i = 1; i <= 3; i++) {
-        // Realizar una solicitud fetch para obtener el archivo XML
-        fetch(`/XMLyXSD/XMLClubes.xml`)
-            .then(response => response.text())
-            .then(xmlString => {
-                // Crear un objeto DOMParser para analizar el XML
-                const parser = new DOMParser();
-                const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
-                
-                // Definir los identificadores para los elementos HTML
-                const clubId = `club${i}`;
-                const escudoId = `escudo${i}`;
-                const codigoId = `codigo${i}`;
-                const nombreId = `nombre${i}`;
-                const estadioId = `estadio${i}`;
-                const presidenteId = `presidente${i}`;
-                const cantidadId = `cantidad${i}`;
+// Ruta del archivo XML
+const xmlFilePath = '/XMLyXSD/XMLInicio.xml';
 
-                // Llamar a la función para actualizar la información del club
-                updateClubInfo(xmlDoc, clubId, escudoId, codigoId, nombreId, estadioId, presidenteId, cantidadId);
-            });
-    }
-});
-
-// Función para actualizar la información del club en la página HTML
-function updateClubInfo(xmlDoc, clubId, escudoId, codigoId, nombreId, estadioId, presidenteId, cantidadId) {
-    // Obtener el elemento del club del documento XML
-    const clubElement = xmlDoc.querySelector(clubId);
-
-    // Verificar si se encontró el elemento del club
-    if (clubElement) {
-        // Obtener elementos específicos del club del documento XML
-        const escudoElement = clubElement.querySelector('escudo');
-        const codigoElement = clubElement.querySelector('codigo');
-        const nombreElement = clubElement.querySelector('nombre');
-        const estadioElement = clubElement.querySelector('estadio');
-        const presidenteElement = clubElement.querySelector('presidente');
-        const cantidadElement = clubElement.querySelector('cantidad');
-
-        // Actualizar los elementos HTML con la información del club
-        document.getElementById(escudoId).src = escudoElement.textContent;
-        document.getElementById(codigoId).textContent = codigoElement.textContent;
-        document.getElementById(nombreId).textContent = nombreElement.textContent;
-        document.getElementById(estadioId).textContent = estadioElement.textContent;
-        document.getElementById(presidenteId).textContent = presidenteElement.textContent;
-        document.getElementById(cantidadId).textContent = cantidadElement ? cantidadElement.textContent : "N/A";
+// Función para cargar un archivo XML
+function loadXMLDoc(filename) {
+    if (window.XMLHttpRequest) {
+        var xhttp = new XMLHttpRequest();
     } else {
-        // Mostrar un mensaje de error si el elemento del club no se encuentra
-        console.error(`Club con identificador ${clubId} no encontrado.`);
+        var xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xhttp.open("GET", filename, false);
+    xhttp.send();
+
+    return xhttp.responseXML;
+}
+
+// Функция для обновления данных на странице
+function updateTableData() {
+    // Загрузка XML файла
+    const xmlDoc = loadXMLDoc(xmlFilePath);
+
+    // Получение списка всех элементов <club>
+    const clubElements = xmlDoc.getElementsByTagName('club');
+
+    // Обновление данных для каждого <club> элемента
+    for (let i = 0; i < clubElements.length; i++) {
+        const club = clubElements[i];
+        const clubIndex = i + 1;
+
+        // Получение данных из XML
+        const escudo = club.querySelector('escudo').textContent;
+        const codigo = club.querySelector('codigo').textContent;
+        const nombre = club.querySelector('nombre').textContent;
+        const estadio = club.querySelector('estadio').textContent;
+        const presidente = club.querySelector('presidente').textContent;
+        const cantidadSocios = club.querySelector('cantidadSocios').textContent;
+
+        // Обновление содержимого элементов на странице HTML
+        document.getElementById(`escudo${clubIndex}`).src = escudo;
+        document.getElementById(`codigo${clubIndex}`).textContent = codigo;
+        document.getElementById(`nombre${clubIndex}`).textContent = nombre;
+        document.getElementById(`estadio${clubIndex}`).textContent = estadio;
+        document.getElementById(`presidente${clubIndex}`).textContent = presidente;
+        document.getElementById(`cantidad${clubIndex}`).textContent = cantidadSocios;
     }
 }
+
+// Вызов функции для обновления данных при загрузке страницы
+updateTableData();

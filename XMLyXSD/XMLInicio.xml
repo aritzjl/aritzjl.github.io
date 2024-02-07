@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TopClubs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDInicio.xsd">
+    <club>
+        <escudo>/imagenes/logoEquipo.png</escudo>
+        <codigo>22495031</codigo>
+        <nombre>dfvsfdbbgfb</nombre>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Tailer Derden</presidente>
+        <cantidadSocios>2001</cantidadSocios>
+        <ciudad>Madrid</ciudad>
+        <cantidad>15</cantidad>
+    </club>
+    <club>
+        <escudo>/imagenes/logoEquipo2.jpg</escudo>
+        <nombre>Wsdfbgn gbgbb Club</nombre>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Robert Polson</presidente>
+        <cantidadSocios>1994</cantidadSocios>
+        <ciudad>Bilbao</ciudad>
+        <codigo>22495031</codigo>
+        <cantidad>13</cantidad>
+    </club>
+    <club>
+        <escudo>/imagenes/logoEquipo.png</escudo>
+        <nombre>DINAHU Club</nombre>
+        <estadio>Madrid calle Hiujnfd 74</estadio>
+        <presidente>Robert Polson</presidente>
+        <cantidadSocios>1994</cantidadSocios>
+        <ciudad>Bilbao</ciudad>
+        <codigo>22495031</codigo>
+        <cantidad>13</cantidad>
+    </club>
+</TopClubs>
