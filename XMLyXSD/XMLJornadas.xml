@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Jornadas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/XMLyXSD/XSDJornadas.xsd">
-    <Temporada2022 name="2022">
-        <Jornada1 name="Jornada 1">
-            <Partido1>
+    <Temporada id="2022">
+        <Jornada id="1">
+            <Partido>
                 <fotcaLocal>/imagenes/Spirit.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/Gladiators.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
@@ -10,8 +10,8 @@
                 <etiquetaPartido>Partido 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido1>
-            <Partido2>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/Navi.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/logoEquipo.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -19,8 +19,8 @@
                 <etiquetaPartido>Partido 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido2>
-            <Partido3>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/Navi.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/Gladiators.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -28,11 +28,11 @@
                 <etiquetaPartido>Partido 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido3>
-        </Jornada1>
+            </Partido>
+        </Jornada>
 
-        <Jornada2 name="Jornada 2">
-            <Partido1>
+        <Jornada id="2">
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
@@ -40,8 +40,8 @@
                 <etiquetaPartido>Partido 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido1>
-            <Partido2>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -49,8 +49,8 @@
                 <etiquetaPartido>Partido 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido2>
-            <Partido3>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -58,11 +58,11 @@
                 <etiquetaPartido>Partido 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido3>
-        </Jornada2>
+            </Partido>
+        </Jornada>
 
-        <Jornada3 name="Jornada 3">
-            <Partido1>
+        <Jornada id="3">
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
@@ -70,8 +70,8 @@
                 <etiquetaPartido>Partido 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido1>
-            <Partido2>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -79,8 +79,8 @@
                 <etiquetaPartido>Partido 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido2>
-            <Partido3>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -88,13 +88,13 @@
                 <etiquetaPartido>Partido 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido3>
-        </Jornada3>
-    </Temporada2022>
+            </Partido>
+        </Jornada>
+    </Temporada>
 
-    <Temporada2023 name="2023">
-        <Jornada1>
-            <Partido1 name="Jornada 1">
+    <Temporada id="2023">
+        <Jornada id="Jornada1">
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
@@ -102,8 +102,8 @@
                 <etiquetaPartido>Partido 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido1>
-            <Partido2 >
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -111,8 +111,8 @@
                 <etiquetaPartido>Partido 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido2>
-            <Partido3>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -120,11 +120,11 @@
                 <etiquetaPartido>Partido 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido3>
-        </Jornada1>
+            </Partido>
+        </Jornada>
 
-        <Jornada2 name="Jornada 2">
-            <Partido1>
+        <Jornada id="Jornada2">
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartzafffffffffffffffffffflaret</nomEquipoLocal>
@@ -132,8 +132,8 @@
                 <etiquetaPartido>Partido 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido1>
-            <Partido2>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -141,8 +141,8 @@
                 <etiquetaPartido>Partido 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido2>
-            <Partido3>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -150,11 +150,11 @@
                 <etiquetaPartido>Pafffffffdo 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido3>
-        </Jornada2>
+            </Partido>
+        </Jornada>
 
-        <Jornada3 name="Jornada 3">
-            <Partido1>
+        <Jornada id="Jornada3">
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
@@ -162,8 +162,8 @@
                 <etiquetaPartido>Partfffffffffffffffffo 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido1>
-            <Partido2>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Lfffffffffffffffna</nomEquipoLocal>
@@ -171,8 +171,8 @@
                 <etiquetaPartido>Partfffffffffffffffdo 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido2>
-            <Partido3>
+            </Partido>
+            <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
@@ -180,8 +180,8 @@
                 <etiquetaPartido>Partfffffffffffffffffo 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
-            </Partido3>
-        </Jornada3>
-    </Temporada2023>
+            </Partido>
+        </Jornada>
+    </Temporada>
 
     </Jornadas>
