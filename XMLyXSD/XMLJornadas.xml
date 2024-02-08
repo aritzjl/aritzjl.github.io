@@ -3,8 +3,8 @@
     <Temporada2022 name="2022">
         <Jornada1 name="Jornada 1">
             <Partido1>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <fotcaLocal>/imagenes/Spirit.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/Gladiators.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 1</etiquetaPartido>
@@ -12,8 +12,8 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido1>
             <Partido2>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <fotcaLocal>/imagenes/Navi.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/logoEquipo.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 2</etiquetaPartido>
@@ -21,8 +21,8 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido2>
             <Partido3>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <fotcaLocal>/imagenes/Navi.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/Gladiators.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 3</etiquetaPartido>
