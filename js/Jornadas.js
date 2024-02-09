@@ -24,6 +24,7 @@ function updateJornadaInfo(xmlDoc, Jornada, Temporada) {
 
     // Получить элемент года из XML-файла по указанному году
     const TemporadaElement = xmlDoc.querySelector(`Temporada[id="${Temporada}"]`);
+    console.log(TemporadaElement);
     if (TemporadaElement) {
         // Получить элемент тура внутри года по указанному туру
         const JornadaElement = TemporadaElement.querySelector(`Jornada[id="${Jornada}"]`);
