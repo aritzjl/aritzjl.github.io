@@ -18,11 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Функция для обновления информации о новости на странице
 function updateNoticiaInfo(xmlDoc, noticiaId, noticiaFastId) {
-    console.log(noticiaFastId, noticiaId);
     if (noticiaFastId) {
         // Если есть идентификатор noticiaFastId
         const noticiaFastElement = xmlDoc.querySelector(`news[id="${noticiaFastId}"]`);
-        console.log(noticiaFastElement);
         if (noticiaFastElement) {
             // Получаем элементы области noticiaFast из XML
             const imageFElement = noticiaFastElement.querySelector('image');
