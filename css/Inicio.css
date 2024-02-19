@@ -1,3 +1,6 @@
+header {
+  z-index: 1000;
+}
 body {
     display: flex;
     flex-direction: column;

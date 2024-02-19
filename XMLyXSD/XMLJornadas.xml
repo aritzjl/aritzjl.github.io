@@ -93,7 +93,7 @@
     </Temporada>
 
     <Temporada id="2023">
-        <Jornada id="Jornada1">
+        <Jornada id="1">
             <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
@@ -123,7 +123,7 @@
             </Partido>
         </Jornada>
 
-        <Jornada id="Jornada2">
+        <Jornada id="2">
             <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
@@ -153,7 +153,7 @@
             </Partido>
         </Jornada>
 
-        <Jornada id="Jornada3">
+        <Jornada id="3">
             <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
