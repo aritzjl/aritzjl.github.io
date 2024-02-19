@@ -72,13 +72,11 @@ function updateTableData(selectedSeason) {
         const temporadaId = club.closest('temporada').getAttribute('id');
 
         if (temporadaId === selectedSeason) {
-            const escudo = club.getElementsByTagName('escudo')[0].textContent;
             const nombre = club.getElementsByTagName('nombre')[0].textContent;
             const estadio = club.getElementsByTagName('estadio')[0].textContent;
             const presidente = club.getElementsByTagName('presidente')[0].textContent;
             const cantidadSocios = club.getElementsByTagName('cantidadSocios')[0].textContent;
             const ciudad = club.getElementsByTagName('ciudad')[0].textContent;
-            const historia = club.getElementsByTagName('historia')[0].textContent;
             const codigo = club.getElementsByTagName('codigo')[0].textContent;
 
             const newRow = document.createElement('tr');
@@ -86,13 +84,11 @@ function updateTableData(selectedSeason) {
 
             newRow.addEventListener('click', function() {
                 const clubInfo = {
-                    escudo: escudo,
                     nombre: nombre,
                     estadio: estadio,
                     presidente: presidente,
                     cantidadSocios: cantidadSocios,
                     ciudad: ciudad,
-                    historia: historia,
                     codigo: codigo
                 };
 
@@ -101,7 +97,6 @@ function updateTableData(selectedSeason) {
             });
 
             newRow.innerHTML = `
-                <td class="px-6 py-4"><img src="${escudo}" alt="Escudo Equipo" class="h-8"></td>
                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nombre}</td>
                 <td class="px-6 py-4">${estadio}</td>
                 <td class="px-6 py-4">${presidente}</td>
