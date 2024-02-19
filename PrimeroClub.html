@@ -18,66 +18,57 @@
 	<br>
 	<br>
 
-	<main class="lg:mx-4 justify-center">
-		<div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
-			<div class="col-span-2">
-		<div role="status" class="bg-white border border-gray-200 rounded-lg p-4 shadow-lg dark:bg-gray-800 dark:border-gray-700">
-			<div class="flex items-center space-x-4">
-				<div class="flex-shrink-0 w-48 h-48 bg-gray-300 rounded dark:bg-gray-700 ">
-					<img id="escudo" class="h-auto max-w-full rounded-lg">
+	<main class="m-4">
+			<div>
+				<div role="status" class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-gray-800 dark:border-gray-700 w-full">
+					<div class="flex items-center space-x-4">
+						<div class="flex-shrink-0 w-48 h-48 bg-gray-300 rounded dark:bg-gray-700 ">
+							<img id="escudo" class="h-auto max-w-full rounded-lg">
+						</div>
+						<div class="w-full">
+							<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">información</div>
+							<div id="nombre" class="text-left mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">error</div>
+							<br>
+							<div class="flex items-center">
+								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Codigo de Club:</div>
+								<div id="codigo" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+							</div>
+							<br>
+							<div class="flex items-center">
+								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">El presidente: </div>
+								<div id="presidente" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+							</div>
+							<br>
+							<div class="flex items-center">
+								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Cantidad de socios: </div>
+								<div id="cantidad" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+							</div>
+							<br>
+							<div class="flex items-center">
+								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Estadio: </div>
+								<div id="estadio" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+							</div>
+							<br>
+						</div>
+					</div>
+					<span class="sr-only">Loading...</span>
 				</div>
-				<div class="w-full">
-					<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">información</div>
-					<!-- нейм -->
-					<div id="nombre" class="text-left mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">error</div>
-					<br>
-					<div class="flex items-center">
-						<!--код группы -->
-						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Codigo de Club:</div>
-						<div id="codigo" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-					</div>
-					<br>
-					<div class="flex items-center">
-						<!--презик -->
-						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">El presidente: </div>
-						<div id="presidente" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-					</div>
-					<br>
-					<div class="flex items-center">
-						<!--количество игроков -->
-						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Cantidad de socios: </div>
-						<div id="cantidad" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-					</div>
-					<br>
-					<div class="flex items-center">
-						<!--место игр -->
-						<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Estadio: </div>
-						<div id="estadio" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-					</div>
-					<br>
-				</div>
+				<br>
+				<button type="#" onclick="window.location.href='/clubes.html'" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Volver</button>
 			</div>
-			<span class="sr-only">Loading...</span>
-		</div>
-			<br>
-			<button type="#" onclick="window.location.href='/clubes.html'" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Volver</button>
-		</div>
-		</div>
-
 	</main>
+	
 
 
 	<div id="modals-container"></div>
   
 	<div id="footer-container"></div>
 	  
-	  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	  <script src="js/reciclaje.js"></script>
-	  <script src="js/footer.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="js/reciclaje.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 	<script src="js/PrimeroClub.js"></script>
-	<script src="js/Personas.js"></script>
 
 </body>
 
