@@ -60,38 +60,7 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
         </Jornada>
-
-        <Jornada id="3">
-            <Partido>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
-                <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
-                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
-                <etiquetaPartido>Partido 1</etiquetaPartido>
-                <resultadoLocal>4</resultadoLocal>
-                <resultadoVisitante>5</resultadoVisitante>
-            </Partido>
-            <Partido>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
-                <nomEquipoLocal>La Latina</nomEquipoLocal>
-                <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
-                <etiquetaPartido>Partido 2</etiquetaPartido>
-                <resultadoLocal>5</resultadoLocal>
-                <resultadoVisitante>5</resultadoVisitante>
-            </Partido>
-            <Partido>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
-                <nomEquipoLocal>La Latina</nomEquipoLocal>
-                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
-                <etiquetaPartido>Partido 3</etiquetaPartido>
-                <resultadoLocal>4</resultadoLocal>
-                <resultadoVisitante>5</resultadoVisitante>
-            </Partido>
-        </Jornada>
     </Temporada>
-
     <Temporada id="2023">
         <Jornada id="1">
             <Partido>
@@ -152,23 +121,22 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
         </Jornada>
-
         <Jornada id="3">
             <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
-                <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
-                <nombreEquipoVisitante>Sffffffffffffla</nombreEquipoVisitante>
-                <etiquetaPartido>Partfffffffffffffffffo 1</etiquetaPartido>
+                <nomEquipoLocal>Askartzafffffffffffffffffffflaret</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 1</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
                 <fotcaLocal>/imagenes/img2.png</fotcaLocal>
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
-                <nomEquipoLocal>La Lfffffffffffffffna</nomEquipoLocal>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
-                <etiquetaPartido>Partfffffffffffffffdo 2</etiquetaPartido>
+                <etiquetaPartido>Partido 2</etiquetaPartido>
                 <resultadoLocal>5</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
@@ -177,7 +145,97 @@
                 <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
-                <etiquetaPartido>Partfffffffffffffffffo 3</etiquetaPartido>
+                <etiquetaPartido>Pafffffffdo 3</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+        </Jornada>
+    </Temporada>
+    <Temporada id="2024">
+        <Jornada id="1">
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 1</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 2</etiquetaPartido>
+                <resultadoLocal>5</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 3</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+        </Jornada>
+
+        <Jornada id="2">
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>Askartzafffffffffffffffffffflaret</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 1</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 2</etiquetaPartido>
+                <resultadoLocal>5</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Pafffffffdo 3</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+        </Jornada>
+        <Jornada id="3">
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>Askartzafffffffffffffffffffflaret</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 1</etiquetaPartido>
+                <resultadoLocal>4</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
+                <etiquetaPartido>Partido 2</etiquetaPartido>
+                <resultadoLocal>5</resultadoLocal>
+                <resultadoVisitante>5</resultadoVisitante>
+            </Partido>
+            <Partido>
+                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
+                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
+                <nomEquipoLocal>La Latina</nomEquipoLocal>
+                <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
+                <etiquetaPartido>Pafffffffdo 3</etiquetaPartido>
                 <resultadoLocal>4</resultadoLocal>
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>

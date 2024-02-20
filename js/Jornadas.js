@@ -1,33 +1,124 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Получить параметры 'Jornadas' и 'Temporada' из URL
-    const params = new URLSearchParams(window.location.search);
+document.addEventListener("DOMContentLoaded", function() {
+    loadTemporadas();
+    document.getElementById("Temporada").addEventListener("change", function() {
+        var selectedTemporadaId = this.value;
+        loadJornadas(selectedTemporadaId);
+    });
 
-    const Jornada = params.get('Jornadas');
-    const Temporada = params.get('Temporada');
-
-    // Загрузить XML-файл и обновить данные для выбранного сезона
-    fetch('/XMLyXSD/XMLJornadas.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
-
-            // Вызвать функцию для обновления информации о туре и годе
-            updateJornadaInfo(xmlDoc, Jornada, Temporada);
+    document.getElementById("Jornada").addEventListener("change", function() {
+        var selectedTemporadaId = document.getElementById("Temporada").value;
+        var selectedJornadaId = this.value;
+        loadXMLDoc("/XMLyXSD/XMLJornadas.xml", function(xmlDoc) {
+            updateJornadaInfo(xmlDoc, selectedJornadaId, selectedTemporadaId);
         });
+    });
 });
 
-// Функция для обновления информации о туре и годе на странице
-function updateJornadaInfo(xmlDoc, Jornada, Temporada) {
-    console.log(`Год: ${Temporada}`);
-    console.log(`Тур: ${Jornada}`);
+function loadTemporadas() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            displayTemporadas(this);
+        }
+    };
+    xmlhttp.open("GET", "/XMLyXSD/XMLJornadas.xml", true);
+    xmlhttp.send();
+}
+
+function displayTemporadas(xml) {
+    var xmlDoc = xml.responseXML;
+    var temporadas = xmlDoc.getElementsByTagName("Temporada");
+    var selectTemporada = document.getElementById("Temporada");
+    
+    // Clear existing options
+    selectTemporada.innerHTML = "";
+    
+    var existingOptions = {}; // Object to store existing options
+    
+    for (var i = 0; i < temporadas.length; i++) {
+        var id = temporadas[i].getAttribute("id");
+        
+        // Check if the option already exists
+        if (!existingOptions[id]) {
+            var option = document.createElement("option");
+            option.value = id;
+            option.text = id;
+            selectTemporada.appendChild(option);
+            existingOptions[id] = true; // Mark this option as existing
+        }
+    }
+    
+    // Set default selected temporada
+    selectTemporada.value = '2024';
+
+    // Trigger change event to populate jornadas initially
+    selectTemporada.dispatchEvent(new Event("change"));
+}
+
+function loadJornadas(selectedTemporadaId) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            displayJornadas(selectedTemporadaId, this.responseXML);
+        }
+    };
+    xmlhttp.open("GET", "/XMLyXSD/XMLJornadas.xml", true);
+    xmlhttp.send();
+}
+
+function displayJornadas(selectedTemporadaId, xmlDoc) {
+    var jornadas = xmlDoc.querySelectorAll('Temporada[id="' + selectedTemporadaId + '"] Jornada');
+    var selectJornada = document.getElementById("Jornada");
+    selectJornada.innerHTML = ""; // Clear previous options
+    
+    if (jornadas.length > 0) {
+        jornadas.forEach(function(jornada) {
+            var id = jornada.getAttribute("id");
+            var option = document.createElement("option");
+            option.value = id;
+            option.text = id;
+            selectJornada.appendChild(option);
+        });
+    } else {
+        var option = document.createElement("option");
+        option.text = "No Jornadas available";
+        selectJornada.appendChild(option);
+    }
+
+    // Set default selected jornada
+    selectJornada.value = '1';
+}
+
+function loadXMLDoc(url, callback) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            callback(this.responseXML);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+
+window.onload = function() {
+    const defaultSelectedTemporada = '2024'; // Задаем 2024 год по умолчанию
+    const defaultSelectedJornada = '1'; // Задаем 1 тур по умолчанию
+    loadXMLDoc("/XMLyXSD/XMLJornadas.xml", function(xmlDoc) {
+        updateJornadaInfo(xmlDoc, defaultSelectedJornada, defaultSelectedTemporada);
+    });
+};
+
+
+function updateJornadaInfo(xmlDoc, jornada, temporada) {
+    console.log(`Год: ${temporada}`);
+    console.log(`Тур: ${jornada}`);
 
     // Получить элемент года из XML-файла по указанному году
-    const TemporadaElement = xmlDoc.querySelector(`Temporada[id="${Temporada}"]`);
+    const TemporadaElement = xmlDoc.querySelector(`Temporada[id="${temporada}"]`);
     console.log(TemporadaElement);
     if (TemporadaElement) {
         // Получить элемент тура внутри года по указанному туру
-        const JornadaElement = TemporadaElement.querySelector(`Jornada[id="${Jornada}"]`);
+        const JornadaElement = TemporadaElement.querySelector(`Jornada[id="${jornada}"]`);
         console.log(JornadaElement);
         if (JornadaElement) {
             // Итерировать по матчам тура

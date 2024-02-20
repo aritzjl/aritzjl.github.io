@@ -17,3 +17,8 @@ main {
 footer {
     margin-top: auto;
 }
+#nomEquipoLocal1, #nombreEquipoVisitante1, #nomEquipoLocal2, #nombreEquipoVisitante2, #nomEquipoLocal3, #nombreEquipoVisitante3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
