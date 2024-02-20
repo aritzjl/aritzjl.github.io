@@ -97,6 +97,7 @@ function updateTableData(selectedSeason) {
             });
 
             newRow.innerHTML = `
+                <td class="px-6 py-4"><img src="/imagenes/Spirit.png" alt="Escudo Equipo" class="h-8"></td>
                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nombre}</td>
                 <td class="px-6 py-4">${estadio}</td>
                 <td class="px-6 py-4">${presidente}</td>

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const clubInfo = JSON.parse(decodeURIComponent(clubInfoJSON));
 
     // Отображает информацию о клубе
-    document.getElementById('escudo').src = clubInfo.escudo;
     document.getElementById('codigo').textContent = clubInfo.codigo;
     document.getElementById('nombre').textContent = clubInfo.nombre;
     document.getElementById('estadio').textContent = clubInfo.estadio;
