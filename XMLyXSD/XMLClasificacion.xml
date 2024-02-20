@@ -3,7 +3,6 @@
 <temporada id="2022">
     <team>
         <position>1</position>
-        <escudo_path>/imagenes/Spirit.png</escudo_path>
         <nombre>Team Spirit</nombre>
         <ganados>9</ganados>
         <perdidos>1</perdidos>
@@ -15,7 +14,6 @@
     </team>
     <team>
         <position>2</position>
-        <escudo_path>/imagenes/gladiators.png</escudo_path>
         <nombre>Gladiators</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>
@@ -28,7 +26,6 @@
     <!-- Добавленная строка -->
     <team>
         <position>3</position>
-        <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
         <nombre>Fight Club</nombre>
         <ganados>7</ganados>
         <perdidos>1</perdidos>
@@ -40,7 +37,6 @@
     </team>
     <team>
         <position>4</position>
-        <escudo_path>/imagenes/logoEquipo.png</escudo_path>
         <nombre>WaterPolo Club</nombre>
         <ganados>7</ganados>
         <perdidos>1</perdidos>
@@ -52,7 +48,6 @@
     </team>
     <team>
         <position>5</position>
-        <escudo_path>/imagenes/Virtus.png</escudo_path>
         <nombre>Virtus.pro</nombre>
         <ganados>7</ganados>
         <perdidos>3</perdidos>
@@ -64,7 +59,6 @@
     </team>
     <team>
         <position>6</position>
-        <escudo_path>/imagenes/Navi.png</escudo_path>
         <nombre>Navi</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>
@@ -76,7 +70,6 @@
     </team>
     <team>
         <position>1</position>
-        <escudo_path>/imagenes/Spirit.png</escudo_path>
         <nombre>Team Spirit</nombre>
         <ganados>9</ganados>
         <perdidos>1</perdidos>
@@ -88,7 +81,6 @@
     </team>
     <team>
         <position>2</position>
-        <escudo_path>/imagenes/gladiators.png</escudo_path>
         <nombre>Gladiators</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>
@@ -101,7 +93,6 @@
     <!-- Добавленная строка -->
     <team>
         <position>3</position>
-        <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
         <nombre>Fight Club</nombre>
         <ganados>7</ganados>
         <perdidos>1</perdidos>
@@ -113,7 +104,6 @@
     </team>
     <team>
         <position>4</position>
-        <escudo_path>/imagenes/logoEquipo.png</escudo_path>
         <nombre>WaterPolo Club</nombre>
         <ganados>7</ganados>
         <perdidos>1</perdidos>
@@ -125,7 +115,6 @@
     </team>
     <team>
         <position>5</position>
-        <escudo_path>/imagenes/Virtus.png</escudo_path>
         <nombre>Virtus.pro</nombre>
         <ganados>7</ganados>
         <perdidos>3</perdidos>
@@ -137,7 +126,6 @@
     </team>
     <team>
         <position>6</position>
-        <escudo_path>/imagenes/Navi.png</escudo_path>
         <nombre>Navi</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>
@@ -151,7 +139,6 @@
 <temporada id="2023">
     <team>
         <position>1</position>
-        <escudo_path>/imagenes/Spirit.png</escudo_path>
         <nombre>Team Spirit</nombre>
         <ganados>9</ganados>
         <perdidos>1</perdidos>
@@ -163,7 +150,6 @@
     </team>
     <team>
         <position>2</position>
-        <escudo_path>/imagenes/gladiators.png</escudo_path>
         <nombre>Gladiators</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>
@@ -176,7 +162,6 @@
     <!-- Добавленная строка -->
     <team>
         <position>3</position>
-        <escudo_path>/imagenes/logoEquipo2.jpg</escudo_path>
         <nombre>Fight Club</nombre>
         <ganados>7</ganados>
         <perdidos>1</perdidos>
@@ -188,7 +173,6 @@
     </team>
     <team>
         <position>5</position>
-        <escudo_path>/imagenes/Virtus.png</escudo_path>
         <nombre>Virtus.pro</nombre>
         <ganados>7</ganados>
         <perdidos>3</perdidos>
@@ -200,7 +184,6 @@
     </team>
     <team>
         <position>6</position>
-        <escudo_path>/imagenes/Navi.png</escudo_path>
         <nombre>Navi</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>
@@ -214,7 +197,6 @@
 <temporada id="2024">
     <team>
         <position>1</position>
-        <escudo_path>/imagenes/Spirit.png</escudo_path>
         <nombre>Team Spirit</nombre>
         <ganados>9</ganados>
         <perdidos>1</perdidos>
@@ -226,7 +208,6 @@
     </team>
     <team>
         <position>2</position>
-        <escudo_path>/imagenes/gladiators.png</escudo_path>
         <nombre>Gladiators</nombre>
         <ganados>7</ganados>
         <perdidos>2</perdidos>

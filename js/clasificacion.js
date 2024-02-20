@@ -62,7 +62,6 @@ function loadTableData(selectedSeason) {
 
         if (temporadaId === selectedSeason) {
             const position = team.getElementsByTagName('position')[0].textContent;
-            const escudoPath = team.getElementsByTagName('escudo_path')[0].textContent;
             const nombre = team.getElementsByTagName('nombre')[0].textContent;
             const ganados = parseInt(team.getElementsByTagName('ganados')[0].textContent);
             const perdidos = parseInt(team.getElementsByTagName('perdidos')[0].textContent);
@@ -74,7 +73,6 @@ function loadTableData(selectedSeason) {
 
             teamsData.push({
                 position: position,
-                escudoPath: escudoPath,
                 nombre: nombre,
                 ganados: ganados,
                 perdidos: perdidos,
@@ -110,7 +108,7 @@ teamsData.sort((a, b) => {
 
         newRow.innerHTML = `
             <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${i + 1}</td>
-            <td class="px-6 py-4"><img src="${teamData.escudoPath}" alt="Escudo Equipo" class="h-8"></td>
+            <td class="px-6 py-4"><img src="/imagenes/Spirit.png" alt="Escudo Equipo" class="h-8"></td>
             <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${teamData.nombre}</td>
             <td class="px-6 py-4">${teamData.ganados}</td>
             <td class="px-6 py-4">${teamData.perdidos}</td>
