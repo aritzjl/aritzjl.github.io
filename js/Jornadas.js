@@ -131,8 +131,6 @@ function updateJornadaInfo(xmlDoc, jornada, temporada) {
             const partidos = JornadaElement.querySelectorAll('Partido');
             partidos.forEach((partido, i) => {
                 // Получить соответствующие элементы из XML
-                const fotcaLocalElement = partido.querySelector('fotcaLocal');
-                const fotcaVisitanteElement = partido.querySelector('fotcaVisitante');
                 const nomEquipoLocalElement = partido.querySelector('nomEquipoLocal');
                 const nombreEquipoVisitanteElement = partido.querySelector('nombreEquipoVisitante');
                 const etiquetaPartidoElement = partido.querySelector('etiquetaPartido');
@@ -140,8 +138,6 @@ function updateJornadaInfo(xmlDoc, jornada, temporada) {
                 const resultadoVisitanteElement = partido.querySelector('resultadoVisitante');
 
                 // Получить соответствующие HTML-элементы на странице
-                const fotcaLocal = document.getElementById(`fotcaLocal${i + 1}`);
-                const fotcaVisitante = document.getElementById(`fotcaVisitante${i + 1}`);
                 const nomEquipoLocal = document.getElementById(`nomEquipoLocal${i + 1}`);
                 const nombreEquipoVisitante = document.getElementById(`nombreEquipoVisitante${i + 1}`);
                 const etiquetaPartido = document.getElementById(`etiquetaPartido${i + 1}`);
@@ -149,9 +145,7 @@ function updateJornadaInfo(xmlDoc, jornada, temporada) {
                 const resultadoVisitante = document.getElementById(`resultadoVisitante${i + 1}`);
 
                 // Обновить HTML-элементы данными о матче
-                if (fotcaLocal && fotcaVisitante && nomEquipoLocal && nombreEquipoVisitante && etiquetaPartido && resultadoLocal && resultadoVisitante) {
-                    fotcaLocal.src = fotcaLocalElement.textContent;
-                    fotcaVisitante.src = fotcaVisitanteElement.textContent;
+                if (nomEquipoLocal && nombreEquipoVisitante && etiquetaPartido && resultadoLocal && resultadoVisitante) {
                     nomEquipoLocal.textContent = nomEquipoLocalElement.textContent;
                     nombreEquipoVisitante.textContent = nombreEquipoVisitanteElement.textContent;
                     etiquetaPartido.textContent = etiquetaPartidoElement.textContent;

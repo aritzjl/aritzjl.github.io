@@ -3,8 +3,6 @@
     <Temporada id="2022">
         <Jornada id="1">
             <Partido>
-                <fotcaLocal>/imagenes/Spirit.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/Gladiators.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 1</etiquetaPartido>
@@ -12,8 +10,6 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
-                <fotcaLocal>/imagenes/Navi.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/logoEquipo.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 2</etiquetaPartido>
@@ -21,8 +17,6 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
-                <fotcaLocal>/imagenes/Navi.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/Gladiators.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 3</etiquetaPartido>
@@ -33,8 +27,6 @@
 
         <Jornada id="2">
             <Partido>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>Askartza Claret</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 1</etiquetaPartido>
@@ -42,8 +34,6 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Navarra</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 2</etiquetaPartido>
@@ -51,8 +41,6 @@
                 <resultadoVisitante>5</resultadoVisitante>
             </Partido>
             <Partido>
-                <fotcaLocal>/imagenes/img2.png</fotcaLocal>
-                <fotcaVisitante>/imagenes/img2.png</fotcaVisitante>
                 <nomEquipoLocal>La Latina</nomEquipoLocal>
                 <nombreEquipoVisitante>Sevilla</nombreEquipoVisitante>
                 <etiquetaPartido>Partido 3</etiquetaPartido>

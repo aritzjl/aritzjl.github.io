@@ -61,7 +61,6 @@ function loadTableData(selectedSeason) {
         const temporadaId = team.closest('temporada').getAttribute('id');
 
         if (temporadaId === selectedSeason) {
-            const position = team.getElementsByTagName('position')[0].textContent;
             const nombre = team.getElementsByTagName('nombre')[0].textContent;
             const ganados = parseInt(team.getElementsByTagName('ganados')[0].textContent);
             const perdidos = parseInt(team.getElementsByTagName('perdidos')[0].textContent);
@@ -72,7 +71,6 @@ function loadTableData(selectedSeason) {
             const jugados = calculateJugados(ganados, perdidos, empatados);
 
             teamsData.push({
-                position: position,
                 nombre: nombre,
                 ganados: ganados,
                 perdidos: perdidos,
