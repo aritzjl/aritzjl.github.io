@@ -70,7 +70,13 @@ function displayJornadas(selectedTemporadaId, xmlDoc) {
     var jornadas = xmlDoc.querySelectorAll('Temporada[id="' + selectedTemporadaId + '"] Jornada');
     var selectJornada = document.getElementById("Jornada");
     selectJornada.innerHTML = ""; // Clear previous options
-    
+
+    // Создаем опцию "Choose Jornada" и добавляем в начало списка
+    var chooseOption = document.createElement("option");
+    chooseOption.text = "Choose Jornada";
+    chooseOption.value = ""; // Установите значение по вашему усмотрению, если нужно
+    selectJornada.appendChild(chooseOption);
+
     if (jornadas.length > 0) {
         jornadas.forEach(function(jornada) {
             var id = jornada.getAttribute("id");
@@ -86,7 +92,7 @@ function displayJornadas(selectedTemporadaId, xmlDoc) {
     }
 
     // Set default selected jornada
-    selectJornada.value = '1';
+    selectJornada.value = ''; // Установите значение по умолчанию для "Choose Jornada"
 }
 
 function loadXMLDoc(url, callback) {
