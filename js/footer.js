@@ -9,6 +9,18 @@ function openPrivacyPolicyModal() {
     modal.focus();
 }
 
+// Функция для открытия модального окна "Nosotros"
+function openNosotrosModal() {
+    const modal = document.getElementById('nosotros-modal');
+    modal.classList.remove('hidden');
+}
+
+// Функция для открытия модального окна "Contacto"
+function openContactoModal() {
+    const modal = document.getElementById('contacto-modal');
+    modal.classList.remove('hidden');
+}
+
 // Получение кнопок для закрытия модального окна
 const closeModalButtons = document.querySelectorAll('[data-modal-hide="default-modal"]');
 
@@ -78,4 +90,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+// Назначение обработчика события на кнопку "Nosotros"
+document.querySelector('a[href="#nosotros"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Предотвращает стандартное поведение ссылки
+    openNosotrosModal(); // Ваша функция для открытия модального окна "Nosotros"
+    return false; // Предотвращает прокрутку страницы и обновление
+  });
+  
+  // Назначение обработчика события на кнопку "Politica de privacidad"
+  document.querySelector('a[href="#politica"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Предотвращает стандартное поведение ссылки
+    openPrivacyPolicyModal(); // Ваша функция для открытия модального окна Politica de privacidad
+    return false; // Предотвращает прокрутку страницы и обновление
+  });
+  
+  // Назначение обработчика события на кнопку "Contacto"
+  document.querySelector('a[href="#contacto"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Предотвращает стандартное поведение ссылки
+    openContactoModal(); // Ваша функция для открытия модального окна "Contacto"
+    return false; // Предотвращает прокрутку страницы и обновление
+  });
 });
