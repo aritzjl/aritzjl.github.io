@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     loadTemporadas();
-    document.getElementById("Temporada").addEventListener("change", function() {
+
+    document.getElementById("temporada").addEventListener("change", function() {
         var selectedTemporadaId = this.value;
         loadJornadas(selectedTemporadaId);
     });
 
-    document.getElementById("Jornada").addEventListener("change", function() {
-        var selectedTemporadaId = document.getElementById("Temporada").value;
+    document.getElementById("jornada").addEventListener("change", function() {
+        var selectedTemporadaId = document.getElementById("temporada").value;
         var selectedJornadaId = this.value;
-        loadXMLDoc("/XMLyXSD/XMLJornadas.xml", function(xmlDoc) {
-            updateJornadaInfo(xmlDoc, selectedJornadaId, selectedTemporadaId);
-        });
+        loadJornadasXML(selectedTemporadaId, selectedJornadaId);
     });
 });
 
@@ -21,78 +20,56 @@ function loadTemporadas() {
             displayTemporadas(this);
         }
     };
-    xmlhttp.open("GET", "/XMLyXSD/XMLJornadas.xml", true);
+    xmlhttp.open("GET", "/XMLyXSD/jornadas.xml", true);
     xmlhttp.send();
 }
 
 function displayTemporadas(xml) {
     var xmlDoc = xml.responseXML;
-    var temporadas = xmlDoc.getElementsByTagName("Temporada");
-    var selectTemporada = document.getElementById("Temporada");
-    
-    // Clear existing options
+    var temporadas = xmlDoc.getElementsByTagName("temporada");
+    var selectTemporada = document.getElementById("temporada");
     selectTemporada.innerHTML = "";
-    
-    var existingOptions = {}; // Object to store existing options
-    
+
     for (var i = 0; i < temporadas.length; i++) {
         var id = temporadas[i].getAttribute("id");
-        
-        // Check if the option already exists
-        if (!existingOptions[id]) {
-            var option = document.createElement("option");
-            option.value = id;
-            option.text = id;
-            selectTemporada.appendChild(option);
-            existingOptions[id] = true; // Mark this option as existing
-        }
+        var option = createOption(id, id);
+        selectTemporada.appendChild(option);
     }
-    
-    // Set default selected temporada
-    selectTemporada.value = '2024';
 
-    // Trigger change event to populate jornadas initially
+    selectTemporada.value = '2024';
     selectTemporada.dispatchEvent(new Event("change"));
 }
 
 function loadJornadas(selectedTemporadaId) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            displayJornadas(selectedTemporadaId, this.responseXML);
-        }
-    };
-    xmlhttp.open("GET", "/XMLyXSD/XMLJornadas.xml", true);
-    xmlhttp.send();
+    loadXMLDoc("/XMLyXSD/jornadas.xml", function(xmlDoc) {
+        displayJornadas(selectedTemporadaId, xmlDoc);
+    });
 }
 
 function displayJornadas(selectedTemporadaId, xmlDoc) {
-    var jornadas = xmlDoc.querySelectorAll('Temporada[id="' + selectedTemporadaId + '"] Jornada');
-    var selectJornada = document.getElementById("Jornada");
-    selectJornada.innerHTML = ""; // Clear previous options
+    var jornadas = xmlDoc.querySelectorAll('temporada[id="' + selectedTemporadaId + '"] jornada');
+    var selectJornada = document.getElementById("jornada");
+    selectJornada.innerHTML = "";
 
-    // Создаем опцию "Choose Jornada" и добавляем в начало списка
-    var chooseOption = document.createElement("option");
-    chooseOption.text = "Choose Jornada";
-    chooseOption.value = ""; // Установите значение по вашему усмотрению, если нужно
+    var chooseOption = createOption("", "Choose Jornada");
     selectJornada.appendChild(chooseOption);
 
     if (jornadas.length > 0) {
         jornadas.forEach(function(jornada) {
             var id = jornada.getAttribute("id");
-            var option = document.createElement("option");
-            option.value = id;
-            option.text = id;
+            var option = createOption(id, id);
             selectJornada.appendChild(option);
         });
     } else {
-        var option = document.createElement("option");
-        option.text = "No Jornadas available";
+        var option = createOption("", "No Jornadas available");
         selectJornada.appendChild(option);
     }
+}
 
-    // Set default selected jornada
-    selectJornada.value = ''; // Установите значение по умолчанию для "Choose Jornada"
+function loadJornadasXML(selectedTemporadaId, selectedJornadaId) {
+    loadXMLDoc("/XMLyXSD/jornadas.xml", function(xmlDoc) {
+        updateJornadaInfo(xmlDoc, selectedJornadaId, selectedTemporadaId);
+    });
 }
 
 function loadXMLDoc(url, callback) {
@@ -106,48 +83,46 @@ function loadXMLDoc(url, callback) {
     xmlhttp.send();
 }
 
+function createOption(value, text) {
+    var option = document.createElement("option");
+    option.value = value;
+    option.text = text;
+    return option;
+}
+
 window.onload = function() {
-    const defaultSelectedTemporada = '2024'; // Задаем 2024 год по умолчанию
-    const defaultSelectedJornada = '1'; // Задаем 1 тур по умолчанию
-    loadXMLDoc("/XMLyXSD/XMLJornadas.xml", function(xmlDoc) {
+    const defaultSelectedTemporada = '2024';
+    const defaultSelectedJornada = '1';
+    loadXMLDoc("/XMLyXSD/jornadas.xml", function(xmlDoc) {
         updateJornadaInfo(xmlDoc, defaultSelectedJornada, defaultSelectedTemporada);
     });
 };
-
 
 function updateJornadaInfo(xmlDoc, jornada, temporada) {
     console.log(`Год: ${temporada}`);
     console.log(`Тур: ${jornada}`);
 
-    // Получить элемент года из XML-файла по указанному году
-    const TemporadaElement = xmlDoc.querySelector(`Temporada[id="${temporada}"]`);
-    console.log(TemporadaElement);
+    const TemporadaElement = xmlDoc.querySelector(`temporada[id="${temporada}"]`);
     if (TemporadaElement) {
-        // Получить элемент тура внутри года по указанному туру
-        const JornadaElement = TemporadaElement.querySelector(`Jornada[id="${jornada}"]`);
-        console.log(JornadaElement);
+        const JornadaElement = TemporadaElement.querySelector(`jornada[id="${jornada}"]`);
         if (JornadaElement) {
-            // Итерировать по матчам тура
-            const partidos = JornadaElement.querySelectorAll('Partido');
+            const partidos = JornadaElement.querySelectorAll('partido');
             partidos.forEach((partido, i) => {
-                // Получить соответствующие элементы из XML
-                const nomEquipoLocalElement = partido.querySelector('nomEquipoLocal');
-                const nombreEquipoVisitanteElement = partido.querySelector('nombreEquipoVisitante');
+                const nomequipoLocalElement = partido.querySelector('nomequipoLocal');
+                const nomEquipoVisitanteElement = partido.querySelector('nomEquipoVisitante');
                 const etiquetaPartidoElement = partido.querySelector('etiquetaPartido');
                 const resultadoLocalElement = partido.querySelector('resultadoLocal');
                 const resultadoVisitanteElement = partido.querySelector('resultadoVisitante');
 
-                // Получить соответствующие HTML-элементы на странице
-                const nomEquipoLocal = document.getElementById(`nomEquipoLocal${i + 1}`);
-                const nombreEquipoVisitante = document.getElementById(`nombreEquipoVisitante${i + 1}`);
+                const nomequipoLocal = document.getElementById(`nomequipoLocal${i + 1}`);
+                const nomEquipoVisitante = document.getElementById(`nomEquipoVisitante${i + 1}`);
                 const etiquetaPartido = document.getElementById(`etiquetaPartido${i + 1}`);
                 const resultadoLocal = document.getElementById(`resultadoLocal${i + 1}`);
                 const resultadoVisitante = document.getElementById(`resultadoVisitante${i + 1}`);
 
-                // Обновить HTML-элементы данными о матче
-                if (nomEquipoLocal && nombreEquipoVisitante && etiquetaPartido && resultadoLocal && resultadoVisitante) {
-                    nomEquipoLocal.textContent = nomEquipoLocalElement.textContent;
-                    nombreEquipoVisitante.textContent = nombreEquipoVisitanteElement.textContent;
+                if (nomequipoLocal && nomEquipoVisitante && etiquetaPartido && resultadoLocal && resultadoVisitante) {
+                    nomequipoLocal.textContent = nomequipoLocalElement.textContent;
+                    nomEquipoVisitante.textContent = nomEquipoVisitanteElement.textContent;
                     etiquetaPartido.textContent = etiquetaPartidoElement.textContent;
                     resultadoLocal.textContent = resultadoLocalElement.textContent;
                     resultadoVisitante.textContent = resultadoVisitanteElement.textContent;
