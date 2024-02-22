@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TablaClubs>
+    <temporada id="2026">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2024">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2023">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>dfffffffffffffffffffffffffffffff</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>dddddddddddddddddddddddddddd </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasdddddddddddddddddddddddddddle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Cardddddddddddddddddddddddn</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2022">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2021">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2020">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2019">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2018">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2017">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2016">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2015">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2014">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2013">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2012">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2002">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2001">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="2000">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="1999">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+    <temporada id="1998">
+        <club>
+            <codEq>Rxfn</codEq>
+            <nomEq>Real Madrid</nomEq>
+            <presEq>Florentino Perez</presEq>
+            <cantSocios>100009</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>s4JN</codEq>
+            <nomEq>Aleti </nomEq>
+            <presEq>Niidea</presEq>
+            <cantSocios>111</cantSocios>
+            <estadio>
+                <nomEst>El Sadar</nomEst>
+                <capacidad>363465</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>05H6</codEq>
+            <nomEq>Lasalle</nomEq>
+            <presEq>Juan</presEq>
+            <cantSocios>1</cantSocios>
+            <estadio>
+                <nomEst>San Mames</nomEst>
+                <capacidad>10000000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>1gZl</codEq>
+            <nomEq>Carmin</nomEq>
+            <presEq>Carmen</presEq>
+            <cantSocios>5</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>345345</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>fZwI</codEq>
+            <nomEq>HarryPotter</nomEq>
+            <presEq>ermion</presEq>
+            <cantSocios>14000</cantSocios>
+            <estadio>
+                <nomEst>Los Carmenes</nomEst>
+                <capacidad>5000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>M2DD</codEq>
+            <nomEq>Obiwan</nomEq>
+            <presEq>Kenobi</presEq>
+            <cantSocios>15000</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>zurY</codEq>
+            <nomEq>HanSOlo</nomEq>
+            <presEq>SOlo</presEq>
+            <cantSocios>1596</cantSocios>
+            <estadio>
+                <nomEst>Riazor</nomEst>
+                <capacidad>1000</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>SSal</codEq>
+            <nomEq>Athletic Club</nomEq>
+            <presEq>Asier Perez</presEq>
+            <cantSocios>200000</cantSocios>
+            <estadio>
+                <nomEst>Bernabeu</nomEst>
+                <capacidad>34653645</capacidad>
+            </estadio>
+        </club>
+        <club>
+            <codEq>0xnk</codEq>
+            <nomEq>Zaragoza</nomEq>
+            <presEq>Manolo Perez</presEq>
+            <cantSocios>25000</cantSocios>
+            <estadio>
+                <nomEst>La Cartuja</nomEst>
+                <capacidad>30000</capacidad>
+            </estadio>
+        </club>
+    </temporada>
+</TablaClubs>

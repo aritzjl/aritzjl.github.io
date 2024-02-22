@@ -1,5 +1,5 @@
 // Ruta del archivo XML
-const xmlFilePath = '/XMLyXSD/XMLClubes.xml';
+const xmlFilePath = '/XMLyXSD/equipos.xml';
 
 // Función para cargar un archivo XML
 function loadXMLDoc(filename) {
@@ -72,24 +72,24 @@ function updateTableData(selectedSeason) {
         const temporadaId = club.closest('temporada').getAttribute('id');
 
         if (temporadaId === selectedSeason) {
-            const nombre = club.getElementsByTagName('nombre')[0].textContent;
+            const nomEq = club.getElementsByTagName('nomEq')[0].textContent;
             const estadio = club.getElementsByTagName('estadio')[0].textContent;
-            const presidente = club.getElementsByTagName('presidente')[0].textContent;
-            const cantidadSocios = club.getElementsByTagName('cantidadSocios')[0].textContent;
-            const ciudad = club.getElementsByTagName('ciudad')[0].textContent;
-            const codigo = club.getElementsByTagName('codigo')[0].textContent;
+            const presEq = club.getElementsByTagName('presEq')[0].textContent;
+            const cantSocios = club.getElementsByTagName('cantSocios')[0].textContent;
+            const nomEst = club.getElementsByTagName('nomEst')[0].textContent;
+            const codEq = club.getElementsByTagName('codEq')[0].textContent;
 
             const newRow = document.createElement('tr');
             newRow.className = i % 2 === 0 ? ' dark:border-gray-700' : '';
 
             newRow.addEventListener('click', function() {
                 const clubInfo = {
-                    nombre: nombre,
+                    nomEq: nomEq,
                     estadio: estadio,
-                    presidente: presidente,
-                    cantidadSocios: cantidadSocios,
-                    ciudad: ciudad,
-                    codigo: codigo
+                    presEq: presEq,
+                    cantSocios: cantSocios,
+                    nomEst: nomEst,
+                    codEq: codEq
                 };
 
                 const clubInfoJSON = encodeURIComponent(JSON.stringify(clubInfo));
@@ -98,11 +98,11 @@ function updateTableData(selectedSeason) {
 
             newRow.innerHTML = `
                 <td class="px-6 py-4"><img src="/imagenes/Spirit.png" alt="Escudo Equipo" class="h-8"></td>
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nombre}</td>
+                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${nomEq}</td>
                 <td class="px-6 py-4">${estadio}</td>
-                <td class="px-6 py-4">${presidente}</td>
-                <td class="px-6 py-4">${cantidadSocios}</td>
-                <td class="px-6 py-4">${ciudad}</td>
+                <td class="px-6 py-4">${presEq}</td>
+                <td class="px-6 py-4">${cantSocios}</td>
+                <td class="px-6 py-4">${nomEst}</td>
             `;
         
             tableBody.appendChild(newRow);

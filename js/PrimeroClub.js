@@ -8,10 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const clubInfo = JSON.parse(decodeURIComponent(clubInfoJSON));
 
     // Отображает информацию о клубе
-    document.getElementById('codigo').textContent = clubInfo.codigo;
-    document.getElementById('nombre').textContent = clubInfo.nombre;
+    document.getElementById('codEq').textContent = clubInfo.codEq;
+    document.getElementById('nomEq').textContent = clubInfo.nomEq;
     document.getElementById('estadio').textContent = clubInfo.estadio;
-    document.getElementById('presidente').textContent = clubInfo.presidente;
-    document.getElementById('cantidad').textContent = clubInfo.cantidadSocios;
-    document.getElementById('historia').textContent = clubInfo.historia;
+    document.getElementById('presEq').textContent = clubInfo.presEq;
+    document.getElementById('cantSocios').textContent = clubInfo.cantSocios;
 });
