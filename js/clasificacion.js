@@ -1,5 +1,5 @@
 // Ruta del archivo XML
-const xmlFilePath = '/XMLyXSD/XMLClasificacion.xml';
+const xmlFilePath = '/XMLyXSD/clasificacion.xml';
 
 // Функция для загрузки XML-документа
 function loadXMLDoc(filename) {
@@ -61,7 +61,7 @@ function loadTableData(selectedSeason) {
         const temporadaId = team.closest('temporada').getAttribute('id');
 
         if (temporadaId === selectedSeason) {
-            const nombre = team.getElementsByTagName('nombre')[0].textContent;
+            const nomEq = team.getElementsByTagName('nomEq')[0].textContent;
             const ganados = parseInt(team.getElementsByTagName('ganados')[0].textContent);
             const perdidos = parseInt(team.getElementsByTagName('perdidos')[0].textContent);
             const empatados = parseInt(team.getElementsByTagName('empatados')[0].textContent);
@@ -71,7 +71,7 @@ function loadTableData(selectedSeason) {
             const jugados = calculateJugados(ganados, perdidos, empatados);
 
             teamsData.push({
-                nombre: nombre,
+                nomEq: nomEq,
                 ganados: ganados,
                 perdidos: perdidos,
                 empatados: empatados,
@@ -107,7 +107,7 @@ teamsData.sort((a, b) => {
         newRow.innerHTML = `
             <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${i + 1}</td>
             <td class="px-6 py-4"><img src="/imagenes/Spirit.png" alt="Escudo Equipo" class="h-8"></td>
-            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${teamData.nombre}</td>
+            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${teamData.nomEq}</td>
             <td class="px-6 py-4">${teamData.ganados}</td>
             <td class="px-6 py-4">${teamData.perdidos}</td>
             <td class="px-6 py-4">${teamData.empatados}</td>
