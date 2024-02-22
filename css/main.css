@@ -1,9 +1,8 @@
-/* Puedes ajustar estos estilos según sea necesario */
 .table-container {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Para iOS */
+    -webkit-overflow-scrolling: touch;
     max-width: 100%;
     overflow-y: visible;
-    margin-bottom: 1rem; /* Puede ser necesario para evitar superposiciones */
+    margin-bottom: 1rem;
     display: block;
 }
