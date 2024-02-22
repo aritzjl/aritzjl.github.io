@@ -1,7 +1,7 @@
-// Объявление переменной Dismiss (предполагается, что это некоторая пользовательская функция или библиотека)
-const Dismiss = window.Dismiss; // Предположим, что Dismiss - глобальная переменная
+// Supongamos que Dismiss es una función o biblioteca global
+const Dismiss = window.Dismiss;
 
-// Функция для открытия модального окна политики конфиденциальности
+// Función para abrir el modal de política de privacidad
 function openPrivacyPolicyModal() {
     const modal = document.getElementById('default-modal');
     modal.classList.remove('hidden');
@@ -9,28 +9,28 @@ function openPrivacyPolicyModal() {
     modal.focus();
 }
 
-// Функция для открытия модального окна "Nosotros"
+// Función para abrir el modal "Nosotros"
 function openNosotrosModal() {
     const modal = document.getElementById('nosotros-modal');
     modal.classList.remove('hidden');
 }
 
-// Функция для открытия модального окна "Contacto"
+// Función para abrir el modal "Contacto"
 function openContactoModal() {
     const modal = document.getElementById('contacto-modal');
     modal.classList.remove('hidden');
 }
 
-// Получение кнопок для закрытия модального окна
+// Obtener botones para cerrar el modal
 const closeModalButtons = document.querySelectorAll('[data-modal-hide="default-modal"]');
 
-// Добавление обработчиков событий клика на кнопки для закрытия модального окна
+// Agregar manejadores de eventos de clic para cerrar el modal
 closeModalButtons.forEach(function(button) {
     button.addEventListener('click', function() {
         const modal = document.getElementById('default-modal');
         modal.classList.add('hidden');
         modal.setAttribute('aria-hidden', 'true');
-        // Установка фокуса на ссылку политики конфиденциальности после закрытия модального окна
+        // Establecer el foco en el enlace de política de privacidad después de cerrar el modal
         const privacyPolicyLink = document.querySelector('a[href="#"]');
         if (privacyPolicyLink) {
             privacyPolicyLink.focus();
@@ -38,25 +38,25 @@ closeModalButtons.forEach(function(button) {
     });
 });
 
-// Когда DOM полностью загружен, выполнить следующие действия
+// Cuando el DOM se carga completamente, realizar las siguientes acciones
 document.addEventListener('DOMContentLoaded', function() {
-    // Получение элементов DOM, связанных с модальным окном контактов
+    // Obtener elementos del DOM relacionados con el modal de contacto
     const openContactModal = document.getElementById('openContactModal');
     const closeModalButton = document.querySelector('[data-modal-toggle="crud-modal"]');
     const sendButton = document.getElementById('contactButton');
     const modal = document.getElementById('contacto-modal');
     const notification = document.getElementById('notification');
 
-    // Добавление обработчика событий клика для открытия модального окна контактов
+    // Agregar manejador de eventos de clic para abrir el modal de contacto
     openContactModal.addEventListener('click', function(event) {
         event.preventDefault();
         modal.classList.remove('hidden');
     });
 
-    // Добавление обработчика событий клика для закрытия модального окна контактов
+    // Agregar manejador de eventos de clic para cerrar el modal de contacto
     closeModalButton.addEventListener('click', function() {
         modal.classList.add('hidden');
-        // Закрытие модального окна с анимацией (предположительно, с использованием Dismiss)
+        // Cerrar el modal con animación (presumiblemente usando Dismiss)
         if (Dismiss) {
             const options = {
                 transition: 'transition-opacity',
@@ -68,17 +68,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Добавление обработчика событий клика для кнопки отправки в модальном окне контактов
+    // Agregar manejador de eventos de clic para el botón de enviar en el modal de contacto
     sendButton.addEventListener('click', function() {
         modal.classList.add('hidden');
         notification.classList.remove('hidden');
-        // Скрытие уведомления через 3 секунды
+        // Ocultar la notificación después de 3 segundos
         setTimeout(function() {
             notification.classList.add('hidden');
-        }, 3000); // 3000 миллисекунд = 3 секунды
+        }, 3000); // 3000 milisegundos = 3 segundos
     });
 
-    // Добавление обработчика событий для закрытия модального окна по нажатию клавиши Escape
+    // Agregar manejador de eventos para cerrar el modal al presionar la tecla Escape
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             const modal = document.getElementById('default-modal');
@@ -90,24 +90,25 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-// Назначение обработчика события на кнопку "Nosotros"
-document.querySelector('a[href="#nosotros"]').addEventListener('click', function(e) {
-    e.preventDefault(); // Предотвращает стандартное поведение ссылки
-    openNosotrosModal(); // Ваша функция для открытия модального окна "Nosotros"
-    return false; // Предотвращает прокрутку страницы и обновление
-  });
-  
-  // Назначение обработчика события на кнопку "Politica de privacidad"
-  document.querySelector('a[href="#politica"]').addEventListener('click', function(e) {
-    e.preventDefault(); // Предотвращает стандартное поведение ссылки
-    openPrivacyPolicyModal(); // Ваша функция для открытия модального окна Politica de privacidad
-    return false; // Предотвращает прокрутку страницы и обновление
-  });
-  
-  // Назначение обработчика события на кнопку "Contacto"
-  document.querySelector('a[href="#contacto"]').addEventListener('click', function(e) {
-    e.preventDefault(); // Предотвращает стандартное поведение ссылки
-    openContactoModal(); // Ваша функция для открытия модального окна "Contacto"
-    return false; // Предотвращает прокрутку страницы и обновление
-  });
+
+    // Asignar manejador de eventos al botón "Nosotros"
+    document.querySelector('a[href="#nosotros"]').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevenir comportamiento estándar del enlace
+        openNosotrosModal(); // Llamar a la función para abrir el modal "Nosotros"
+        return false; // Prevenir desplazamiento y recarga de la página
+    });
+
+    // Asignar manejador de eventos al botón "Politica de privacidad"
+    document.querySelector('a[href="#politica"]').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevenir comportamiento estándar del enlace
+        openPrivacyPolicyModal(); // Llamar a la función para abrir el modal de política de privacidad
+        return false; // Prevenir desplazamiento y recarga de la página
+    });
+
+    // Asignar manejador de eventos al botón "Contacto"
+    document.querySelector('a[href="#contacto"]').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevenir comportamiento estándar del enlace
+        openContactoModal(); // Llamar a la función para abrir el modal "Contacto"
+        return false; // Prevenir desplazamiento y recarga de la página
+    });
 });

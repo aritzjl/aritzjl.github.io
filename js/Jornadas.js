@@ -1,11 +1,15 @@
+// Cuando el DOM está completamente cargado, ejecutar estas acciones
 document.addEventListener("DOMContentLoaded", function() {
+    // Cargar las temporadas disponibles al inicio
     loadTemporadas();
 
+    // Añadir un evento al cambio de la selección de temporada
     document.getElementById("temporada").addEventListener("change", function() {
         var selectedTemporadaId = this.value;
         loadJornadas(selectedTemporadaId);
     });
 
+    // Añadir un evento al cambio de la selección de jornada
     document.getElementById("jornada").addEventListener("change", function() {
         var selectedTemporadaId = document.getElementById("temporada").value;
         var selectedJornadaId = this.value;
@@ -13,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Función para cargar las temporadas disponibles
 function loadTemporadas() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -24,6 +29,7 @@ function loadTemporadas() {
     xmlhttp.send();
 }
 
+// Función para mostrar las temporadas en el dropdown
 function displayTemporadas(xml) {
     var xmlDoc = xml.responseXML;
     var temporadas = xmlDoc.getElementsByTagName("temporada");
@@ -36,16 +42,19 @@ function displayTemporadas(xml) {
         selectTemporada.appendChild(option);
     }
 
+    // Establecer el valor por defecto como '2024' y lanzar el evento change
     selectTemporada.value = '2024';
     selectTemporada.dispatchEvent(new Event("change"));
 }
 
+// Función para cargar las jornadas de una temporada seleccionada
 function loadJornadas(selectedTemporadaId) {
     loadXMLDoc("/XMLyXSD/jornadas.xml", function(xmlDoc) {
         displayJornadas(selectedTemporadaId, xmlDoc);
     });
 }
 
+// Función para mostrar las jornadas en el dropdown
 function displayJornadas(selectedTemporadaId, xmlDoc) {
     var jornadas = xmlDoc.querySelectorAll('temporada[id="' + selectedTemporadaId + '"] jornada');
     var selectJornada = document.getElementById("jornada");
@@ -66,12 +75,14 @@ function displayJornadas(selectedTemporadaId, xmlDoc) {
     }
 }
 
+// Función para cargar las jornadas y actualizar la información
 function loadJornadasXML(selectedTemporadaId, selectedJornadaId) {
     loadXMLDoc("/XMLyXSD/jornadas.xml", function(xmlDoc) {
         updateJornadaInfo(xmlDoc, selectedJornadaId, selectedTemporadaId);
     });
 }
 
+// Función para cargar un archivo XML utilizando XMLHttpRequest
 function loadXMLDoc(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -83,6 +94,7 @@ function loadXMLDoc(url, callback) {
     xmlhttp.send();
 }
 
+// Función para crear un elemento opción para un dropdown
 function createOption(value, text) {
     var option = document.createElement("option");
     option.value = value;
@@ -90,6 +102,7 @@ function createOption(value, text) {
     return option;
 }
 
+// Al cargar la ventana, cargar los datos de la temporada '2024' y jornada '1' por defecto
 window.onload = function() {
     const defaultSelectedTemporada = '2024';
     const defaultSelectedJornada = '1';
@@ -98,9 +111,8 @@ window.onload = function() {
     });
 };
 
+// Función para actualizar la información de la jornada seleccionada
 function updateJornadaInfo(xmlDoc, jornada, temporada) {
-    console.log(`Год: ${temporada}`);
-    console.log(`Тур: ${jornada}`);
 
     const TemporadaElement = xmlDoc.querySelector(`temporada[id="${temporada}"]`);
     if (TemporadaElement) {
@@ -129,9 +141,9 @@ function updateJornadaInfo(xmlDoc, jornada, temporada) {
                 }
             });
         } else {
-            console.log("Неправильный номер тура");
+            console.log("Número de jornada incorrecto");
         }
     } else {
-        console.log("Неправильный год");
+        console.log("Año de temporada incorrecto");
     }
 }

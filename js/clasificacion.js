@@ -1,39 +1,42 @@
-// Ruta del archivo XML
 const xmlFilePath = '/XMLyXSD/clasificacion.xml';
 
-// Функция для загрузки XML-документа
+// Función para cargar un archivo XML desde el servidor
 function loadXMLDoc(filename) {
+    // Comprobación del tipo de objeto XMLHttpRequest disponible en el navegador
     if (window.XMLHttpRequest) {
-        var xhttp = new XMLHttpRequest();
+        var xhttp = new XMLHttpRequest(); // Para navegadores modernos
     } else {
-        var xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        var xhttp = new ActiveXObject("Microsoft.XMLHTTP"); // Para versiones antiguas de Internet Explorer
     }
     
-    xhttp.open("GET", filename, false);
-    xhttp.send();
+    xhttp.open("GET", filename, false); // Abrir conexión para obtener el archivo XML de manera síncrona
+    xhttp.send(); // Enviar solicitud
     
-    return xhttp.responseXML;
+    return xhttp.responseXML; // Devolver el objeto XML
 }
 
-// Функция для вычисления очков команды
+// Función para calcular los puntos de un equipo basado en partidos ganados y empatados
 function calculatePoints(ganados, empatados) {
-    return (ganados * 3) + empatados;
+    return (ganados * 3) + empatados; // Puntos = (Ganados * 3) + Empatados
 }
 
+// Función para calcular el total de partidos jugados por un equipo
 function calculateJugados(ganados, perdidos, empatados) {
-    return ganados + perdidos + empatados;
+    return ganados + perdidos + empatados; // Total de partidos jugados = Ganados + Perdidos + Empatados
 }
 
-// Функция для загрузки данных в таблицу из XML
+// Función principal para cargar y mostrar los datos de la tabla
 function loadTableData(selectedSeason) {
-    const xmlDoc = loadXMLDoc(xmlFilePath);
-
-    populateSeasonDropdown(xmlDoc);
-
-    const selectElement = document.getElementById('countries');
-
-    const temporadas = xmlDoc.getElementsByTagName('temporada');
+    const xmlDoc = loadXMLDoc(xmlFilePath); // Cargar el archivo XML
+    
+    populateSeasonDropdown(xmlDoc); // Llenar el menú desplegable de temporadas
+    
+    const selectElement = document.getElementById('countries'); // Obtener el elemento de selección de países
+    
+    const temporadas = xmlDoc.getElementsByTagName('temporada'); // Obtener todas las etiquetas 'temporada' del XML
     let hasCurrentYear = false;
+    
+    // Comprobar si la temporada seleccionada está presente en los datos XML
     for (let i = 0; i < temporadas.length; i++) {
         const temporada = temporadas[i];
         const temporadaId = temporada.getAttribute('id');
@@ -43,23 +46,26 @@ function loadTableData(selectedSeason) {
         }
     }
 
+    // Si la temporada seleccionada no está presente, mostrar un mensaje y detener la ejecución
     if (!hasCurrentYear) {
-        selectElement.innerHTML = '<option selected>Choose a Temporada</option>';
+        selectElement.innerHTML = '<option selected>Elige una Temporada</option>';
         return;
     }
 
-    selectElement.value = '2024';
+    selectElement.value = '2024'; // Seleccionar la temporada por defecto al cargar la página
 
-    const tableBody = document.getElementById('table-body');
-    tableBody.innerHTML = '';
+    const tableBody = document.getElementById('table-body'); // Obtener el cuerpo de la tabla
+    tableBody.innerHTML = ''; // Limpiar cualquier contenido existente en la tabla
 
-    const teams = xmlDoc.getElementsByTagName('team');
-    const teamsData = [];
+    const teams = xmlDoc.getElementsByTagName('team'); // Obtener todas las etiquetas 'team' del XML
+    const teamsData = []; // Arreglo para almacenar los datos de los equipos
 
+    // Iterar sobre cada equipo en los datos XML
     for (let i = 0; i < teams.length; i++) {
         const team = teams[i];
-        const temporadaId = team.closest('temporada').getAttribute('id');
+        const temporadaId = team.closest('temporada').getAttribute('id'); // Obtener el ID de la temporada del equipo
 
+        // Si el equipo pertenece a la temporada seleccionada, extraer sus datos y añadirlos al arreglo
         if (temporadaId === selectedSeason) {
             const nomEq = team.getElementsByTagName('nomEq')[0].textContent;
             const ganados = parseInt(team.getElementsByTagName('ganados')[0].textContent);
@@ -67,9 +73,10 @@ function loadTableData(selectedSeason) {
             const empatados = parseInt(team.getElementsByTagName('empatados')[0].textContent);
             const golesF = team.getElementsByTagName('goles_f')[0].textContent;
             const golesC = team.getElementsByTagName('goles_c')[0].textContent;
-            const puntos = calculatePoints(ganados, empatados);
-            const jugados = calculateJugados(ganados, perdidos, empatados);
+            const puntos = calculatePoints(ganados, empatados); // Calcular los puntos del equipo
+            const jugados = calculateJugados(ganados, perdidos, empatados); // Calcular los partidos jugados
 
+            // Añadir los datos del equipo al arreglo 'teamsData'
             teamsData.push({
                 nomEq: nomEq,
                 ganados: ganados,
@@ -81,29 +88,31 @@ function loadTableData(selectedSeason) {
                 jugados: jugados
             });
         }
-        // Сортируем команды по количеству очков и разнице в голах (по убыванию)
-teamsData.sort((a, b) => {
-    if (a.puntos !== b.puntos) {
-        return b.puntos - a.puntos; // Сортировка по количеству очков
-    } else {
-        // Если очки одинаковые, сравниваем разницу в голах
-        const diferenciaGolesA = a.golesF - a.golesC;
-        const diferenciaGolesB = b.golesF - b.golesC;
-        return diferenciaGolesB - diferenciaGolesA; // Учитываем разницу в голах
-    }
-});
+
+        // Ordenar los equipos por puntos y diferencia de goles
+        teamsData.sort((a, b) => {
+            if (a.puntos !== b.puntos) {
+                return b.puntos - a.puntos;
+            } else {
+                const diferenciaGolesA = a.golesF - a.golesC;
+                const diferenciaGolesB = b.golesF - b.golesC;
+                return diferenciaGolesB - diferenciaGolesA;
+            }
+        });
     }
 
-    // Сортируем команды по количеству очков (по убыванию)
+    // Ordenar los equipos nuevamente por puntos (por si acaso)
     teamsData.sort((a, b) => b.puntos - a.puntos);
 
-    // Добавляем отсортированные команды в таблицу
+    // Crear filas para cada equipo y añadirlos a la tabla
     for (let i = 0; i < teamsData.length; i++) {
         const teamData = teamsData[i];
 
+        // Crear una nueva fila (tr) para el equipo
         const newRow = document.createElement('tr');
-        newRow.className = i % 2 === 0 ? ' dark:border-gray-700' : '';
+        newRow.className = i % 2 === 0 ? ' dark:border-gray-700' : ''; // Alternar colores de fila
 
+        // Llenar la fila con los datos del equipo
         newRow.innerHTML = `
             <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">${i + 1}</td>
             <td class="px-6 py-4"><img src="/imagenes/Spirit.png" alt="Escudo Equipo" class="h-8"></td>
@@ -117,49 +126,48 @@ teamsData.sort((a, b) => {
             <td class="px-6 py-4">${teamData.puntos}</td>
         `;
 
-        tableBody.appendChild(newRow);
+        tableBody.appendChild(newRow); // Añadir la fila a la tabla
     }
 }
 
-// Функция для загрузки выпадающего списка сезонов
+// Función para llenar el menú desplegable de temporadas
 function populateSeasonDropdown(xmlDoc) {
-    const selectElement = document.getElementById('countries');
-    selectElement.innerHTML = '';
+    const selectElement = document.getElementById('countries'); // Obtener el elemento de selección de países
+    selectElement.innerHTML = ''; // Limpiar el contenido existente del menú desplegable
 
-    const temporadas = xmlDoc.getElementsByTagName('temporada');
+    const temporadas = xmlDoc.getElementsByTagName('temporada'); // Obtener todas las etiquetas 'temporada' del XML
 
+    // Iterar sobre cada temporada y crear una opción para el menú desplegable
     for (let i = 0; i < temporadas.length; i++) {
         const temporada = temporadas[i];
-        const temporadaId = temporada.getAttribute('id');
+        const temporadaId = temporada.getAttribute('id'); // Obtener el ID de la temporada
 
+        // Crear una nueva opción (option) para el menú desplegable
         const optionElement = document.createElement('option');
-        optionElement.value = temporadaId;
-        optionElement.text = temporadaId;
-        selectElement.add(optionElement);
+        optionElement.value = temporadaId; // Asignar el valor de la temporada a la opción
+        optionElement.text = temporadaId; // Asignar el texto de la temporada a la opción
+        selectElement.add(optionElement); // Agregar la opción al menú desplegable
     }
 }
 
-// Функция loadTableData будет выполнена при полной загрузке окна
+// Función que se ejecuta cuando la página se carga completamente
 window.onload = function() {
-    const defaultSelectedSeason = '2024'; // Задаем 2024 год по умолчанию
-    loadTableData(defaultSelectedSeason);
+    const defaultSelectedSeason = '2024'; // Temporada seleccionada por defecto al cargar la página
+    loadTableData(defaultSelectedSeason); // Cargar y mostrar los datos de la tabla para la temporada por defecto
 };
 
-// Функция loadTableData будет выполнена при изменении значения в выпадающем списке
+// Evento que se activa cuando se cambia la temporada seleccionada en el menú desplegable
 document.getElementById('countries').addEventListener('change', function() {
-    const selectedSeason = this.value;
-    loadTableData(selectedSeason);
-    
-    // Получаем все опции в списке выбора года
+    const selectedSeason = this.value; // Obtener la temporada seleccionada
+    loadTableData(selectedSeason); // Cargar y mostrar los datos de la tabla para la temporada seleccionada
+
+    // Actualizar la opción seleccionada en el menú desplegable
     const options = this.options;
-    // Проходимся по каждой опции
     for (let i = 0; i < options.length; i++) {
         const option = options[i];
-        // Если значение опции совпадает с выбранным годом, устанавливаем для нее атрибут selected
         if (option.value === selectedSeason) {
             option.setAttribute('selected', 'selected');
         } else {
-            // Иначе убираем атрибут selected
             option.removeAttribute('selected');
         }
     }

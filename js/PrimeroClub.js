@@ -1,13 +1,13 @@
-// Espera a que se cargue el contenido de la página
+// Espera a que se cargue todo el contenido de la página
 document.addEventListener('DOMContentLoaded', function () {
     // Obtiene el parámetro 'clubInfo' de la URL
     const params = new URLSearchParams(window.location.search);
     const clubInfoJSON = params.get('clubInfo');
 
-    // Преобразует JSON в объект
+    // Convierte el JSON de 'clubInfo' en un objeto JavaScript
     const clubInfo = JSON.parse(decodeURIComponent(clubInfoJSON));
 
-    // Отображает информацию о клубе
+    // Muestra la información del club en el documento HTML
     document.getElementById('codEq').textContent = clubInfo.codEq;
     document.getElementById('nomEq').textContent = clubInfo.nomEq;
     document.getElementById('estadio').textContent = clubInfo.estadio;
