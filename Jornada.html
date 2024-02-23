@@ -2,147 +2,175 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="imagenes/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/Jornada.css">
     <title> WFE Inicio</title>
-    
+
 </head>
 
 <body class="flex flex-col h-screen bg-white border-gray-200 dark:bg-gray-700">
-	<div id="header-container"></div>
+    <div id="header-container"></div>
     <div>
-        <label for="countries1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Temporada</label>
-		    <select id="temporada" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-		    </select>
-        <label for="countries2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Jornada</label>
-		    <select id="jornada" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-		    </select>
-	</div>
+        <label for="countries1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+            Temporada</label>
+        <select id="temporada"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </select>
+        <label for="countries2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+            Jornada</label>
+        <select id="jornada"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </select>
+    </div>
     <br>
     <br>
     <br>
     <h1 class="text-center text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Jornadas</h1>
-        <br>
-        <br>
-        <br>
+    <br>
+    <br>
+    <br>
 
     <div id="temporada">
         <div id="Partido1" class="flex flex-wrap justify-center m-16">
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
                 <div class="flex items-center justify-center h-48">
                     <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto my-4" alt="" />
                 </div>
                 <div class="p-5">
-                    <h5 id="nomequipoLocal1" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
+                    <h5 id="nomequipoLocal1"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
                 </div>
             </div>
             <div class="flex flex-col items-center md:max-w-xl m-16 border-gray-200 dark:bg-gray-700">
                 <div class="flex flex-col items-center justify-center p-4 leading-normal h-full">
-                    <h5 id="etiquetaPartido1" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Error</h5>
+                    <h5 id="etiquetaPartido1"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Error
+                    </h5>
                     <div class="flex items-center">
-                        <p id="resultadoLocal1" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
+                        <p id="resultadoLocal1" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">
+                            Error</p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center"> : </p>
-                        <p id="resultadoVisitante1" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
+                        <p id="resultadoVisitante1"
+                            class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Fecha: 14.02.2024</p>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Tiempo: 13.00</p>
                 </div>
                 <a class="disabled" aria-disabled="true"></a>
             </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
                 <div class="flex items-center justify-center h-48">
                     <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto my-4" alt="" />
                 </div>
                 <div class="p-5">
-                    <h5 id="nomEquipoVisitante1" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
+                    <h5 id="nomEquipoVisitante1"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
                 </div>
             </div>
         </div>
-        
-        
-            <hr>
-            <div id="Partido2" class="flex flex-wrap justify-center m-16">
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
-                    <div class="flex items-center justify-center h-48">
-                        <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
-                    </div>
-                    <div class="p-5">
-                        <h5 id="nomequipoLocal2" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
-                    </div>
+
+
+        <hr>
+        <div id="Partido2" class="flex flex-wrap justify-center m-16">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
+                <div class="flex items-center justify-center h-48">
+                    <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
                 </div>
-                <div class="flex flex-col items-center md:max-w-xl m-16 border-gray-200 dark:bg-gray-700">
-                    <div class="flex flex-col items-center justify-center p-4 leading-normal h-full">
-                        <h5 id="etiquetaPartido2" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Error</h5>
-                        <div class="flex items-center">
-                            <p id="resultadoLocal2" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center"> : </p>
-                            <p id="resultadoVisitante2" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
-                        </div>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Fecha: 14.02.2024</p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Tiempo: 13.00</p>
-                    </div>
-                    <a class="disabled" aria-disabled="true"></a>
-                </div>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
-                    <div class="flex items-center justify-center h-48">
-                        <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
-                    </div>
-                    <div class="p-5">
-                        <h5 id="nomEquipoVisitante2" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
-                    </div>
+                <div class="p-5">
+                    <h5 id="nomequipoLocal2"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
                 </div>
             </div>
-            
-            <hr>
-            <div id="Partido3" class="flex flex-wrap justify-center m-16">
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
-                    <div class="flex items-center justify-center h-48">
-                        <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
+            <div class="flex flex-col items-center md:max-w-xl m-16 border-gray-200 dark:bg-gray-700">
+                <div class="flex flex-col items-center justify-center p-4 leading-normal h-full">
+                    <h5 id="etiquetaPartido2"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Error
+                    </h5>
+                    <div class="flex items-center">
+                        <p id="resultadoLocal2" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">
+                            Error</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center"> : </p>
+                        <p id="resultadoVisitante2"
+                            class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
                     </div>
-                    <div class="p-5">
-                        <h5 id="nomequipoLocal3" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
-                    </div>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Fecha: 14.02.2024</p>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Tiempo: 13.00</p>
                 </div>
-                <div class="flex flex-col items-center md:max-w-xl m-16 border-gray-200 dark:bg-gray-700">
-                    <div class="flex flex-col items-center justify-center p-4 leading-normal h-full">
-                        <h5 id="etiquetaPartido3" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Error</h5>
-                        <div class="flex items-center">
-                            <p id="resultadoLocal3" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center"> : </p>
-                            <p id="resultadoVisitante3" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
-                        </div>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Fecha: 14.02.2024</p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Tiempo: 13.00</p>
-                    </div>
-                    <a class="disabled" aria-disabled="true"></a>
+                <a class="disabled" aria-disabled="true"></a>
+            </div>
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
+                <div class="flex items-center justify-center h-48">
+                    <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
                 </div>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
-                    <div class="flex items-center justify-center h-48">
-                        <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
-                    </div>
-                    <div class="p-5">
-                        <h5 id="nomEquipoVisitante3" class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
-                    </div>
+                <div class="p-5">
+                    <h5 id="nomEquipoVisitante2"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
                 </div>
             </div>
-            
+        </div>
+
+        <hr>
+        <div id="Partido3" class="flex flex-wrap justify-center m-16">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
+                <div class="flex items-center justify-center h-48">
+                    <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
+                </div>
+                <div class="p-5">
+                    <h5 id="nomequipoLocal3"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:max-w-xl m-16 border-gray-200 dark:bg-gray-700">
+                <div class="flex flex-col items-center justify-center p-4 leading-normal h-full">
+                    <h5 id="etiquetaPartido3"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Error
+                    </h5>
+                    <div class="flex items-center">
+                        <p id="resultadoLocal3" class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">
+                            Error</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center"> : </p>
+                        <p id="resultadoVisitante3"
+                            class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Error</p>
+                    </div>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Fecha: 14.02.2024</p>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Tiempo: 13.00</p>
+                </div>
+                <a class="disabled" aria-disabled="true"></a>
+            </div>
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-64 h-64">
+                <div class="flex items-center justify-center h-48">
+                    <img src="imagenes/Spirit.png" class="rounded-t-lg h-48 w-48 mx-auto" alt="" />
+                </div>
+                <div class="p-5">
+                    <h5 id="nomEquipoVisitante3"
+                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center"></h5>
+                </div>
+            </div>
+        </div>
+
     </div>
-	</main>
+    </main>
 
 
-	<div id="modals-container"></div>
-  
-	<div id="footer-container"></div>
-	  
-	  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	  <script src="js/reciclaje.js"></script>
-	<script src="js/footer.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <div id="modals-container"></div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/reciclaje.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="js/Jornadas.js"></script>
 </body>
 

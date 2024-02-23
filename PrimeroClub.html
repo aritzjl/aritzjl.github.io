@@ -8,8 +8,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="main.css">
 	<link rel="icon" href="imagenes/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/PrimeroClub.css">
-    <title>WFE Información de Club</title>
+	<link rel="stylesheet" href="/css/PrimeroClub.css">
+	<title>WFE Información de Club</title>
 </head>
 
 <body class="flex flex-col h-screen bg-white border-gray-200 dark:bg-gray-700">
@@ -19,51 +19,56 @@
 	<br>
 
 	<main class="m-4">
-			<div>
-				<div role="status" class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-gray-800 dark:border-gray-700 w-full">
-					<div class="flex items-center space-x-4">
-						<div class="flex-shrink-0 w-48 h-48 bg-gray-300 rounded dark:bg-gray-700 ">
-							<img src="/imagenes/Spirit.png" class="h-auto max-w-full rounded-lg">
-						</div>
-						<div class="w-full">
-							<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">información</div>
-							<div id="nomEq" class="text-left mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">error</div>
-							<br>
-							<div class="flex items-center">
-								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Codigo de Club:</div>
-								<div id="codEq" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-							</div>
-							<br>
-							<div class="flex items-center">
-								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">El presidente: </div>
-								<div id="presEq" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-							</div>
-							<br>
-							<div class="flex items-center">
-								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Cantidad de socios: </div>
-								<div id="cantSocios" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-							</div>
-							<br>
-							<div class="flex items-center">
-								<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Estadio: </div>
-								<div id="estadio" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
-							</div>
-							<br>
-						</div>
+		<div>
+			<div role="status"
+				class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-gray-800 dark:border-gray-700 w-full">
+				<div class="flex items-center space-x-4">
+					<div class="flex-shrink-0 w-48 h-48 bg-gray-300 rounded dark:bg-gray-700 ">
+						<img src="/imagenes/Spirit.png" class="h-auto max-w-full rounded-lg">
 					</div>
-					<span class="sr-only">Loading...</span>
+					<div class="w-full">
+						<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+							información</div>
+						<div id="nomEq"
+							class="text-left mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">error
+						</div>
+						<br>
+						<div class="flex items-center">
+							<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Codigo de Club:</div>
+							<div id="codEq" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+						</div>
+						<br>
+						<div class="flex items-center">
+							<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">El presidente: </div>
+							<div id="presEq" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+						</div>
+						<br>
+						<div class="flex items-center">
+							<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Cantidad de socios: </div>
+							<div id="cantSocios" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+						</div>
+						<br>
+						<div class="flex items-center">
+							<div class="h-2 text-gray-500 dark:text-gray-400 mb-2.5">Estadio: </div>
+							<div id="estadio" class="h-2 text-gray-500 dark:text-gray-400 mb-2.5 ml-2">error</div>
+						</div>
+						<br>
+					</div>
 				</div>
-				<br>
-				<button type="#" onclick="window.location.href='/clubes.html'" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Volver</button>
+				<span class="sr-only">Loading...</span>
 			</div>
+			<br>
+			<button type="#" onclick="window.location.href='/clubes.html'"
+				class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Volver</button>
+		</div>
 	</main>
-	
+
 
 
 	<div id="modals-container"></div>
-  
+
 	<div id="footer-container"></div>
-	  
+
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="js/reciclaje.js"></script>
 	<script src="js/footer.js"></script>

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="icon" href="imagenes/logo.png" type="image/x-icon" />
 	<link rel="stylesheet" href="/css/clasificacion.css">
-    <title> WFE Clasificacion</title>
+	<title> WFE Clasificacion</title>
 </head>
 
 <body class="flex flex-col h-screen bg-white border-gray-200 dark:bg-gray-700">
@@ -20,39 +20,42 @@
 	<main class="lg:mx-4">
 
 		<div class="relative rounded-md overflow-x-auto drop-shadow-xl">
-			<table class="w-full max-w-full sm:max-w-none text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border border-black">
-                <thead class="text-xs text-gray-50 uppercase bg-blue-500 dark:bg-blue-900 dark:text-gray-100">
-                    <tr>
-                        <th scope="col" class="px-6 py-3">Posición</th>
-                        <th scope="col" class="px-6 py-3">Escudo</th>
-                        <th scope="col" class="px-6 py-3">Nombre</th>
-                        <th scope="col" class="px-6 py-3">Ganados</th>
-                        <th scope="col" class="px-6 py-3">Perdidos</th>
-                        <th scope="col" class="px-6 py-3">Empatados</th>
-                        <th scope="col" class="px-6 py-3">Jugados</th>
-                        <th scope="col" class="px-6 py-3">Goles F</th>
-                        <th scope="col" class="px-6 py-3">Goles C</th>
-                        <th scope="col" class="px-6 py-3">Puntos</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <!-- Dynamic content will be inserted here -->
-                </tbody>
-            </table>
+			<table
+				class="w-full max-w-full sm:max-w-none text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border border-black">
+				<thead class="text-xs text-gray-50 uppercase bg-blue-500 dark:bg-blue-900 dark:text-gray-100">
+					<tr>
+						<th scope="col" class="px-6 py-3">Posición</th>
+						<th scope="col" class="px-6 py-3">Escudo</th>
+						<th scope="col" class="px-6 py-3">Nombre</th>
+						<th scope="col" class="px-6 py-3">Ganados</th>
+						<th scope="col" class="px-6 py-3">Perdidos</th>
+						<th scope="col" class="px-6 py-3">Empatados</th>
+						<th scope="col" class="px-6 py-3">Jugados</th>
+						<th scope="col" class="px-6 py-3">Goles F</th>
+						<th scope="col" class="px-6 py-3">Goles C</th>
+						<th scope="col" class="px-6 py-3">Puntos</th>
+					</tr>
+				</thead>
+				<tbody id="table-body">
+					<!-- Dynamic content will be inserted here -->
+				</tbody>
+			</table>
 			<br>
 			<br>
 		</div>
-		<label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-		<select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+		<label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an
+			option</label>
+		<select id="countries"
+			class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
 		</select>
 	</main>
 
 
 
 	<div id="modals-container"></div>
-  
+
 	<div id="footer-container"></div>
-	  
+
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="js/reciclaje.js"></script>
 	<script src="js/footer.js"></script>
