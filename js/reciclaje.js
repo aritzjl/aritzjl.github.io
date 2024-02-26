@@ -25,4 +25,8 @@ $(document).ready(function () {
             $('#footer-container').html(data); // Corregido aquí
         }
     });
+        // Переключение видимости меню при нажатии на кнопку
+        $('#mobile-menu-toggle').click(function () {
+            $('#mobile-menu').toggle();
+        });
 });

@@ -1,7 +1,7 @@
 // Elementos del encabezado
 const headerElements = {
   hamburgerMenu: document.getElementById('hamburgerMenu'),
-  navMenu: document.getElementById('navMenu')
+  navMenu: document.getElementById('navbar-default')
 };
 
 // Iconos SVG
@@ -12,6 +12,7 @@ const iconSVG = {
 // Manejador de clic para mostrar/ocultar el menú de navegación en dispositivos móviles
 headerElements.hamburgerMenu.addEventListener('click', () => {
   headerElements.navMenu.classList.toggle('active');
+  console.log('нажата кнопка');
 });
 
 // Función para cambiar la fuente del ícono SVG al pasar el ratón sobre él
